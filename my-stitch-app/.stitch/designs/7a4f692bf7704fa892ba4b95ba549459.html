@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#1e1b19","error-container":"#ffdad6","on-secondary":"#ffffff","surface-variant":"#e9e1dd","secondary":"#ac3400","on-tertiary-fixed-variant":"#005323","surface-container":"#f4ece8","on-tertiary-container":"#82e595","tertiary-fixed-dim":"#79db8d","primary":"#712c00","on-secondary-container":"#5d1900","tertiary":"#004c20","on-tertiary-fixed":"#00210a","primary-container":"#92400e","on-surface":"#1e1b19","surface":"#fff8f5","on-error":"#ffffff","surface-container-low":"#faf2ee","on-primary":"#ffffff","inverse-surface":"#33302d","tertiary-container":"#00672d","surface-container-highest":"#e9e1dd","surface-bright":"#fff8f5","on-primary-fixed":"#341000","inverse-primary":"#ffb693","tertiary-fixed":"#95f8a7","background":"#fff8f5","on-secondary-fixed":"#390c00","secondary-container":"#fd6b36","on-tertiary":"#ffffff","outline":"#887269","on-primary-container":"#ffc2a5","error":"#ba1a1a","on-secondary-fixed-variant":"#832600","surface-tint":"#9a4614","inverse-on-surface":"#f7efeb","primary-fixed-dim":"#ffb693","surface-container-high":"#eee7e3","on-primary-fixed-variant":"#7a3000","surface-container-lowest":"#ffffff","secondary-fixed":"#ffdbd0","on-surface-variant":"#55433a","on-error-container":"#93000a","outline-variant":"#dcc1b6","primary-fixed":"#ffdbcb","secondary-fixed-dim":"#ffb59d","surface-dim":"#e0d8d5"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-sm":"0.5rem","space-lg":"1.25rem","space-xs":"0.25rem","space-xl":"1.75rem","gutter":"1rem","margin":"1.5rem","space-md":"0.75rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"tabular-numeric":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"stat-kpi":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"]},fontSize:{"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"tabular-numeric":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"stat-kpi":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.025em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-14 px-space-md flex items-center gap-space-sm bg-surface-container"><img alt="Brand logo. - Primary color: #92400e
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U-kvlj5dp_ud32cha0D7du47YHgH17IS-POpaoFkl--a38zx1NsKhf_5zxfcRKJAke29TNGoIT4m3jDrSwnXjdNO_pX6pJzor_z8GgyZhn6Q-YZH7EFaeDI_RYyrixSmjB5ep-pFqtoF1NpC0EvbqRxuEohS-MKMyZ5Xm9CGCyK5pD_5O1Vjgwz7std9yMYsLyyaGWJPrjUGAosG7kDyEB-qEjHJSMDvkOBknIPfkWBg-D7LKr6tHL9dQ"/><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">ChaiOps</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Artisanal POS &amp; Ops</span></div></div><div class="p-space-sm"><div class="px-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Station &amp; Shifts</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="staff-shift-pos" href="#"><span class="material-symbols-outlined text-base">point_of_sale</span><span>Staff &amp; Shift POS</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="live-order-queue" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-base">countertops</span><span>Live Order Queue</span></div><span class="px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-tabular-numeric text-label-sm">4</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="multi-branch-overview" href="#"><span class="material-symbols-outlined text-base">storefront</span><span>Multi-Branch Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recipe-bom-inventory" href="#"><span class="material-symbols-outlined text-base">blender</span><span>Recipe BOM &amp; Inventory</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="menu-branch-pricing" href="#"><span class="material-symbols-outlined text-base">menu_book</span><span>Menu &amp; Branch Pricing</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="eod-cash-reconciliation" href="#"><span class="material-symbols-outlined text-base">account_balance_wallet</span><span>EOD Cash Reconciliation</span></a></nav></div></div><div class="p-space-sm bg-surface-container-lowest m-space-sm rounded shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">System Health</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold"><span class="inline-block w-2 h-2 rounded-full bg-tertiary-container"></span>99.98%</span></div><div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><span>Local Sync Buffer</span><span class="font-tabular-numeric text-tabular-numeric text-on-surface">0 Pending</span></div><div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant mt-1"><span>Hardware Till Box</span><span class="font-tabular-numeric text-tabular-numeric text-tertiary">Connected</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin select-none"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-primary text-base">location_on</span><span class="font-label-md text-label-md text-on-surface">KR Mangalam Flagship</span><span class="material-symbols-outlined text-on-surface-variant text-base">arrow_drop_down</span></div><div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Live Terminal #01</span></div><div class="flex items-center gap-space-xs px-space-xs py-0.5 rounded bg-surface-container-low"><span class="font-label-sm text-label-sm text-secondary font-semibold">Shift 02 · Active</span><span class="text-outline text-xs">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">Suresh M. (Lead)</span></div></div><div class="flex items-center gap-space-sm"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-outline text-base">search</span><input class="h-8 pl-8 pr-space-sm bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded w-64 focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search ticket #, blend, cup size..." type="text"/></div><div class="flex items-center gap-space-xs"><button class="h-8 px-space-sm bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-base">bolt</span><span>Quick Walk-in</span></button><button class="h-8 px-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-base">pause_circle</span><span>Hold Cart</span></button><div class="h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md rounded flex items-center gap-1"><span class="material-symbols-outlined text-base text-primary">payments</span><span class="font-tabular-numeric text-tabular-numeric">Till: ₹7,200</span></div></div><div class="flex items-center gap-space-xs pl-space-xs ml-space-xs bg-surface-container-low px-space-sm py-1 rounded"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UyhF3nUwOJklk7ZpPaez4YbD_XJQlm-OthzNssbT2htPY8seF4nEUP35qW62GIZ_wSEtQTMCpWNmvht_5B90dOHgwujK59xnSyUnWUdWWqrBcU7HU-rVmZS3LzK5HXdCVruiWW7o9gK43alICqMwW-3539LCdTS3La2qtpqGgxUbgagRPEsl0rBcBTmOp1307_w06moYwTcYZ44iIf46fW3T_ETDkb53-yWI_QgRgJv_iHpp1WhIKMGjE"/><div class="flex flex-col leading-tight"><span class="font-label-sm text-label-sm text-on-surface">Clocked In</span><span class="font-tabular-numeric text-label-sm text-secondary">06h 42m</span></div></div></div></header><main class="w-full px-margin pt-14 bg-surface min-h-[calc(100vh-3.5rem)]"><div class="flex flex-col w-full pb-12 gap-y-space-lg">
+<!-- Top Command & Custody Meta Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary/5 rounded-full pointer-events-none blur-2xl"></div>
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md relative z-10">
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider">Terminal #01 Main Counter</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Shift #02 Closure</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-lowest text-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            Dual-Auth Handover Required
+          </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mt-1">Shift #02 Closure &amp; Custody Transfer Audit</h1>
+<div class="flex flex-wrap items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm mt-0.5">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">schedule</span>
+            07:00 IST – 15:30 IST <span class="font-tabular-numeric text-tabular-numeric text-on-surface font-semibold">(8h 30m elapsed)</span>
+</span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-outline">domain</span>
+            KR Mangalam Flagship Store
+          </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-outline">cloud_done</span>
+            Master Webhook Sync: 100% Intact
+          </span>
+</div>
+</div>
+<!-- Custody Pairing Card -->
+<div class="flex items-center gap-space-md bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Close-up headshot of Suresh, an experienced Indian tea master with an apron, warm studio portrait with soft amber light in an artisanal cafe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS79s_5KOLQgYBxFs3b6aNOuSU_CfxiWH91Y19I9-pBF7d7Ad3PU5KNN85wINubt3-lHzX25ot5oGCy1_lMdql39-teShnHfMdeEFW1daFJEzzK69DFvK4s0Ab6HaKHijNEE5-SbLu--uCsZZfRafzdtHiNq9sUzOdKgF8QMJn2oysZfy6NVeAFV2SMQ6rmBjiKCHBOo-BKiqdipVjEnlKhqOqmZStITrAfXfIsuiZnibPXKlozbzQ"/>
+<div class="flex flex-col leading-tight">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Outgoing Lead</span>
+<span class="font-label-md text-label-md text-on-surface">Suresh M.</span>
+<span class="font-tabular-numeric text-label-sm text-on-surface-variant">#ST-8821</span>
+</div>
+</div>
+<div class="h-8 w-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-base">swap_horiz</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<img class="w-9 h-9 rounded-full object-cover" data-alt="Portrait of Rohan, a young professional cafe supervisor wearing a brown linen barista apron in a contemporary tea house setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpHmntInGqgV7piZhKJIZFE9qIHfCKydDTagzvb52Ik8ZA1mhEe1bfqN-KQMvk5vhSOcXTDAjyydre2c2axfEeFaDCV1mp_fDmYdgRp8Zrqq3BUkc7_q8ESwFUtyzBhsQ-ZOQvsnEABLj_DGUfx6klHIaYAQedBK3KGQpsdU4nRwBVqP1--LbtrcN1vIJSPkAVrqvJYoZBBcc6xGZcbH2HWAzKN1AcTE5X38qUnu1VutQVVaYM1yby"/>
+<div class="flex flex-col leading-tight">
+<span class="font-label-sm text-label-sm text-tertiary uppercase font-semibold">Incoming Lead</span>
+<span class="font-label-md text-label-md text-on-surface">Rohan S.</span>
+<span class="font-tabular-numeric text-label-sm text-on-surface-variant">#ST-9043</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Metric Strip (Bento 5-column) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter">
+<!-- Card 1: Shift Gross Sales -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Gross Shift Sales</span>
+<span class="p-1 rounded bg-surface-container text-primary">
+<span class="material-symbols-outlined text-base">receipt_long</span>
+</span>
+</div>
+<div class="my-space-xs">
+<div class="font-stat-kpi text-stat-kpi text-on-surface font-tabular-numeric">₹24,850.00</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-tabular-numeric font-semibold text-primary">612</span> orders settled
+        </div>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 104%"></div>
+</div>
+</div>
+<!-- Card 2: Digital UPI Settled -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Digital UPI / GPay</span>
+<span class="p-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">100% Match</span>
+</div>
+<div class="my-space-xs">
+<div class="font-stat-kpi text-stat-kpi text-on-surface font-tabular-numeric">₹17,650.00</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-tertiary">
+<span class="material-symbols-outlined text-sm">verified</span> PhonePe &amp; Paytm Webhooked
+        </div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-tabular-numeric">498 Digital Tickets (71.0%)</span>
+</div>
+<!-- Card 3: Cash Target -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Cash System Target</span>
+<span class="material-symbols-outlined text-outline text-base">calculate</span>
+</div>
+<div class="my-space-xs">
+<div class="font-stat-kpi text-stat-kpi text-on-surface font-tabular-numeric">₹7,200.00</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant truncate">
+          Float (₹1k) + Cash (₹6,350) - PC (₹150)
+        </div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-tabular-numeric">Expected in Drawer #01</span>
+</div>
+<!-- Card 4: Counted Physical Cash & Variance -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Physical Counted</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">check_circle</span> BALANCED
+        </span>
+</div>
+<div class="my-space-xs">
+<div class="font-stat-kpi text-stat-kpi text-tertiary font-tabular-numeric">₹7,200.00</div>
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-tertiary">
+<span class="font-bold">Variance: ₹0.00</span> (Zero Discrepancy)
+        </div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Smart Scale Count Validated</span>
+</div>
+<!-- Card 5: BOM Dispensed -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">BOM Dispensed</span>
+<span class="p-1 rounded bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-base">coffee_maker</span>
+</span>
+</div>
+<div class="my-space-xs flex flex-col gap-0.5">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Buffalo Milk:</span>
+<span class="font-tabular-numeric text-label-md text-on-surface font-semibold">48.5 L</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Assam CTC Leaf:</span>
+<span class="font-tabular-numeric text-label-md text-on-surface font-semibold">12.2 kg</span>
+</div>
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Clay Kulhads:</span>
+<span class="font-tabular-numeric text-label-md text-primary font-semibold">492 pcs</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-tabular-numeric">99.1% Yield Efficiency</span>
+</div>
+</div>
+<!-- Main Grid: Worksheet & Operational Handover -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left 7 Columns: Physical Cash Denominations, Safe Drop, Petty Cash -->
+<div class="lg:col-span-7 flex flex-col gap-y-space-md">
+<!-- Denomination Table Container -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="p-1.5 rounded bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-base">payments</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Cash Denomination Audit</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Count physical currency present in register drawer</p>
+</div>
+</div>
+<button class="h-7 px-space-sm rounded bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1" id="autoScaleBtn" type="button">
+<span class="material-symbols-outlined text-sm text-secondary">scale</span>
+<span>Sync Smart Scale</span>
+</button>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-xs px-space-sm rounded-l">Denomination</th>
+<th class="py-space-xs px-space-sm text-center">Unit</th>
+<th class="py-space-xs px-space-sm text-center w-28">Physical Count</th>
+<th class="py-space-xs px-space-sm text-right rounded-r">Computed Subtotal</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md divide-none text-on-surface">
+<!-- 500 Note -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="font-tabular-numeric font-semibold">₹500 Currency Note</span>
+</div>
+</td>
+<td class="py-space-xs px-space-sm text-center font-label-sm text-on-surface-variant">Paper</td>
+<td class="py-space-xs px-space-sm text-center">
+<input class="denom-input w-20 h-7 text-center font-tabular-numeric text-tabular-numeric rounded bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest" data-val="500" min="0" type="number" value="8"/>
+</td>
+<td class="py-space-xs px-space-sm text-right font-tabular-numeric text-tabular-numeric font-semibold denom-subtotal">₹4,000.00</td>
+</tr>
+<!-- 200 Note -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span>
+<span class="font-tabular-numeric font-semibold">₹200 Currency Note</span>
+</div>
+</td>
+<td class="py-space-xs px-space-sm text-center font-label-sm text-on-surface-variant">Paper</td>
+<td class="py-space-xs px-space-sm text-center">
+<input class="denom-input w-20 h-7 text-center font-tabular-numeric text-tabular-numeric rounded bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest" data-val="200" min="0" type="number" value="8"/>
+</td>
+<td class="py-space-xs px-space-sm text-right font-tabular-numeric text-tabular-numeric font-semibold denom-subtotal">₹1,600.00</td>
+</tr>
+<!-- 100 Note -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed"></span>
+<span class="font-tabular-numeric font-semibold">₹100 Currency Note</span>
+</div>
+</td>
+<td class="py-space-xs px-space-sm text-center font-label-sm text-on-surface-variant">Paper</td>
+<td class="py-space-xs px-space-sm text-center">
+<input class="denom-input w-20 h-7 text-center font-tabular-numeric text-tabular-numeric rounded bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest" data-val="100" min="0" type="number" value="12"/>
+</td>
+<td class="py-space-xs px-space-sm text-right font-tabular-numeric text-tabular-numeric font-semibold denom-subtotal">₹1,200.00</td>
+</tr>
+<!-- 50 Note -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-high"></span>
+<span class="font-tabular-numeric font-semibold">₹50 Currency Note</span>
+</div>
+</td>
+<td class="py-space-xs px-space-sm text-center font-label-sm text-on-surface-variant">Paper</td>
+<td class="py-space-xs px-space-sm text-center">
+<input class="denom-input w-20 h-7 text-center font-tabular-numeric text-tabular-numeric rounded bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest" data-val="50" min="0" type="number" value="5"/>
+</td>
+<td class="py-space-xs px-space-sm text-right font-tabular-numeric text-tabular-numeric font-semibold denom-subtotal">₹250.00</td>
+</tr>
+<!-- 20 Note -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed"></span>
+<span class="font-tabular-numeric font-semibold">₹20 Currency Note</span>
+</div>
+</td>
+<td class="py-space-xs px-space-sm text-center font-label-sm text-on-surface-variant">Paper</td>
+<td class="py-space-xs px-space-sm text-center">
+<input class="denom-input w-20 h-7 text-center font-tabular-numeric text-tabular-numeric rounded bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest" data-val="20" min="0" type="number" value="4"/>
+</td>
+<td class="py-space-xs px-space-sm text-right font-tabular-numeric text-tabular-numeric font-semibold denom-subtotal">₹80.00</td>
+</tr>
+<!-- 10 Note -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-variant"></span>
+<span class="font-tabular-numeric font-semibold">₹10 Currency Note</span>
+</div>
+</td>
+<td class="py-space-xs px-space-sm text-center font-label-sm text-on-surface-variant">Paper</td>
+<td class="py-space-xs px-space-sm text-center">
+<input class="denom-input w-20 h-7 text-center font-tabular-numeric text-tabular-numeric rounded bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest" data-val="10" min="0" type="number" value="5"/>
+</td>
+<td class="py-space-xs px-space-sm text-right font-tabular-numeric text-tabular-numeric font-semibold denom-subtotal">₹50.00</td>
+</tr>
+<!-- Coins -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-space-xs px-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-outline"></span>
+<span class="font-tabular-numeric font-semibold">Loose Coins (₹1, ₹2, ₹5, ₹10)</span>
+</div>
+</td>
+<td class="py-space-xs px-space-sm text-center font-label-sm text-on-surface-variant">Metal Tray</td>
+<td class="py-space-xs px-space-sm text-center">
+<input class="w-20 h-7 text-center font-tabular-numeric text-tabular-numeric rounded bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="coinSubtotalInput" min="0" type="number" value="20"/>
+</td>
+<td class="py-space-xs px-space-sm text-right font-tabular-numeric text-tabular-numeric font-semibold" id="coinDisplaySubtotal">₹20.00</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="bg-surface-container font-headline-sm text-headline-sm text-on-surface">
+<td class="py-space-sm px-space-sm rounded-l font-semibold" colspan="2">Total Physical Cash in Drawer</td>
+<td class="py-space-sm px-space-sm text-center font-label-sm text-on-surface-variant">Sum (Notes+Coins)</td>
+<td class="py-space-sm px-space-sm text-right rounded-r font-tabular-numeric text-primary font-bold" id="totalPhysicalCountLabel">₹7,200.00</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<!-- Safe Drop & Base Float Partition -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Retained Float for Next Shift -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-base">lock</span>
+</span>
+<span class="font-label-md text-label-md text-on-surface">Next Shift Float Retention</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Mandatory</span>
+</div>
+<div class="my-space-sm bg-surface-container-low p-space-sm rounded">
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant">
+<span>Standard Morning Base:</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface font-semibold">₹1,000.00</span>
+</div>
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant mt-1">
+<span>Drawer Compartment:</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Lower Till B-1</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-base text-tertiary">check</span>
+<span>Rohan S. verified presence for Shift 03 launch</span>
+</div>
+</div>
+<!-- Safe Drop Deposit Seal -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary-fixed text-secondary">
+<span class="material-symbols-outlined text-base">savings</span>
+</span>
+<span class="font-label-md text-label-md text-on-surface">Tamper Pouch Safe Drop</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">CIT Ready</span>
+</div>
+<div class="my-space-sm bg-surface-container-low p-space-sm rounded">
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant">
+<span>Amount Enclosed:</span>
+<span class="font-tabular-numeric text-headline-sm text-headline-sm text-primary font-bold">₹6,200.00</span>
+</div>
+<div class="flex justify-between items-center text-body-sm text-on-surface-variant mt-1">
+<span>Barcode Seal Tag:</span>
+<span class="font-tabular-numeric text-label-sm text-on-surface font-bold bg-surface-container px-1 rounded">#KRM-EOD-9821</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-base text-outline">verified_user</span>
+<span>Dual-envelope dropped to Floor Safe #2</span>
+</div>
+</div>
+</div>
+<!-- Petty Cash & Emergency Expense Audit -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-outline">receipt</span>
+<span class="font-label-md text-label-md text-on-surface">Shift Petty Cash Claims</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 Claim Authorized</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary font-bold font-tabular-numeric">
+              PC-42
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface">Local Vendor: Fresh Herb Market</span>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Approved</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Emergency top-up: 500g Fresh Ginger &amp; Spearmint Leaves</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-tabular-numeric text-tabular-numeric font-bold text-on-surface">-₹150.00</span>
+<a class="font-label-sm text-label-sm text-primary hover:underline flex items-center gap-0.5" href="#">
+<span class="material-symbols-outlined text-xs">attachment</span> View Bill Slip
+            </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 5 Columns: Visual Analytics, Shift Velocity & Checklist -->
+<div class="lg:col-span-5 flex flex-col gap-y-space-md">
+<!-- Hourly Brew Velocity SVG Chart Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Shift Velocity &amp; Cups Brewed</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Morning rush spike peak at 140 cups/hr</p>
+</div>
+<span class="font-tabular-numeric text-label-sm text-secondary font-bold">612 Total Cups</span>
+</div>
+<!-- Inline SVG Area Chart for Artisanal Vibe -->
+<div class="w-full h-36 bg-surface-container-low rounded-lg p-space-xs flex flex-col justify-end relative overflow-hidden">
+<svg class="w-full h-28 text-primary overflow-visible" preserveaspectratio="none" viewbox="0 0 400 120">
+<defs>
+<lineargradient id="teaGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#92400e" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#92400e" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Fill -->
+<path d="M 0,105 L 30,95 L 70,80 L 120,20 L 170,15 L 220,60 L 270,45 L 320,55 L 370,85 L 400,90 L 400,120 L 0,120 Z" fill="url(#teaGradient)"></path>
+<!-- Stroke line -->
+<path d="M 0,105 L 30,95 L 70,80 L 120,20 L 170,15 L 220,60 L 270,45 L 320,55 L 370,85 L 400,90" fill="none" stroke="#712c00" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Rush Peak Marker -->
+<circle cx="145" cy="18" fill="#ac3400" r="4"></circle>
+</svg>
+<div class="flex justify-between text-on-surface-variant font-tabular-numeric text-label-sm pt-1 px-1">
+<span>07:00</span>
+<span class="font-bold text-secondary">09:30 (Peak)</span>
+<span>11:30</span>
+<span>13:30</span>
+<span>15:30</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm mt-space-sm pt-space-xs border-none">
+<div class="bg-surface-container-low p-space-xs rounded">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Avg Brew Extraction</div>
+<div class="font-tabular-numeric text-headline-sm text-on-surface font-bold">3.2m</div>
+<div class="font-body-sm text-body-sm text-tertiary">0.4m faster than SLA</div>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded">
+<div class="font-label-sm text-label-sm text-on-surface-variant">Register Delay</div>
+<div class="font-tabular-numeric text-headline-sm text-on-surface font-bold">12s</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Tap-to-KOT time</div>
+</div>
+</div>
+</div>
+<!-- Inventory & Station Sanitization Checklist -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Sanitization &amp; Station Sign-off</h3>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">4/4 Complete</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="flex items-center gap-space-sm p-space-xs rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Milk Chiller Tank logged at 3.8°C</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Compliant with dairy quality threshold &lt; 4.0°C</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Raw Spice &amp; Leaf Containers Air-Sealed</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cardamom, Clove, Lemongrass &amp; Assam bins locked</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">120-Mesh Brass Strainers Boiled</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Decoction kettles descaled for evening shift</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm p-space-xs rounded hover:bg-surface-container-low cursor-pointer transition-colors">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Clay Kulhads Physical Stacks Counted</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">620 pcs intact &amp; dry for Shift 03 evening peak</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Handover Notes & Incident Log -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Shift Incident &amp; Transfer Log</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Audited by Ops</span>
+</div>
+<textarea class="w-full p-space-sm bg-surface-container-low rounded font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-highest transition-colors resize-none" rows="3">Smooth shift with sustained morning rush. Corporate lunch crowd peak handled with zero ticket delays. CyberCity branch requested an emergency 20L milk loan, dispatched via hub runner at 13:00 IST with log entry #BR-LN-09.</textarea>
+</div>
+</div>
+</div>
+<!-- Bottom Command Bar: Dual-Auth Verification & Handover Commit -->
+<div class="sticky bottom-4 z-30 bg-surface-container-lowest/95 backdrop-blur-md rounded-xl p-space-md shadow-xl">
+<div class="flex flex-col xl:flex-row items-center justify-between gap-space-md">
+<!-- Left: Dual Auth PIN Inputs -->
+<div class="flex flex-wrap items-center gap-space-lg w-full xl:w-auto">
+<!-- Suresh (Outgoing) PIN -->
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold font-label-md">
+            S
+          </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Suresh M. (Outgoing Lead PIN)</span>
+<div class="flex items-center gap-1 mt-0.5">
+<input class="w-24 h-8 px-2 bg-surface-container text-center font-tabular-numeric tracking-widest text-on-surface rounded text-sm select-none" maxlength="4" readonly="" type="password" value="8821"/>
+<span class="material-symbols-outlined text-base text-tertiary">check_circle</span>
+</div>
+</div>
+</div>
+<div class="hidden sm:block w-px h-8 bg-surface-container-high"></div>
+<!-- Rohan (Incoming) PIN -->
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-bold font-label-md">
+            R
+          </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rohan S. (Incoming Acceptance PIN)</span>
+<div class="flex items-center gap-1 mt-0.5">
+<input class="w-24 h-8 px-2 bg-surface-container-low text-center font-tabular-numeric tracking-widest text-on-surface rounded text-sm focus:bg-surface-container-lowest focus:outline-none" id="incomingPinInput" maxlength="4" placeholder="••••" type="password" value="9043"/>
+<span class="material-symbols-outlined text-base text-tertiary" id="incomingPinStatus">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Utility Actions & Commit CTA -->
+<div class="flex items-center flex-wrap gap-space-xs w-full xl:w-auto justify-end">
+<button class="h-9 px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded flex items-center gap-1 transition-colors" onclick="alert('Sending audit receipt to EPSON TM-T88VI Thermal Printer...')" type="button">
+<span class="material-symbols-outlined text-base">print</span>
+<span>Print Slip</span>
+</button>
+<button class="h-9 px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md rounded flex items-center gap-1 transition-colors" onclick="alert('Exporting CSV Ledger Data for Head Office Accounts...')" type="button">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span>Export CSV</span>
+</button>
+<button class="h-9 px-space-md bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded flex items-center gap-1.5 shadow-sm transition-all transform active:scale-95" id="commitHandoverBtn" type="button">
+<span class="material-symbols-outlined text-base">lock_clock</span>
+<span>Lock Drawer &amp; Transfer Custody</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic Denomination Calculator for Interactive Fidelity
+  const denomInputs = document.querySelectorAll('.denom-input');
+  const coinInput = document.getElementById('coinSubtotalInput');
+  const coinDisplay = document.getElementById('coinDisplaySubtotal');
+  const totalPhysicalLabel = document.getElementById('totalPhysicalCountLabel');
+
+  function calculateDrawerSum() {
+    let total = 0;
+    denomInputs.forEach(input => {
+      const multiplier = parseInt(input.getAttribute('data-val'), 10);
+      const count = parseInt(input.value, 10) || 0;
+      const subtotal = multiplier * count;
+      const rowSubtotalElem = input.closest('tr').querySelector('.denom-subtotal');
+      if (rowSubtotalElem) {
+        rowSubtotalElem.textContent = '₹' + subtotal.toLocaleString('en-IN', { minimumFractionDigits: 2 });
+      }
+      total += subtotal;
+    });
+
+    const coinsVal = parseFloat(coinInput.value) || 0;
+    coinDisplay.textContent = '₹' + coinsVal.toLocaleString('en-IN', { minimumFractionDigits: 2 });
+    total += coinsVal;
+
+    totalPhysicalLabel.textContent = '₹' + total.toLocaleString('en-IN', { minimumFractionDigits: 2 });
+  }
+
+  denomInputs.forEach(inp => {
+    inp.addEventListener('input', calculateDrawerSum);
+  });
+  if (coinInput) {
+    coinInput.addEventListener('input', calculateDrawerSum);
+  }
+
+  // Scale sync simulation micro-interaction
+  const autoScaleBtn = document.getElementById('autoScaleBtn');
+  if (autoScaleBtn) {
+    autoScaleBtn.addEventListener('click', () => {
+      autoScaleBtn.innerHTML = '<span class="material-symbols-outlined text-sm animate-spin">refresh</span> Reading...';
+      setTimeout(() => {
+        autoScaleBtn.innerHTML = '<span class="material-symbols-outlined text-sm text-tertiary">check</span> Scale Synced';
+        calculateDrawerSum();
+      }, 700);
+    });
+  }
+
+  // Commit Handover CTA micro-interaction
+  const commitBtn = document.getElementById('commitHandoverBtn');
+  if (commitBtn) {
+    commitBtn.addEventListener('click', () => {
+      commitBtn.disabled = true;
+      commitBtn.classList.remove('bg-primary');
+      commitBtn.classList.add('bg-tertiary');
+      commitBtn.innerHTML = '<span class="material-symbols-outlined text-base">check_circle</span> Custody Transferred to Rohan S.';
+    });
+  }
+</script></main></div></body></html>

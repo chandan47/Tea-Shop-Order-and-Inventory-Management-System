@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#832600","on-error":"#ffffff","inverse-surface":"#33302d","on-error-container":"#93000a","secondary-fixed-dim":"#ffb59d","background":"#fff8f5","on-secondary":"#ffffff","surface-container-high":"#eee7e3","surface-bright":"#fff8f5","on-tertiary-fixed-variant":"#005323","primary-fixed-dim":"#ffb693","tertiary-fixed":"#95f8a7","inverse-on-surface":"#f7efeb","surface":"#fff8f5","on-primary":"#ffffff","primary-fixed":"#ffdbcb","on-tertiary":"#ffffff","on-secondary-fixed":"#390c00","on-tertiary-fixed":"#00210a","secondary-fixed":"#ffdbd0","surface-dim":"#e0d8d5","on-secondary-container":"#5d1900","secondary":"#ac3400","on-primary-fixed":"#341000","inverse-primary":"#ffb693","surface-container-highest":"#e9e1dd","on-background":"#1e1b19","primary":"#712c00","on-tertiary-container":"#82e595","on-primary-fixed-variant":"#7a3000","surface-container-lowest":"#ffffff","on-primary-container":"#ffc2a5","error-container":"#ffdad6","secondary-container":"#fd6b36","tertiary-fixed-dim":"#79db8d","surface-container":"#f4ece8","on-surface":"#1e1b19","outline-variant":"#dcc1b6","tertiary-container":"#00672d","on-surface-variant":"#55433a","primary-container":"#92400e","surface-tint":"#9a4614","surface-container-low":"#faf2ee","error":"#ba1a1a","outline":"#887269","surface-variant":"#e9e1dd","tertiary":"#004c20"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"1.75rem","margin":"1.5rem","space-lg":"1.25rem","space-md":"0.75rem"},"fontFamily":{"stat-kpi":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"tabular-numeric":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"stat-kpi":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"tabular-numeric":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-14 px-margin flex items-center gap-space-sm bg-surface-container"><img alt="ChaiOps Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XEbT592nQcX2pzmg8K2BsNoOYgXaj_aFVgcL6W-kfnZzDfaYsHDb6mb30SjuYkR3hXOhkPPlpI7Ry1kjmURCWzPUBexFdNYEGDVA8OptQYcfxnGRMPKiIYM_-9_h8qMvQekuLwW-fM8G3vbvEtX7gdoTRZcWy7Qf284uwvY_Z00RMJ4lg-0PO4fR4e6uYf_BeQaEkGpoawPQxuAmOzNFOGduyHOHi2tDZz2qt34VhPMJh2cpT0n2mb9Wg"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">ChaiOps</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant uppercase">HQ</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Enterprise Super Admin</span></div></div><div class="px-space-md py-space-sm overflow-y-auto max-h-[calc(100vh-140px)]"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-headline-sm rounded-lg shadow-sm"><div class="pt-space-sm pb-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Operations</div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="multi-branch-overview" href="#">Multi-Branch Overview</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="live-order-queue" href="#">Live Order Queue</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="eod-cash-reconciliation" href="#">EOD Cash Reconciliation</a><div class="pt-space-md pb-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Supply &amp; Menu</div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="recipe-bom-inventory" href="#">Recipe BOM &amp; Inventory</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="menu-branch-pricing" href="#">Menu &amp; Branch Pricing</a><div class="pt-space-md pb-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Management / Settings</div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="staff-shift-pos" href="#">Staff &amp; Shift POS</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="financial-reports" href="#">Financial Reports</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="settings-webhooks" href="#">Settings &amp; Webhooks</a></nav></div></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low"><div class="flex items-center gap-space-sm px-space-sm py-space-xs rounded bg-surface-container"><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">4 Branches Online</span><span class="font-body-sm text-body-sm text-on-surface-variant">Supabase Sync Active</span></div></div><div class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-headline-sm">verified_user</span><span class="font-body-sm text-body-sm">Audit Compliant</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors"><span class="material-symbols-outlined text-headline-sm text-primary">storefront</span><span class="font-label-md text-label-md text-on-surface font-medium">All Branches / KR Mangalam Flagship</span><span class="material-symbols-outlined text-headline-sm text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed"><span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold">WebSockets Live Sync</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface"><span class="material-symbols-outlined text-headline-sm text-on-surface-variant">event</span><span class="font-tabular-numeric text-tabular-numeric">Today, 24 Oct 2024</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-headline-sm text-on-surface-variant">search</span><input class="w-60 h-8 pl-8 pr-space-md bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search orders, recipes, webhooks, SKUs..." type="text"/></div><button aria-label="Alerts" class="relative p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-headline-md">notifications</span><span class="absolute top-1 right-1 flex items-center justify-center h-4 min-w-4 px-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">3</span></button><div class="h-6 w-px bg-surface-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Aditya Roy Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtIdWOy10pr_SrhGsLCXdeIjrv1gs-UvlXR8vOrY49L6H8gDqWZtzp9bW8cw-dImNtZrFdancZnfUE4tAh3WSJVpb8qNLvPW4m7PjPhRdkB7mzH6qHSOriLgeJoGNVhkcw5c7C_gvnqo2KJ0chlvlk90w3ZvyVA088jhP6uiNnNBeF5Oy0FfZK9kqRoHNE5sgDP0Gz-DreNCtsMOsnf4HrqQjI5aRoArAqI7j01-6gJmqCUNTa7YZT"/><div class="flex flex-col text-left"><span class="font-headline-sm text-headline-sm leading-none text-on-surface">Aditya Roy</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Owner &amp; Master Franchisee</span></div></div></div></header><main class="w-full pt-14 px-margin pb-margin bg-surface"><div class="flex flex-col w-full">
+<!-- Breadcrumb & Top Command Bar -->
+<section class="flex flex-col gap-space-sm pb-space-lg">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase">
+<span>Operations HQ</span>
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+<span>Management</span>
+<span class="material-symbols-outlined text-[13px] text-outline">chevron_right</span>
+<span class="text-primary font-semibold">Settings &amp; Webhooks</span>
+</div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+          Settings &amp; System Webhooks
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5 max-w-3xl">
+          Manage multi-tenant webhook listeners, UPI payment intent gateways (PhonePe &amp; Razorpay), Supabase PostgreSQL event triggers, and live KDS event dispatch streams.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors shadow-sm" id="btn-ping" onclick="triggerPingTest()">
+<span class="material-symbols-outlined text-headline-sm text-primary">sensors</span>
+<span>Test Webhook Ping</span>
+</button>
+<a class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors shadow-sm" href="#api-docs">
+<span class="material-symbols-outlined text-headline-sm text-on-surface-variant">terminal</span>
+<span>Documentation API</span>
+</a>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-all shadow-md active:scale-95" id="btn-save-deploy" onclick="deployConfigAlert()">
+<span class="material-symbols-outlined text-headline-sm">cloud_upload</span>
+<span>Save &amp; Deploy Configurations</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Health & Diagnostic KPI Metrics -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md pb-space-lg">
+<!-- Card 1: Webhook Delivery Health -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Webhook Delivery Health</span>
+<span class="font-stat-kpi text-stat-kpi font-bold text-on-surface mt-1">99.98%</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary animate-pulse"></span>
+          Healthy
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">speed</span>
+          4ms avg latency
+        </span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface font-medium">24,819 payloads</span>
+</div>
+</div>
+<!-- Card 2: UPI Intent Handshakes -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">UPI Intent Gateways</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">Dual Provider</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">
+          Auto-Fallback
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span class="truncate">PhonePe Biz • Razorpay Route</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-bold">0 Drop</span>
+</div>
+</div>
+<!-- Card 3: PostgreSQL Triggers -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">PostgreSQL Triggers</span>
+<span class="font-stat-kpi text-stat-kpi font-bold text-on-surface mt-1">6 Active Hooks</span>
+</div>
+<span class="p-1 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[20px]">database</span>
+</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span class="truncate font-tabular-numeric text-tabular-numeric">trg_deduct_recipe_bom</span>
+<span class="text-tertiary font-medium">Syncing</span>
+</div>
+</div>
+<!-- Card 4: Dead Letter Queue -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Dead Letter Queue (DLQ)</span>
+<span class="font-stat-kpi text-stat-kpi font-bold text-on-surface mt-1">0 Failed</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+          Retry × 3
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-space-xs">
+<span>Exp backoff (1s • 5s • 30s)</span>
+<span class="text-primary font-medium">Auto Flush</span>
+</div>
+</div>
+</section>
+<!-- Navigation Pill Tabs -->
+<section class="pb-space-lg">
+<div class="p-1 bg-surface-container rounded-xl flex items-center gap-1 overflow-x-auto">
+<button class="tab-trigger flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md font-semibold transition-all" data-target="tab-webhooks">
+<span class="material-symbols-outlined text-[16px] text-primary">webhook</span>
+<span>Webhooks &amp; Event Streams</span>
+<span class="ml-1 px-1.5 py-0.2 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">4</span>
+</button>
+<button class="tab-trigger flex items-center gap-space-xs px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-target="tab-payment">
+<span class="material-symbols-outlined text-[16px]">account_balance_wallet</span>
+<span>Payment Gateway API</span>
+</button>
+<button class="tab-trigger flex items-center gap-space-xs px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-target="tab-branches">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+<span>Branch Routing &amp; Isolation</span>
+</button>
+<button class="tab-trigger flex items-center gap-space-xs px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-target="tab-security">
+<span class="material-symbols-outlined text-[16px]">key</span>
+<span>API Keys &amp; Ingress Security</span>
+</button>
+<button class="tab-trigger flex items-center gap-space-xs px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" data-target="tab-logs">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Audit Logs</span>
+</button>
+</div>
+</section>
+<!-- Main Dual Column Workspace -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg">
+<!-- LEFT COLUMN: Endpoints & Interactive Tester (7 Cols) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- Registered Endpoints Card -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="p-1.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-headline-md">hub</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Registered Webhook Endpoints</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active subscription listeners across store channels and microservices</span>
+</div>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm" onclick="addNewWebhookModal()">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+<span>Add Endpoint</span>
+</button>
+</div>
+<!-- Webhook Item 1: Razorpay UPI -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-bold uppercase">POST</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface font-semibold select-all">https://api.chaiops.internal/v1/webhooks/razorpay-upi</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+              200 OK • 14ms ago
+            </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">payment.captured</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">payment.failed</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">refund.processed</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm">+1 more</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">lock</span>
+<span class="font-tabular-numeric text-tabular-numeric">whsec_rzp_****93d</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm ml-1" data-secret="whsec_rzp_98ac71542f93d" onclick="toggleMask(this)">Reveal</button>
+</div>
+<span class="text-outline">•</span>
+<span>Retries: 0/3</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" onclick="simulatePayload('razorpay')">Test Ping</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors">Logs</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary transition-colors" title="Settings"><span class="material-symbols-outlined text-[18px]">more_vert</span></button>
+</div>
+</div>
+</div>
+<!-- Webhook Item 2: PhonePe PG -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-bold uppercase">POST</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface font-semibold select-all">https://api.chaiops.internal/v1/webhooks/phonepe-pg</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+              200 OK • 42ms ago
+            </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">TRANSACTION_COMPLETED</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">CHECKOUT_EXPIRED</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">QR_PAYMENT_ACCEPTED</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-outline">lock</span>
+<span class="font-tabular-numeric text-tabular-numeric">whsec_phn_****28e</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm ml-1" data-secret="whsec_phn_5521ae78228e" onclick="toggleMask(this)">Reveal</button>
+</div>
+<span class="text-outline">•</span>
+<span>Retries: 0/3</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" onclick="simulatePayload('phonepe')">Test Ping</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors">Logs</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary transition-colors" title="Settings"><span class="material-symbols-outlined text-[18px]">more_vert</span></button>
+</div>
+</div>
+</div>
+<!-- Webhook Item 3: Kitchen Display KDS WebSocket Broadcast -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase">WSS</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface font-semibold select-all">wss://realtime.chaiops.internal/socket/kitchen-kds</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary animate-pulse"></span>
+              Live • 18 Terminals
+            </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">order.queued</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">order.brewing</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">order.ready_kulhad</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">cash.collected</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-space-md">
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface-variant">Broadcast Channel: <code class="text-primary font-mono">kds:all-branches</code></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" onclick="simulatePayload('kds')">Dispatch Test Order</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary transition-colors" title="Settings"><span class="material-symbols-outlined text-[18px]">more_vert</span></button>
+</div>
+</div>
+</div>
+<!-- Webhook Item 4: Recipe BOM Inventory Depletion Trigger -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm hover:shadow-md transition-shadow">
+<div class="flex flex-wrap items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm font-bold uppercase">PG-HOOK</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface font-semibold select-all">https://erp.chaiops.internal/hooks/inventory-bom-depletion</span>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-medium flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span>
+              200 OK • Auto-calculated
+            </span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">inventory.tea_leaves_assam_deduct</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">inventory.milk_liters_deduct</span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm">inventory.kulhad_units_decrement</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-body-sm text-body-sm">Linked DB Trigger: <code class="text-primary font-mono">trg_pos_order_finalize_bom()</code></span>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" onclick="simulatePayload('bom')">Simulate Deduction</button>
+<button class="p-1 rounded text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[18px]">more_vert</span></button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Webhook Tester & Payload Inspector -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="p-1.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-headline-md">terminal</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Interactive Payload Inspector</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Inspect live simulated POST bodies &amp; cryptographic signatures</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<select class="h-8 px-space-sm bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none cursor-pointer" id="payload-selector" onchange="switchPayload(this.value)">
+<option value="razorpay">payment.upi_intent_success</option>
+<option value="phonepe">TRANSACTION_COMPLETED</option>
+<option value="bom">inventory.bom_depletion</option>
+<option value="kds">order.ready_kulhad</option>
+</select>
+<button class="flex items-center gap-1 h-8 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors" onclick="dispatchSimulation()">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>Send Ping</span>
+</button>
+</div>
+</div>
+<!-- Code Mirror / JSON Editor Window -->
+<div class="rounded-lg bg-inverse-surface text-inverse-on-surface p-space-md shadow-inner flex flex-col gap-space-sm overflow-hidden">
+<div class="flex items-center justify-between text-xs text-on-surface-variant border-b border-surface-variant/20 pb-2">
+<div class="flex items-center gap-2">
+<span class="h-2.5 w-2.5 rounded-full bg-error"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-secondary-container"></span>
+<span class="h-2.5 w-2.5 rounded-full bg-tertiary-container"></span>
+<span class="font-mono text-outline-variant ml-2">POST payload • application/json</span>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm flex items-center gap-1 font-mono" id="hmac-badge">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+              HMAC-SHA256: 7fa0...8d12 Verified
+            </span>
+</div>
+<pre class="font-mono font-tabular-numeric text-tabular-numeric overflow-x-auto text-sm leading-relaxed text-inverse-on-surface/90 py-1 max-h-72" id="json-code-view">{
+  "event": "payment.upi_intent_success",
+  "timestamp": 1729783920,
+  "tenant_id": "chaiops_hq_master",
+  "branch_id": "blr_krmangalam_01",
+  "branch_name": "KR Mangalam Flagship",
+  "order_id": "ORD-2024-8941",
+  "payment": {
+    "gateway": "Razorpay_UPI_Intent",
+    "transaction_ref": "pay_Oxd82YtN9v174a",
+    "amount": 13000,
+    "currency": "INR",
+    "vpa": "aditya.roy@okhdfcbank",
+    "terminal_id": "POS-01-COUNTER"
+  },
+  "line_items": [
+    { "item": "Adrak Elaichi Kadak Chai (Clay Kulhad)", "qty": 3, "unit_price": 3000 },
+    { "item": "Bun Maska Special (Sourdough)", "qty": 1, "unit_price": 4000 }
+  ],
+  "post_triggers": [
+    "trg_deduct_recipe_bom",
+    "trg_update_drawer_float"
+  ]
+}</pre>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm px-1">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-tertiary font-semibold">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+              Target Endpoint: 200 OK
+            </span>
+<span class="text-outline">•</span>
+<span class="font-tabular-numeric text-tabular-numeric">Latency: 9ms</span>
+</div>
+<button class="hover:text-primary transition-colors flex items-center gap-1 font-label-sm text-label-sm text-on-surface" onclick="copyPayloadToClipboard()">
+<span class="material-symbols-outlined text-[14px]">content_copy</span>
+<span>Copy Mock Payload</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Environment Routing, Security, and Live Ingress Logs (5 Cols) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Branch Isolation & Routing Scope -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-headline-sm text-primary">share_location</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Multi-Tenant Branch Routing</h2>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-primary font-label-sm text-label-sm uppercase font-bold">Isolated</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Control whether webhooks broadcast to centralized master queue or strictly routed to local store POS/KDS counters.
+        </p>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold">Current Ingress Context</label>
+<div class="relative">
+<select class="w-full h-9 px-space-md pr-8 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none shadow-sm cursor-pointer">
+<option>KR Mangalam Flagship (Current Node: Active)</option>
+<option>CyberCity TechPark Food Court (Node #2)</option>
+<option>Indiranagar Artisanal Roastery (Node #3)</option>
+<option>Koramangala 4th Block High-Street (Node #4)</option>
+<option>Global Wildcard (All 4 Branches Sync)</option>
+</select>
+<span class="material-symbols-outlined absolute right-space-sm top-2 text-headline-sm text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Realtime WebSocket Counter Connection Status -->
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="h-8 w-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">devices</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">18 Connected Counter Terminals</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero dropped packets in last 6 hours</span>
+</div>
+</div>
+<span class="h-2 w-2 rounded-full bg-tertiary animate-ping"></span>
+</div>
+</div>
+<!-- Security & API Signing Keys -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-headline-sm text-primary">vpn_key</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">API Keys &amp; Ingress Signature</h2>
+</div>
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Production</span>
+</div>
+<!-- Live API Key Field -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Super Admin Master Key</span>
+<div class="flex items-center rounded-lg bg-surface-container-lowest overflow-hidden shadow-sm">
+<input class="w-full px-space-md py-1.5 bg-transparent font-mono text-sm text-on-surface focus:outline-none select-all" id="input-api-key" readonly="" type="password" value="pk_live_chaiops_9837a2810cd842ef"/>
+<button class="px-space-sm text-on-surface-variant hover:text-primary transition-colors" onclick="toggleKeyVisibility()" title="Toggle visibility">
+<span class="material-symbols-outlined text-headline-sm" id="key-icon">visibility</span>
+</button>
+<button class="px-space-md py-2 bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold" onclick="copyToClipboard('input-api-key', 'API Key Copied')">
+              Copy
+            </button>
+</div>
+</div>
+<!-- Signing Secret Field -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Webhook Signature Secret (HMAC)</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm font-semibold" onclick="regenerateSecretNotice()">Rotate Secret</button>
+</div>
+<div class="flex items-center rounded-lg bg-surface-container-lowest overflow-hidden shadow-sm">
+<input class="w-full px-space-md py-1.5 bg-transparent font-mono text-sm text-on-surface focus:outline-none select-all" id="input-whsec-key" readonly="" type="password" value="whsec_7x9f08a9c3d4e7b1a20c5d6e"/>
+<button class="px-space-md py-2 bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold" onclick="copyToClipboard('input-whsec-key', 'Secret Copied')">
+              Copy
+            </button>
+</div>
+</div>
+<!-- IP Ingress Whitelist (PhonePe / Razorpay / Internal) -->
+<div class="flex flex-col gap-space-xs pt-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Allowed IP CIDR Ranges</span>
+<span class="text-tertiary font-label-sm text-label-sm font-bold">Strict Ingress</span>
+</div>
+<div class="rounded-lg bg-surface-container-lowest p-space-sm shadow-sm flex flex-col gap-1 text-xs font-mono">
+<div class="flex items-center justify-between text-on-surface py-0.5">
+<span>Razorpay Route Ingress:</span>
+<span class="font-tabular-numeric text-tabular-numeric text-primary font-semibold">52.74.120.0/24</span>
+</div>
+<div class="flex items-center justify-between text-on-surface py-0.5">
+<span>PhonePe Business Gateway:</span>
+<span class="font-tabular-numeric text-tabular-numeric text-primary font-semibold">103.88.220.0/22</span>
+</div>
+<div class="flex items-center justify-between text-on-surface py-0.5">
+<span>Internal VPC (Supabase PG):</span>
+<span class="font-tabular-numeric text-tabular-numeric text-tertiary font-semibold">10.0.4.0/20</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Realtime Webhook Ingress / Delivery Stream -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-md flex-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-headline-sm text-primary">stream</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Live Ingress Stream</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Polling 1000ms</span>
+</div>
+<!-- Stream Feed Item Container -->
+<div class="flex flex-col gap-space-xs overflow-y-auto max-h-72 pr-1" id="activity-stream-feed">
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between hover:bg-surface-bright transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="h-2 w-2 rounded-full bg-tertiary"></span>
+<div class="flex flex-col">
+<span class="font-tabular-numeric text-tabular-numeric font-semibold text-on-surface text-xs">payment.captured</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ORD-8941 • PhonePe UPI • KR Mangalam</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">200 OK</span>
+<span class="font-tabular-numeric text-tabular-numeric text-[11px] text-on-surface-variant mt-0.5">12ms</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between hover:bg-surface-bright transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="h-2 w-2 rounded-full bg-tertiary"></span>
+<div class="flex flex-col">
+<span class="font-tabular-numeric text-tabular-numeric font-semibold text-on-surface text-xs">trg_deduct_recipe_bom</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3 Kulhads • 60ml Milk • 15g Assam Leaf</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">200 OK</span>
+<span class="font-tabular-numeric text-tabular-numeric text-[11px] text-on-surface-variant mt-0.5">4ms</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between hover:bg-surface-bright transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="h-2 w-2 rounded-full bg-tertiary"></span>
+<div class="flex flex-col">
+<span class="font-tabular-numeric text-tabular-numeric font-semibold text-on-surface text-xs">kds.order.brewing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">KDS Screen #1 • Counter 2 dispatch</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">200 OK</span>
+<span class="font-tabular-numeric text-tabular-numeric text-[11px] text-on-surface-variant mt-0.5">18ms</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between hover:bg-surface-bright transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="h-2 w-2 rounded-full bg-tertiary"></span>
+<div class="flex flex-col">
+<span class="font-tabular-numeric text-tabular-numeric font-semibold text-on-surface text-xs">cash.drawer_reconciled</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mid-day Float • INR 14,250 verified</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">200 OK</span>
+<span class="font-tabular-numeric text-tabular-numeric text-[11px] text-on-surface-variant mt-0.5">2ms</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span>Buffer: 250 in-memory events</span>
+<button class="text-primary hover:underline font-label-sm text-label-sm" onclick="clearActivityStream()">Clear Stream</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Container for Micro-Interactions -->
+<div class="fixed bottom-6 right-6 px-space-md py-space-sm rounded-lg bg-inverse-surface text-inverse-on-surface font-body-md text-body-md shadow-xl transition-all duration-300 transform translate-y-20 opacity-0 pointer-events-none z-50 flex items-center gap-2" id="toast-notification">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-headline-sm" id="toast-icon">check_circle</span>
+<span id="toast-message">Configuration applied successfully.</span>
+</div>
+</div>
+<script>
+  // Dynamic JSON Payloads for the Inspector
+  const mockPayloads = {
+    razorpay: {
+      "event": "payment.upi_intent_success",
+      "timestamp": Math.floor(Date.now() / 1000),
+      "tenant_id": "chaiops_hq_master",
+      "branch_id": "blr_krmangalam_01",
+      "branch_name": "KR Mangalam Flagship",
+      "order_id": "ORD-2024-8941",
+      "payment": {
+        "gateway": "Razorpay_UPI_Intent",
+        "transaction_ref": "pay_Oxd82YtN9v174a",
+        "amount": 13000,
+        "currency": "INR",
+        "vpa": "aditya.roy@okhdfcbank",
+        "terminal_id": "POS-01-COUNTER"
+      },
+      "line_items": [
+        { "item": "Adrak Elaichi Kadak Chai (Clay Kulhad)", "qty": 3, "unit_price": 3000 },
+        { "item": "Bun Maska Special (Sourdough)", "qty": 1, "unit_price": 4000 }
+      ],
+      "post_triggers": [
+        "trg_deduct_recipe_bom",
+        "trg_update_drawer_float"
+      ]
+    },
+    phonepe: {
+      "event": "TRANSACTION_COMPLETED",
+      "timestamp": Math.floor(Date.now() / 1000),
+      "provider": "PhonePe_Enterprise_PG",
+      "merchantTransactionId": "TXN_CHAI_9921471",
+      "amount": 8500,
+      "state": "COMPLETED",
+      "responseCode": "SUCCESS",
+      "paymentInstrument": {
+        "type": "UPI_INTENT",
+        "utr": "429810842910"
+      },
+      "branch_id": "blr_krmangalam_01"
+    },
+    bom: {
+      "event": "inventory.bom_depletion",
+      "timestamp": Math.floor(Date.now() / 1000),
+      "order_ref": "ORD-2024-8941",
+      "recipe_execution": [
+        { "ingredient": "Assam Orthodox Tea Blend (Grade A)", "unit": "grams", "deducted": 18.5, "balance_remaining": 4820 },
+        { "ingredient": "Full Cream Farm Fresh Milk", "unit": "ml", "deducted": 450, "balance_remaining": 12800 },
+        { "ingredient": "Crushed Green Cardamom & Ginger Root", "unit": "grams", "deducted": 6.0, "balance_remaining": 1140 },
+        { "ingredient": "Handcrafted Terracotta Kulhad (Medium)", "unit": "pieces", "deducted": 3, "balance_remaining": 348 }
+      ],
+      "database_trigger": "trg_pos_order_finalize_bom()"
+    },
+    kds: {
+      "event": "order.ready_kulhad",
+      "timestamp": Math.floor(Date.now() / 1000),
+      "token_no": "A-42",
+      "kds_screen_id": "KDS-BREW-STATION-01",
+      "prep_time_seconds": 184,
+      "assigned_barista": "Karan Sharma",
+      "handover_counter": "Counter-01-PickUp"
+    }
+  };
+
+  function switchPayload(type) {
+    const codeView = document.getElementById('json-code-view');
+    const badge = document.getElementById('hmac-badge');
+    if (mockPayloads[type]) {
+      codeView.textContent = JSON.stringify(mockPayloads[type], null, 2);
+      badge.innerHTML = `<span class="material-symbols-outlined text-[13px]">verified</span> HMAC-SHA256: ` + Math.random().toString(16).substring(2, 6) + '...' + Math.random().toString(16).substring(2, 6) + ' Verified';
+    }
+  }
+
+  function simulatePayload(type) {
+    const selector = document.getElementById('payload-selector');
+    selector.value = type;
+    switchPayload(type);
+    showToast("Simulated payload loaded in inspector.");
+  }
+
+  function dispatchSimulation() {
+    const selector = document.getElementById('payload-selector');
+    const selected = selector.value;
+    const stream = document.getElementById('activity-stream-feed');
+    
+    // Create realistic live event row
+    const newRow = document.createElement('div');
+    newRow.className = 'p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex items-center justify-between hover:bg-surface-bright transition-colors animate-pulse';
+    
+    const eventName = selector.options[selector.selectedIndex].text;
+    newRow.innerHTML = `
+      <div class="flex items-center gap-space-sm">
+        <span class="h-2 w-2 rounded-full bg-tertiary"></span>
+        <div class="flex flex-col">
+          <span class="font-tabular-numeric text-tabular-numeric font-semibold text-on-surface text-xs">${eventName}</span>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">Just now &bull; Manual Ping Simulation</span>
+        </div>
+      </div>
+      <div class="flex flex-col items-end">
+        <span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">200 OK</span>
+        <span class="font-tabular-numeric text-tabular-numeric text-[11px] text-on-surface-variant mt-0.5">${Math.floor(Math.random() * 8 + 4)}ms</span>
+      </div>
+    `;
+
+    stream.insertBefore(newRow, stream.firstChild);
+    setTimeout(() => {
+      newRow.classList.remove('animate-pulse');
+    }, 1200);
+
+    showToast("Dispatch delivered: 200 OK response from webhook listener");
+  }
+
+  function toggleMask(btn) {
+    const secret = btn.getAttribute('data-secret');
+    const span = btn.previousElementSibling;
+    if (btn.innerText === "Reveal") {
+      span.innerText = secret;
+      btn.innerText = "Hide";
+    } else {
+      span.innerText = secret.slice(0, 10) + '****' + secret.slice(-3);
+      btn.innerText = "Reveal";
+    }
+  }
+
+  function toggleKeyVisibility() {
+    const input = document.getElementById('input-api-key');
+    const icon = document.getElementById('key-icon');
+    if (input.type === "password") {
+      input.type = "text";
+      icon.innerText = "visibility_off";
+    } else {
+      input.type = "password";
+      icon.innerText = "visibility";
+    }
+  }
+
+  function triggerPingTest() {
+    showToast("Ping broadcasted to all 4 branch nodes. All responsive (<15ms).");
+  }
+
+  function deployConfigAlert() {
+    const btn = document.getElementById('btn-save-deploy');
+    btn.innerHTML = `<span class="material-symbols-outlined text-headline-sm animate-spin">refresh</span><span>Deploying...</span>`;
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = `<span class="material-symbols-outlined text-headline-sm">check</span><span>Saved &amp; Propagated</span>`;
+      showToast("PostgreSQL triggers & Webhook config successfully deployed across all nodes!");
+      setTimeout(() => {
+        btn.innerHTML = `<span class="material-symbols-outlined text-headline-sm">cloud_upload</span><span>Save &amp; Deploy Configurations</span>`;
+        btn.disabled = false;
+      }, 2500);
+    }, 1200);
+  }
+
+  function addNewWebhookModal() {
+    const endpointUrl = prompt("Enter new HTTPS Webhook Endpoint URL:", "https://api.chaiops.internal/v1/webhooks/");
+    if (endpointUrl) {
+      showToast(`Registered endpoint: ${endpointUrl}`);
+    }
+  }
+
+  function regenerateSecretNotice() {
+    if (confirm("Are you sure you want to rotate the HMAC Signing Secret? Existing listeners will fail verification until their secrets are updated.")) {
+      const newSecret = "whsec_" + Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+      document.getElementById('input-whsec-key').value = newSecret;
+      showToast("New HMAC secret generated. Remember to save & deploy!");
+    }
+  }
+
+  function copyToClipboard(elementId, msg) {
+    const input = document.getElementById(elementId);
+    input.select();
+    navigator.clipboard.writeText(input.value);
+    showToast(msg || "Copied to clipboard!");
+  }
+
+  function copyPayloadToClipboard() {
+    const code = document.getElementById('json-code-view').innerText;
+    navigator.clipboard.writeText(code);
+    showToast("Mock JSON payload copied to clipboard");
+  }
+
+  function clearActivityStream() {
+    document.getElementById('activity-stream-feed').innerHTML = `
+      <div class="p-space-md text-center text-on-surface-variant font-body-sm text-body-sm">
+        Stream buffer cleared. Waiting for next inbound webhook payload...
+      </div>
+    `;
+    showToast("Ingress event feed cleared");
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toast-notification');
+    const toastMessage = document.getElementById('toast-message');
+    toastMessage.textContent = message;
+    toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+
+  // Interactive tab highlighting
+  document.querySelectorAll('.tab-trigger').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab-trigger').forEach(t => {
+        t.className = 'tab-trigger flex items-center gap-space-xs px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors';
+      });
+      tab.className = 'tab-trigger flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm font-label-md text-label-md font-semibold transition-all';
+      showToast(`Switched view: ${tab.innerText.trim()}`);
+    });
+  });
+</script></main></div></body></html>

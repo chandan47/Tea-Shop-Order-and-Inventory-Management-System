@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-background":"#1e1b19","error-container":"#ffdad6","on-secondary":"#ffffff","surface-variant":"#e9e1dd","secondary":"#ac3400","on-tertiary-fixed-variant":"#005323","surface-container":"#f4ece8","on-tertiary-container":"#82e595","tertiary-fixed-dim":"#79db8d","primary":"#712c00","on-secondary-container":"#5d1900","tertiary":"#004c20","on-tertiary-fixed":"#00210a","primary-container":"#92400e","on-surface":"#1e1b19","surface":"#fff8f5","on-error":"#ffffff","surface-container-low":"#faf2ee","on-primary":"#ffffff","inverse-surface":"#33302d","tertiary-container":"#00672d","surface-container-highest":"#e9e1dd","surface-bright":"#fff8f5","on-primary-fixed":"#341000","inverse-primary":"#ffb693","tertiary-fixed":"#95f8a7","background":"#fff8f5","on-secondary-fixed":"#390c00","secondary-container":"#fd6b36","on-tertiary":"#ffffff","outline":"#887269","on-primary-container":"#ffc2a5","error":"#ba1a1a","on-secondary-fixed-variant":"#832600","surface-tint":"#9a4614","inverse-on-surface":"#f7efeb","primary-fixed-dim":"#ffb693","surface-container-high":"#eee7e3","on-primary-fixed-variant":"#7a3000","surface-container-lowest":"#ffffff","secondary-fixed":"#ffdbd0","on-surface-variant":"#55433a","on-error-container":"#93000a","outline-variant":"#dcc1b6","primary-fixed":"#ffdbcb","secondary-fixed-dim":"#ffb59d","surface-dim":"#e0d8d5"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-sm":"0.5rem","space-lg":"1.25rem","space-xs":"0.25rem","space-xl":"1.75rem","gutter":"1rem","margin":"1.5rem","space-md":"0.75rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"tabular-numeric":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"stat-kpi":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"]},fontSize:{"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-sm":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"tabular-numeric":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"stat-kpi":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.025em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-14 px-space-md flex items-center gap-space-sm bg-surface-container"><img alt="Brand logo. - Primary color: #92400e
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U-kvlj5dp_ud32cha0D7du47YHgH17IS-POpaoFkl--a38zx1NsKhf_5zxfcRKJAke29TNGoIT4m3jDrSwnXjdNO_pX6pJzor_z8GgyZhn6Q-YZH7EFaeDI_RYyrixSmjB5ep-pFqtoF1NpC0EvbqRxuEohS-MKMyZ5Xm9CGCyK5pD_5O1Vjgwz7std9yMYsLyyaGWJPrjUGAosG7kDyEB-qEjHJSMDvkOBknIPfkWBg-D7LKr6tHL9dQ"/><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">ChaiOps</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Artisanal POS &amp; Ops</span></div></div><div class="p-space-sm"><div class="px-space-sm py-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">Station &amp; Shifts</div><nav class="flex flex-col gap-space-xs mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-label-md text-label-md rounded"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="staff-shift-pos" href="#"><span class="material-symbols-outlined text-base">point_of_sale</span><span>Staff &amp; Shift POS</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="live-order-queue" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-base">countertops</span><span>Live Order Queue</span></div><span class="px-space-xs py-0.5 rounded bg-secondary text-on-secondary font-tabular-numeric text-label-sm">4</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="multi-branch-overview" href="#"><span class="material-symbols-outlined text-base">storefront</span><span>Multi-Branch Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="recipe-bom-inventory" href="#"><span class="material-symbols-outlined text-base">blender</span><span>Recipe BOM &amp; Inventory</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="menu-branch-pricing" href="#"><span class="material-symbols-outlined text-base">menu_book</span><span>Menu &amp; Branch Pricing</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="eod-cash-reconciliation" href="#"><span class="material-symbols-outlined text-base">account_balance_wallet</span><span>EOD Cash Reconciliation</span></a></nav></div></div><div class="p-space-sm bg-surface-container-lowest m-space-sm rounded shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">System Health</span><span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold"><span class="inline-block w-2 h-2 rounded-full bg-tertiary-container"></span>99.98%</span></div><div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant"><span>Local Sync Buffer</span><span class="font-tabular-numeric text-tabular-numeric text-on-surface">0 Pending</span></div><div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface-variant mt-1"><span>Hardware Till Box</span><span class="font-tabular-numeric text-tabular-numeric text-tertiary">Connected</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin select-none"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1 rounded cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-primary text-base">location_on</span><span class="font-label-md text-label-md text-on-surface">KR Mangalam Flagship</span><span class="material-symbols-outlined text-on-surface-variant text-base">arrow_drop_down</span></div><div class="flex items-center gap-1.5 px-space-xs py-0.5 rounded bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant">Live Terminal #01</span></div><div class="flex items-center gap-space-xs px-space-xs py-0.5 rounded bg-surface-container-low"><span class="font-label-sm text-label-sm text-secondary font-semibold">Shift 02 · Active</span><span class="text-outline text-xs">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">Suresh M. (Lead)</span></div></div><div class="flex items-center gap-space-sm"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-2.5 text-outline text-base">search</span><input class="h-8 pl-8 pr-space-sm bg-surface-container-low text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded w-64 focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search ticket #, blend, cup size..." type="text"/></div><div class="flex items-center gap-space-xs"><button class="h-8 px-space-sm bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-base">bolt</span><span>Quick Walk-in</span></button><button class="h-8 px-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded flex items-center gap-1 transition-colors" type="button"><span class="material-symbols-outlined text-base">pause_circle</span><span>Hold Cart</span></button><div class="h-8 px-space-sm bg-surface-container-low text-on-surface font-label-md text-label-md rounded flex items-center gap-1"><span class="material-symbols-outlined text-base text-primary">payments</span><span class="font-tabular-numeric text-tabular-numeric">Till: ₹7,200</span></div></div><div class="flex items-center gap-space-xs pl-space-xs ml-space-xs bg-surface-container-low px-space-sm py-1 rounded"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UyhF3nUwOJklk7ZpPaez4YbD_XJQlm-OthzNssbT2htPY8seF4nEUP35qW62GIZ_wSEtQTMCpWNmvht_5B90dOHgwujK59xnSyUnWUdWWqrBcU7HU-rVmZS3LzK5HXdCVruiWW7o9gK43alICqMwW-3539LCdTS3La2qtpqGgxUbgagRPEsl0rBcBTmOp1307_w06moYwTcYZ44iIf46fW3T_ETDkb53-yWI_QgRgJv_iHpp1WhIKMGjE"/><div class="flex flex-col leading-tight"><span class="font-label-sm text-label-sm text-on-surface">Clocked In</span><span class="font-tabular-numeric text-label-sm text-secondary">06h 42m</span></div></div></div></header><main class="w-full px-margin pt-14 bg-surface min-h-[calc(100vh-3.5rem)]"><div class="flex flex-col w-full gap-space-md pb-space-lg select-none">
+<!-- Top Operational Shift Strip -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-1.5 rounded">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Active Shift #02</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Terminal 01 · Morning Peak</span>
+</div>
+</div>
+<div class="h-8 w-px bg-outline-variant hidden sm:block"></div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-lg">badge</span>
+<div class="flex flex-col leading-tight">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lead Cashier / Barista</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold">Suresh M. (Staff #CH-042)</span>
+</div>
+<button class="ml-1 text-on-surface-variant hover:text-primary bg-surface-container hover:bg-surface-container-high px-2 py-1 rounded font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">lock_reset</span> Switch PIN
+        </button>
+</div>
+<div class="h-8 w-px bg-outline-variant hidden md:block"></div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-lg">avg_time</span>
+<div class="flex flex-col leading-tight">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Decant Speed (Avg)</span>
+<span class="font-tabular-numeric text-tabular-numeric text-tertiary font-bold">3.4 min <span class="text-on-surface-variant text-label-sm font-normal">/ order</span></span>
+</div>
+</div>
+</div>
+<!-- Live Session Counter Metrics & Rapid Drawer Actions -->
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<div class="bg-surface-container px-space-sm py-1 rounded flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Shift Gross:</span>
+<span class="font-tabular-numeric text-body-md font-bold text-on-surface">₹18,450</span>
+</div>
+<div class="bg-surface-container px-space-sm py-1 rounded flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Till Cash:</span>
+<span class="font-tabular-numeric text-body-md font-bold text-primary">₹7,200</span>
+</div>
+<div class="bg-surface-container px-space-sm py-1 rounded flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">UPI Scan:</span>
+<span class="font-tabular-numeric text-body-md font-bold text-tertiary">₹11,250</span>
+</div>
+<div class="bg-surface-container px-space-sm py-1 rounded flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-sm">local_cafe</span>
+<span class="font-tabular-numeric text-body-md font-bold text-on-surface">438 <span class="text-label-sm font-normal text-on-surface-variant">Cups</span></span>
+</div>
+<div class="flex items-center gap-1 ml-auto xl:ml-2">
+<button class="px-space-xs py-1 rounded bg-surface-container-high hover:bg-error hover:text-on-error text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 transition-colors" id="noSaleBtn" title="Log Emergency Cash Drawer Pop" type="button">
+<span class="material-symbols-outlined text-sm">lock_open</span> No-Sale Pop
+        </button>
+<button class="px-space-xs py-1 rounded bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">edit_note</span> Shift Note
+        </button>
+<button class="px-space-xs py-1 rounded bg-primary-container text-on-primary hover:bg-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">point_of_sale</span> Handover / EOD
+        </button>
+</div>
+</div>
+</section>
+<!-- Main POS Canvas: 12-Column Split -->
+<div class="grid grid-cols-12 gap-gutter items-start">
+<!-- LEFT PANEL: High-Speed Counter SKU Catalog (7 Cols) -->
+<div class="col-span-12 xl:col-span-7 flex flex-col gap-space-sm">
+<!-- Fast Filter Category Tabs -->
+<div class="bg-surface-container-low p-1.5 rounded-xl flex items-center gap-1 overflow-x-auto shadow-sm">
+<button class="pos-cat-pill active px-3 py-1.5 rounded text-label-md font-label-md bg-surface-container-lowest text-primary shadow-sm flex items-center gap-1.5 whitespace-nowrap">
+<span class="material-symbols-outlined text-sm text-secondary">local_fire_department</span> Signature Hot Chais (4)
+        </button>
+<button class="pos-cat-pill px-3 py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-sm">ac_unit</span> Iced Brews (3)
+        </button>
+<button class="pos-cat-pill px-3 py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-sm">bakery_dining</span> Bakery &amp; Buns (5)
+        </button>
+<button class="pos-cat-pill px-3 py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-sm">inventory_2</span> Packaged Tea Blends
+        </button>
+<button class="pos-cat-pill px-3 py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-1.5 whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-sm">stars</span> Quick Combos
+        </button>
+</div>
+<!-- Live Boiling Vessel Status Callout -->
+<div class="bg-surface-container-high/60 rounded p-space-xs flex items-center justify-between px-space-sm text-body-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Copper Handi #01:</span>
+<span>Rolling boil Masala Decoction (92°C) · Fresh batch #B-104</span>
+</div>
+<div class="flex items-center gap-3 font-label-sm text-label-sm">
+<span class="text-tertiary flex items-center gap-1"><span class="material-symbols-outlined text-xs">local_shipping</span> Farm Milk In-Stock: 38L</span>
+<span class="text-on-surface-variant">|</span>
+<span class="text-secondary font-tabular-numeric">Baked Kulhads: 86 units left</span>
+</div>
+</div>
+<!-- Product SKU Touch Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-space-xs">
+<!-- SKU 1: Masala Kulhad Chai -->
+<div class="group relative bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-2.5 flex flex-col justify-between cursor-pointer transition-all shadow-sm hover:shadow active:scale-[0.98]" onclick="posAddItem({id: 'sku1', name: 'Masala Chai in Kulhad', price: 40, bom: '12g CTC, 65ml Milk, 1 Kulhad', pot: 'Pot #1: 92°C'})">
+<div class="flex justify-between items-start mb-1.5">
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">Top Seller</span>
+<span class="font-tabular-numeric text-body-lg font-bold text-primary">₹40</span>
+</div>
+<div class="w-full h-20 rounded mb-2 overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Traditional Indian masala chai served steaming hot in an unglazed terracotta earthen kulhad cup, resting on an aged brass tray with raw cinnamon sticks, green cardamom pods and star anise beside it in warm roasted golden lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP4Qy_vgCI5iHDlFeSo1FKSNp1zivk9KyPQaOb16oKtz1f_l1Pq1ZBZh_2JJsVYMqJvwoqqmRcwoVyHC1GraqO8j2w0NJ4sthZjMTrk8KIXN7b8m7TdaUEiZYPyJuujrKoKzHTOU6HsnMyWqZ9lHRhODlHMOM1eD0qFqHl6BrPe-YkOuznqKqHINvcYAs3fZKUht1GPkn8dL0ldPj77HTlREXB8OFy334FoJFmZ2At9085M8zRbA0R"/>
+<span class="absolute bottom-1 left-1 bg-inverse-surface/85 backdrop-blur-xs text-inverse-on-surface font-label-sm text-[10px] px-1 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px] text-secondary-container">thermostat</span> 92°C Simmering
+            </span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 leading-snug">Masala Kulhad Chai</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Ginger, Cardamom, Assam CTC</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-center justify-between border-t-0 bg-surface-container-high/40 rounded px-1.5 py-0.5">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> 18 Kulhads Ready
+            </span>
+<span class="material-symbols-outlined text-primary text-base">add_circle</span>
+</div>
+</div>
+<!-- SKU 2: Saffron Royal Elaichi -->
+<div class="group relative bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-2.5 flex flex-col justify-between cursor-pointer transition-all shadow-sm hover:shadow active:scale-[0.98]" onclick="posAddItem({id: 'sku2', name: 'Saffron Royal Elaichi', price: 60, bom: '8g Green Elaichi, 3 Saffron strands, 80ml Buffalo Milk', pot: 'Pot #3: Slow Steep'})">
+<div class="flex justify-between items-start mb-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold uppercase">Pot Service</span>
+<span class="font-tabular-numeric text-body-lg font-bold text-primary">₹60</span>
+</div>
+<div class="w-full h-20 rounded mb-2 overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Rich saffron infused artisanal milk tea poured gracefully with golden yellow froth into an ornate ceramic teacup, garnished with crushed green cardamom seeds and real crimson Kashmiri saffron threads, amber aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJFRHOxu1-2BjVqc9P2WNvvXr1Ay7tygzNIbUu7VnG5l_ZtKBEuD0URdSS95dBBo6pX48KpoDeOhEBAf9etoLOoenycrAhGBP_KgqoBjOmRKcshj6m5SqU-KPsHWKVMXUXRN9qzuwGAoGJ6gNx5thhlvS7S0dmT5m_VC9LcIS0W7Ycvre5__jbxTcUWKlzAJOQ1gcxJT5vlLd9nXLEUXd0NSE_BCF2-UyNak2kSSVezAzhlLGkRrx6"/>
+<span class="absolute bottom-1 left-1 bg-inverse-surface/85 backdrop-blur-xs text-inverse-on-surface font-label-sm text-[10px] px-1 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px] text-tertiary-fixed">eco</span> Kashmiri Zafran
+            </span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 leading-snug">Saffron Royal Elaichi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Kashmiri Mongra &amp; Buffalo milk</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-center justify-between bg-surface-container-high/40 rounded px-1.5 py-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch Pot #3</span>
+<span class="material-symbols-outlined text-primary text-base">add_circle</span>
+</div>
+</div>
+<!-- SKU 3: Ginger Lemongrass Kadak Chai -->
+<div class="group relative bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-2.5 flex flex-col justify-between cursor-pointer transition-all shadow-sm hover:shadow active:scale-[0.98]" onclick="posAddItem({id: 'sku3', name: 'Ginger Lemongrass Kadak', price: 35, bom: '15g Crushed Ginger, 1 Stalk Lemongrass, 10g Assam CTC', pot: 'Pot #2: High Fire'})">
+<div class="flex justify-between items-start mb-1.5">
+<span class="px-1.5 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold uppercase">Immunity Booster</span>
+<span class="font-tabular-numeric text-body-lg font-bold text-primary">₹35</span>
+</div>
+<div class="w-full h-20 rounded mb-2 overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Steaming hot Indian ginger and fresh lemongrass tea in a clear faceted tea glass with visible bubbles and steam swirling, placed on a dark slate counter next to fresh roots of ginger and fragrant lemongrass leaves." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZXczdBbNB_f5nblT6x3Itjh0eGT729x1zw4T35h4csKh9LQLp1oG8ZGNDY1bE8eBl95gjdiEv0OzvfcGNVkROx-UDV6f6XW-kihDMWs4Ii9UMJCWCDFL-GnXrBoT-pIm2BPHqvPJhzvhq8RpTo-parm4oj1PhUAvq9HxMTZJUVUVPcTuF3suEurCB7fdtFo05A4aRaeloICP1RLW1vdbNfsJGIm_XmnF4Tlk7qPC3ByusXL8_2fUW"/>
+<span class="absolute bottom-1 left-1 bg-inverse-surface/85 backdrop-blur-xs text-inverse-on-surface font-label-sm text-[10px] px-1 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px] text-secondary">bolt</span> Kadak Kick
+            </span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 leading-snug">Ginger Lemongrass Kadak</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Fresh crushed Adrak &amp; leaf</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-center justify-between bg-surface-container-high/40 rounded px-1.5 py-0.5">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">9 Pot Servings Left</span>
+<span class="material-symbols-outlined text-primary text-base">add_circle</span>
+</div>
+</div>
+<!-- SKU 4: Cutting Chai Quick Serve -->
+<div class="group relative bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-2.5 flex flex-col justify-between cursor-pointer transition-all shadow-sm hover:shadow active:scale-[0.98]" onclick="posAddItem({id: 'sku4', name: 'Special Cutting Chai', price: 25, bom: '8g Strong Dust, 40ml Boiled Milk', pot: 'Express Tap'})">
+<div class="flex justify-between items-start mb-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold uppercase">Fast Tap</span>
+<span class="font-tabular-numeric text-body-lg font-bold text-primary">₹25</span>
+</div>
+<div class="w-full h-20 rounded mb-2 overflow-hidden relative bg-surface-container flex items-center justify-center bg-surface-container">
+<span class="material-symbols-outlined text-4xl text-secondary">local_cafe</span>
+<span class="absolute bottom-1 right-1 font-label-sm text-label-sm bg-surface/90 px-1 rounded text-primary">0.5s Prep</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 leading-snug">Special Cutting Chai</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Traditional 90ml tap pour</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-center justify-between bg-surface-container-high/40 rounded px-1.5 py-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Continuous Boil</span>
+<span class="material-symbols-outlined text-primary text-base">add_circle</span>
+</div>
+</div>
+<!-- SKU 5: Irani Bun Maska with Amul Butter -->
+<div class="group relative bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-2.5 flex flex-col justify-between cursor-pointer transition-all shadow-sm hover:shadow active:scale-[0.98]" onclick="posAddItem({id: 'sku5', name: 'Irani Bun Maska (Amul)', price: 50, bom: '1 Sweet Bun, 25g Salted Butter, Tutti-frutti glaze', pot: 'Tawa 02'})">
+<div class="flex justify-between items-start mb-1.5">
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase">Fresh Griddle</span>
+<span class="font-tabular-numeric text-body-lg font-bold text-primary">₹50</span>
+</div>
+<div class="w-full h-20 rounded mb-2 overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Toasted soft golden Mumbai style bun maska cut in half revealing melting generous yellow salted butter dripping, plated on an antique enamel dish alongside chai crumbs in warm natural café daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoS5kzemLQkeMLaKbMVi90PD2rgBQahOwNdZOSEHOBFLCa6qleeB4QLfgzjpeYYTxSFdRiayeLxias52wyf05lN7wBTRgA8zrUpnw0N6CNVxUxw7LeFELwxzg8EQ8VNOv41DhfAViFkj2eO6ak2vbkc7Wyv1YU319Taoi-XN8mL7TY__x19xlpsD69n5mRCZjbZe4XusJI1vqqegoreTrh_avSTgxNe5SbNBHvliIl-hEsjbX7jg2S"/>
+<span class="absolute bottom-1 left-1 bg-inverse-surface/85 backdrop-blur-xs text-inverse-on-surface font-label-sm text-[10px] px-1 rounded flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px] text-secondary">timer</span> Toasted 4m ago
+            </span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 leading-snug">Irani Bun Maska</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Warm soft bun + Amul butter</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-center justify-between bg-surface-container-high/40 rounded px-1.5 py-0.5">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">12 Buns in Warmer</span>
+<span class="material-symbols-outlined text-primary text-base">add_circle</span>
+</div>
+</div>
+<!-- SKU 6: Osmania Biscuit Duo -->
+<div class="group relative bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-2.5 flex flex-col justify-between cursor-pointer transition-all shadow-sm hover:shadow active:scale-[0.98]" onclick="posAddItem({id: 'sku6', name: 'Osmania Biscuit Duo', price: 25, bom: '2 Heritage Biscuits, Salt-Sweet Shortbread', pot: 'Jar 04'})">
+<div class="flex justify-between items-start mb-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-semibold uppercase">Heritage</span>
+<span class="font-tabular-numeric text-body-lg font-bold text-primary">₹25</span>
+</div>
+<div class="w-full h-20 rounded mb-2 overflow-hidden relative bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary-container">cookie</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 leading-snug">Osmania Biscuit Duo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Salty-sweet Hyderabadi bite</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-center justify-between bg-surface-container-high/40 rounded px-1.5 py-0.5">
+<span class="font-label-sm text-label-sm text-tertiary">42 Sets in Glass Jar</span>
+<span class="material-symbols-outlined text-primary text-base">add_circle</span>
+</div>
+</div>
+<!-- SKU 7: Saffron Mawa Cake Slice -->
+<div class="group relative bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-2.5 flex flex-col justify-between cursor-pointer transition-all shadow-sm hover:shadow active:scale-[0.98]" onclick="posAddItem({id: 'sku7', name: 'Saffron Mawa Cake', price: 65, bom: '1 Slice, Cardamom &amp; Pistachio Crumb, Reduced Khoya', pot: 'Display Case'})">
+<div class="flex justify-between items-start mb-1.5">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold uppercase">Artisanal Bake</span>
+<span class="font-tabular-numeric text-body-lg font-bold text-primary">₹65</span>
+</div>
+<div class="w-full h-20 rounded mb-2 overflow-hidden relative bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Dense rich Indian mawa cake slice baked to golden perfection with chopped slivered green pistachios and saffron tint on top, artisanal bakery style presentation on vintage marble plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjhaPdPSkF5zztcVu-2sPRNItijdDiev1Poy-h_UXH9IrO9N5zlhc3ih3XImC-dbOwO0FWq43vqg5YJiBQNz7ix_tRyBXHvHhwbqrd4qt1I3KjF5Qta21Ls2XKGP66t6KkFlU0lQWfoJFFy8YfYOAw2_PWpodPnZYsFzcvBYKE9E1os1G7UmNgtoE-qJZBPS4HLskWzmTAA_LTYQiBVwzL38BGCIH1K4B2GFtdGx4drbXTQV9bPCHu"/>
+<span class="absolute bottom-1 left-1 bg-inverse-surface/85 backdrop-blur-xs text-inverse-on-surface font-label-sm text-[10px] px-1 rounded">Fresh Batch 08:30</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 leading-snug">Saffron Mawa Cake</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Slow-reduced khoya &amp; pistachio</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-center justify-between bg-surface-container-high/40 rounded px-1.5 py-0.5">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Only 6 slices left</span>
+<span class="material-symbols-outlined text-primary text-base">add_circle</span>
+</div>
+</div>
+<!-- SKU 8: Nilgiri Cold Brew Peach Chai -->
+<div class="group relative bg-surface-container-lowest hover:bg-surface-container-low rounded-lg p-2.5 flex flex-col justify-between cursor-pointer transition-all shadow-sm hover:shadow active:scale-[0.98]" onclick="posAddItem({id: 'sku8', name: 'Cold Brew Peach Chai', price: 95, bom: '180ml Cold Steep Nilgiri, 25ml White Peach Extract', pot: 'Draft Keg #1'})">
+<div class="flex justify-between items-start mb-1.5">
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold uppercase">14h Steep</span>
+<span class="font-tabular-numeric text-body-lg font-bold text-primary">₹95</span>
+</div>
+<div class="w-full h-20 rounded mb-2 overflow-hidden relative bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-tertiary">water_drop</span>
+<span class="absolute bottom-1 left-1 bg-inverse-surface/85 text-inverse-on-surface font-label-sm text-[10px] px-1 rounded">Chilled Draft</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface line-clamp-1 leading-snug">Cold Brew Peach Chai</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Nilgiri Frost leaves + peach</p>
+</div>
+<div class="mt-2 pt-1.5 flex items-center justify-between bg-surface-container-high/40 rounded px-1.5 py-0.5">
+<span class="font-label-sm text-label-sm text-tertiary">Pressure Tap Ready</span>
+<span class="material-symbols-outlined text-primary text-base">add_circle</span>
+</div>
+</div>
+</div>
+<!-- Quick Modifiers & Recipe Specification Bar -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-wrap items-center justify-between gap-space-sm mt-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Preset:</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-xs font-semibold" type="button">Standard Sweet</button>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Less Sugar (-50%)</button>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">No Sugar</button>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Milk Base:</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-xs font-semibold" type="button">Full-Cream Buffalo</button>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Light Cow (+0)</button>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">Oat Milk (+₹30)</button>
+</div>
+</div>
+<div class="flex items-center gap-1 ml-auto">
+<button class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-bold flex items-center gap-0.5" type="button">
+<span class="material-symbols-outlined text-xs">local_fire_department</span> Kadak (+Decoc)
+          </button>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Live Order Ticket & Dual Payment Terminal (5 Cols) -->
+<div class="col-span-12 xl:col-span-5 bg-surface-container-lowest rounded-xl p-space-md shadow-md flex flex-col gap-space-sm">
+<!-- Ticket Header & Dining Type Selector -->
+<div class="flex items-center justify-between border-b-0 pb-1">
+<div class="flex items-center gap-2">
+<div class="bg-primary/10 text-primary px-2 py-0.5 rounded font-label-md text-label-md font-bold">
+            TICKET #1846
+          </div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">11:42 AM</span>
+</div>
+<!-- Dining / Channel Selector -->
+<div class="flex items-center bg-surface-container p-0.5 rounded">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-xs flex items-center gap-1" id="btnDineIn" onclick="setOrderMode('dineIn')" type="button">
+<span class="material-symbols-outlined text-xs">table_restaurant</span> Dine-in
+          </button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1" id="btnTakeaway" onclick="setOrderMode('takeaway')" type="button">
+<span class="material-symbols-outlined text-xs">takeout_dining</span> Parcel / Walk-in
+          </button>
+</div>
+</div>
+<!-- Customer Lookup / Loyalty Mini Bar -->
+<div class="bg-surface-container-low rounded p-1.5 flex items-center justify-between gap-2">
+<div class="flex items-center gap-1 text-on-surface-variant flex-1">
+<span class="material-symbols-outlined text-sm text-outline">account_circle</span>
+<input class="bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-outline w-full focus:outline-none" placeholder="Customer Mobile (+91) or Scan QR..." type="text"/>
+</div>
+<div class="flex items-center gap-1">
+<span class="px-1.5 py-0.5 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold">Tier: Chai Lover</span>
+<button class="text-on-surface-variant hover:text-primary" type="button"><span class="material-symbols-outlined text-sm">qr_code_scanner</span></button>
+</div>
+</div>
+<!-- Live Cart Items Journal Table -->
+<div class="flex flex-col min-h-[220px] max-h-[280px] overflow-y-auto pr-1 gap-1.5" id="cartContainer">
+<!-- Item 1: Masala Chai x 2 -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded p-2 flex flex-col gap-1 transition-colors group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Masala Chai in Kulhad</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-tabular-numeric text-body-md font-bold text-on-surface">₹80.00</span>
+<button class="opacity-40 group-hover:opacity-100 text-on-surface-variant hover:text-error transition-opacity" onclick="this.closest('.bg-surface-container-low').remove(); posRecalculate();">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-[11px]">Mod: Normal Sugar · Full-Cream Buffalo · Kadak Decoction</span>
+<span class="font-tabular-numeric text-[11px] text-tertiary font-medium">BOM: -24g CTC · -130ml Milk · -2 Clay Kulhads</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest rounded shadow-xs">
+<button class="w-6 h-6 flex items-center justify-center font-bold text-on-surface-variant hover:text-primary">-</button>
+<span class="w-6 text-center font-tabular-numeric text-body-sm font-bold text-on-surface">2</span>
+<button class="w-6 h-6 flex items-center justify-center font-bold text-on-surface-variant hover:text-primary">+</button>
+</div>
+</div>
+</div>
+<!-- Item 2: Irani Bun Maska x 1 -->
+<div class="bg-surface-container-low hover:bg-surface-container rounded p-2 flex flex-col gap-1 transition-colors group">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-body-md text-body-md font-semibold text-on-surface">Irani Bun Maska (Amul Butter)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-tabular-numeric text-body-md font-bold text-on-surface">₹50.00</span>
+<button class="opacity-40 group-hover:opacity-100 text-on-surface-variant hover:text-error transition-opacity" onclick="this.closest('.bg-surface-container-low').remove(); posRecalculate();">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<div class="flex flex-col">
+<span class="text-on-surface-variant text-[11px]">Mod: Light Crisp Toast · Extra Butter Dab</span>
+<span class="font-tabular-numeric text-[11px] text-tertiary font-medium">BOM: -1 Bun · -25g Salted Amul Butter</span>
+</div>
+<div class="flex items-center bg-surface-container-lowest rounded shadow-xs">
+<button class="w-6 h-6 flex items-center justify-center font-bold text-on-surface-variant hover:text-primary">-</button>
+<span class="w-6 text-center font-tabular-numeric text-body-sm font-bold text-on-surface">1</span>
+<button class="w-6 h-6 flex items-center justify-center font-bold text-on-surface-variant hover:text-primary">+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bill Calculation Box -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 text-body-sm">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Subtotal (2 unique items, 3 qty)</span>
+<span class="font-tabular-numeric font-medium text-on-surface">₹130.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="flex items-center gap-1">
+            Artisanal Tea Exemption (0% GST)
+            <span class="material-symbols-outlined text-xs text-outline" title="Exempted under hot beverage rural agricultural procurement scheme">info</span>
+</span>
+<span class="font-tabular-numeric text-tertiary">₹0.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Packaging &amp; Clay Kulhad Handling</span>
+<span class="font-tabular-numeric text-tertiary">Complimentary</span>
+</div>
+<div class="flex justify-between items-baseline pt-1.5 mt-0.5 border-t-0 bg-surface-container-high/60 px-space-sm py-1 rounded">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Net Payable</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Ready for settlement</span>
+</div>
+<span class="font-stat-kpi text-stat-kpi font-bold text-primary" id="posNetTotal">₹130.00</span>
+</div>
+</div>
+<!-- Payment Fast Keys & Instant Change Calculation -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Fast Tender Cash Notes</span>
+<div class="font-label-sm text-label-sm text-tertiary font-bold" id="changeDueDisplay">
+            Change Due: <span class="font-tabular-numeric">₹0.00</span>
+</div>
+</div>
+<div class="grid grid-cols-5 gap-1">
+<button class="py-1 px-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-tabular-numeric text-body-sm font-semibold rounded text-center transition-colors" onclick="posTenderCash(130)" type="button">
+            Exact ₹130
+          </button>
+<button class="py-1 px-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-tabular-numeric text-body-sm font-semibold rounded text-center transition-colors" onclick="posTenderCash(150)" type="button">
+            ₹150
+          </button>
+<button class="py-1 px-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-tabular-numeric text-body-sm font-semibold rounded text-center transition-colors" onclick="posTenderCash(200)" type="button">
+            ₹200
+          </button>
+<button class="py-1 px-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-tabular-numeric text-body-sm font-semibold rounded text-center transition-colors" onclick="posTenderCash(500)" type="button">
+            ₹500
+          </button>
+<button class="py-1 px-1 bg-surface-container hover:bg-surface-container-high text-on-surface font-tabular-numeric text-body-sm font-semibold rounded text-center transition-colors" onclick="posTenderCash(1000)" type="button">
+            ₹1000
+          </button>
+</div>
+</div>
+<!-- Dual Large Rapid Payment Execution Buttons -->
+<div class="grid grid-cols-2 gap-space-xs mt-1">
+<!-- CASH PAYMENT TRIGGER -->
+<button class="h-16 bg-primary hover:bg-primary-container text-on-primary rounded-lg flex flex-col items-center justify-center p-2 shadow-sm transition-transform active:scale-[0.99]" id="payCashBtn" onclick="posExecuteCashPayment()" type="button">
+<div class="flex items-center gap-1.5 font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-xl">payments</span>
+<span>CASH TENDER</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container">Auto-pops till drawer &amp; logs #1846</span>
+</button>
+<!-- INSTANT UPI SOUNDBOX QR TRIGGER -->
+<button class="h-16 bg-tertiary-container hover:bg-tertiary text-on-primary rounded-lg flex flex-col items-center justify-center p-2 shadow-sm transition-transform active:scale-[0.99]" id="payUpiBtn" onclick="posExecuteUpiPayment()" type="button">
+<div class="flex items-center gap-1.5 font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-xl">qr_code_scanner</span>
+<span>DYNAMIC UPI</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-tertiary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-ping"></span>
+<span>Soundbox 2.0 Webhook Polling</span>
+</div>
+</button>
+</div>
+<!-- Aux Action Bar: Split, Hold Ticket, KOT Print -->
+<div class="grid grid-cols-3 gap-1 pt-1">
+<button class="py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">call_split</span> Split Bill
+        </button>
+<button class="py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center justify-center gap-1 transition-colors" onclick="posHoldTicket()" type="button">
+<span class="material-symbols-outlined text-sm">pause</span> Hold Order
+        </button>
+<button class="py-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded flex items-center justify-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-sm">print</span> Print KOT &amp; Tax
+        </button>
+</div>
+</div>
+</div>
+<!-- Bottom Drawer Live Reconciliation & Hardware Diagnostics Strip -->
+<section class="bg-surface-container-low rounded-xl p-space-sm shadow-sm flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-md text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">savings</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Drawer Float Ledger:</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant">Opening Float:</span>
+<span class="font-tabular-numeric text-on-surface font-medium">₹1,000.00</span>
+</div>
+<div class="text-outline-variant">|</div>
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant">Cash Sales:</span>
+<span class="font-tabular-numeric text-tertiary font-medium">+₹6,200.00</span>
+</div>
+<div class="text-outline-variant">|</div>
+<div class="flex items-center gap-1.5">
+<span class="text-on-surface-variant">Paid Out (Urgent Buffalo Milk Delivery):</span>
+<span class="font-tabular-numeric text-secondary font-medium">-₹150.00</span>
+</div>
+<div class="text-outline-variant">|</div>
+<div class="flex items-center gap-1.5 bg-surface-container px-2 py-0.5 rounded">
+<span class="text-on-surface font-semibold">Expected Cash in Drawer:</span>
+<span class="font-tabular-numeric text-primary font-bold">₹7,050.00</span>
+</div>
+</div>
+<!-- Hardware Health Status Indicators -->
+<div class="flex items-center gap-space-md ml-auto lg:ml-0 text-label-sm font-label-sm">
+<div class="flex items-center gap-1 text-tertiary font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Thermal ESC/POS: Online</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Smart Till Scale: Zero Balanced</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-xs text-primary">cloud_done</span>
+<span>Mesh Buffer: 0 Offline</span>
+</div>
+</div>
+</section>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-lg shadow-xl flex items-center gap-2 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none z-50" id="posToast">
+<span class="material-symbols-outlined text-tertiary-fixed">check_circle</span>
+<span class="font-body-md text-body-md" id="posToastMsg">Till Drawer Opened &amp; Ticket Printed</span>
+</div>
+</div>
+<script>
+  let currentTotal = 130;
+
+  function posShowToast(msg) {
+    const toast = document.getElementById('posToast');
+    const label = document.getElementById('posToastMsg');
+    if (!toast || !label) return;
+    label.innerText = msg;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2400);
+  }
+
+  function setOrderMode(mode) {
+    const btnDine = document.getElementById('btnDineIn');
+    const btnTake = document.getElementById('btnTakeaway');
+    if (mode === 'dineIn') {
+      btnDine.className = "px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-xs flex items-center gap-1";
+      btnTake.className = "px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1";
+      posShowToast("Switched order to Dine-In (Table #08 active)");
+    } else {
+      btnTake.className = "px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-semibold shadow-xs flex items-center gap-1";
+      btnDine.className = "px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1";
+      posShowToast("Switched order to Walk-in / Takeaway Parcel");
+    }
+  }
+
+  function posAddItem(item) {
+    const container = document.getElementById('cartContainer');
+    if (!container) return;
+
+    const row = document.createElement('div');
+    row.className = "bg-surface-container-low hover:bg-surface-container rounded p-2 flex flex-col gap-1 transition-colors group animate-fade-in";
+    row.innerHTML = `
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          <span class="font-body-md text-body-md font-semibold text-on-surface">${item.name}</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="font-tabular-numeric text-body-md font-bold text-on-surface">₹${item.price}.00</span>
+          <button onclick="this.closest('.bg-surface-container-low').remove(); posRecalculate();" class="opacity-40 group-hover:opacity-100 text-on-surface-variant hover:text-error transition-opacity">
+            <span class="material-symbols-outlined text-sm">close</span>
+          </button>
+        </div>
+      </div>
+      <div class="flex items-center justify-between text-body-sm">
+        <div class="flex flex-col">
+          <span class="text-on-surface-variant text-[11px]">Mod: Normal Sugar · Regular Prep (${item.pot})</span>
+          <span class="font-tabular-numeric text-[11px] text-tertiary font-medium">BOM: ${item.bom}</span>
+        </div>
+        <div class="flex items-center bg-surface-container-lowest rounded shadow-xs">
+          <button class="w-6 h-6 flex items-center justify-center font-bold text-on-surface-variant hover:text-primary">-</button>
+          <span class="w-6 text-center font-tabular-numeric text-body-sm font-bold text-on-surface">1</span>
+          <button class="w-6 h-6 flex items-center justify-center font-bold text-on-surface-variant hover:text-primary">+</button>
+        </div>
+      </div>
+    `;
+    container.appendChild(row);
+    currentTotal += item.price;
+    posUpdateTotalDisplay();
+    posShowToast(`Added 1x ${item.name} to current ticket`);
+  }
+
+  function posRecalculate() {
+    currentTotal = 80;
+    posUpdateTotalDisplay();
+  }
+
+  function posUpdateTotalDisplay() {
+    const totalEl = document.getElementById('posNetTotal');
+    if (totalEl) {
+      totalEl.innerText = '₹' + currentTotal + '.00';
+    }
+  }
+
+  function posTenderCash(tenderAmount) {
+    const change = tenderAmount - currentTotal;
+    const changeEl = document.getElementById('changeDueDisplay');
+    if (changeEl) {
+      if (change >= 0) {
+        changeEl.innerHTML = `Change Due: <span class="font-tabular-numeric text-tertiary">₹${change}.00</span>`;
+      } else {
+        changeEl.innerHTML = `Short: <span class="font-tabular-numeric text-secondary">₹${Math.abs(change)}.00</span>`;
+      }
+    }
+    posShowToast(`Tendered ₹${tenderAmount} (Change: ₹${Math.max(0, change)})`);
+  }
+
+  function posExecuteCashPayment() {
+    posShowToast(`₹${currentTotal} Cash Logged! Till Kick Sensor Fired · Receipt Printing...`);
+    setTimeout(() => {
+      currentTotal = 0;
+      posUpdateTotalDisplay();
+      const c = document.getElementById('cartContainer');
+      if (c) c.innerHTML = '<div class="p-4 text-center text-on-surface-variant font-label-sm uppercase">Cart Cleared · Ready for Ticket #1847</div>';
+    }, 1200);
+  }
+
+  function posExecuteUpiPayment() {
+    posShowToast("Dynamic UPI QR displayed on customer pole. Awaiting webhook...");
+    setTimeout(() => {
+      posShowToast("PhonePe Soundbox: 'Received ₹130 on ChaiOps Merchant UPI'");
+      currentTotal = 0;
+      posUpdateTotalDisplay();
+      const c = document.getElementById('cartContainer');
+      if (c) c.innerHTML = '<div class="p-4 text-center text-on-surface-variant font-label-sm uppercase">UPI Verified · Ticket #1846 Settled</div>';
+    }, 2000);
+  }
+
+  function posHoldTicket() {
+    posShowToast("Ticket #1846 held. Stored in Live Buffer (2 parked).");
+  }
+
+  // Handle No Sale pop button
+  const noSaleBtn = document.getElementById('noSaleBtn');
+  if (noSaleBtn) {
+    noSaleBtn.addEventListener('click', () => {
+      posShowToast("AUDIT ALERT: Manual No-Sale Drawer Release Keyed by Suresh M.");
+    });
+  }
+
+  // Category pill tab toggling
+  document.querySelectorAll('.pos-cat-pill').forEach(btn => {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.pos-cat-pill').forEach(b => {
+        b.className = 'pos-cat-pill px-3 py-1.5 rounded text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-1.5 whitespace-nowrap transition-colors';
+      });
+      this.className = 'pos-cat-pill active px-3 py-1.5 rounded text-label-md font-label-md bg-surface-container-lowest text-primary shadow-sm flex items-center gap-1.5 whitespace-nowrap';
+    });
+  });
+</script></main></div></body></html>

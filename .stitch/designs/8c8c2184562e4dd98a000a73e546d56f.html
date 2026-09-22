@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed-variant":"#005323","inverse-on-surface":"#f7efeb","on-primary":"#ffffff","surface-container":"#f4ece8","on-surface-variant":"#55433a","on-tertiary":"#ffffff","surface":"#fff8f5","secondary-container":"#fd6b36","on-primary-fixed-variant":"#7a3000","secondary-fixed":"#ffdbd0","secondary-fixed-dim":"#ffb59d","inverse-surface":"#33302d","on-secondary":"#ffffff","primary-container":"#92400e","surface-variant":"#e9e1dd","on-secondary-container":"#5d1900","on-primary-fixed":"#341000","surface-container-lowest":"#ffffff","background":"#fff8f5","tertiary":"#004c20","on-tertiary-fixed":"#00210a","tertiary-container":"#00672d","error":"#ba1a1a","primary":"#712c00","primary-fixed":"#ffdbcb","on-primary-container":"#ffc2a5","surface-container-highest":"#e9e1dd","surface-container-low":"#faf2ee","on-secondary-fixed-variant":"#832600","on-background":"#1e1b19","secondary":"#ac3400","on-surface":"#1e1b19","tertiary-fixed":"#95f8a7","outline":"#887269","on-error-container":"#93000a","surface-tint":"#9a4614","error-container":"#ffdad6","tertiary-fixed-dim":"#79db8d","surface-container-high":"#eee7e3","outline-variant":"#dcc1b6","inverse-primary":"#ffb693","on-error":"#ffffff","on-secondary-fixed":"#390c00","surface-bright":"#fff8f5","surface-dim":"#e0d8d5","on-tertiary-container":"#82e595","primary-fixed-dim":"#ffb693"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-xl":"1.75rem","space-lg":"1.25rem","space-md":"0.75rem","gutter":"1rem","space-sm":"0.5rem","space-xs":"0.25rem","margin":"1.5rem"},"fontFamily":{"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"stat-kpi":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"tabular-numeric":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"]},"fontSize":{"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.025em","fontWeight":"700"}],"stat-kpi":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"tabular-numeric":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-14 px-margin flex items-center gap-space-sm bg-surface-container"><img alt="ChaiOps Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XEbT592nQcX2pzmg8K2BsNoOYgXaj_aFVgcL6W-kfnZzDfaYsHDb6mb30SjuYkR3hXOhkPPlpI7Ry1kjmURCWzPUBexFdNYEGDVA8OptQYcfxnGRMPKiIYM_-9_h8qMvQekuLwW-fM8G3vbvEtX7gdoTRZcWy7Qf284uwvY_Z00RMJ4lg-0PO4fR4e6uYf_BeQaEkGpoawPQxuAmOzNFOGduyHOHi2tDZz2qt34VhPMJh2cpT0n2mb9Wg"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">ChaiOps</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant uppercase">HQ</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Enterprise Super Admin</span></div></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><div class="pt-space-sm pb-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Operations</div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="multi-branch-overview" href="#">Multi-Branch Overview</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="live-order-queue" href="#">Live Order Queue</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="eod-cash-reconciliation" href="#">EOD Cash Reconciliation</a><div class="pt-space-md pb-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Supply &amp; Menu</div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="recipe-bom-inventory" href="#">Recipe BOM &amp; Inventory</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="menu-branch-pricing" href="#">Menu &amp; Branch Pricing</a><div class="pt-space-md pb-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Management</div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="staff-shift-pos" href="#">Staff &amp; Shift POS</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="financial-reports" href="#">Financial Reports</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-md text-body-md" data-path="settings-webhooks" href="#">Settings &amp; Webhooks</a></nav></div></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low"><div class="flex items-center gap-space-sm px-space-sm py-space-xs rounded bg-surface-container"><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">4 Branches Online</span><span class="font-body-sm text-body-sm text-on-surface-variant">Supabase Sync Active</span></div></div><div class="flex items-center gap-space-xs px-space-sm py-space-xs text-on-surface-variant"><span class="font-body-sm text-body-sm">Operator Docs &amp; Help</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors"><span class="material-symbols-outlined text-headline-sm text-primary">storefront</span><span class="font-label-md text-label-md text-on-surface">All Branches (4)</span><span class="material-symbols-outlined text-headline-sm text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed"><span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span><span class="font-label-sm text-label-sm">Live WebSockets Active</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface"><span class="material-symbols-outlined text-headline-sm text-on-surface-variant">event</span><span class="font-tabular-numeric text-tabular-numeric">Today, 24 Oct 2024</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-headline-sm text-on-surface-variant">search</span><input class="w-56 h-8 pl-8 pr-space-md bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search orders, recipes, SKUs..." type="text"/></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-headline-md">notifications</span><span class="absolute top-1 right-1 flex items-center justify-center h-4 min-w-4 px-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">3</span></button><div class="h-6 w-px bg-surface-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Aditya Roy profile photo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtIdWOy10pr_SrhGsLCXdeIjrv1gs-UvlXR8vOrY49L6H8gDqWZtzp9bW8cw-dImNtZrFdancZnfUE4tAh3WSJVpb8qNLvPW4m7PjPhRdkB7mzH6qHSOriLgeJoGNVhkcw5c7C_gvnqo2KJ0chlvlk90w3ZvyVA088jhP6uiNnNBeF5Oy0FfZK9kqRoHNE5sgDP0Gz-DreNCtsMOsnf4HrqQjI5aRoArAqI7j01-6gJmqCUNTa7YZT"/><div class="flex flex-col text-left"><span class="font-headline-sm text-headline-sm leading-none text-on-surface">Aditya Roy</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Owner &amp; Master Franchisee</span></div></div></div></header><main class="w-full pt-14 px-margin pb-margin bg-surface"><div class="flex flex-col w-full">
+<!-- Dynamic Audio & Notification Notification Floating Toast -->
+<div class="hidden fixed bottom-6 right-6 z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-lg shadow-xl flex items-center gap-space-sm transition-all duration-300" id="audio-toast">
+<span class="material-symbols-outlined text-secondary-fixed text-headline-sm animate-spin">sync</span>
+<span class="font-body-md text-body-md text-inverse-on-surface" id="toast-text">Ticket updated in real-time</span>
+</div>
+<!-- Command Strip & Operational Header -->
+<header class="flex flex-col gap-space-md mb-space-lg">
+<!-- Top Action & Title Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">Live Order Queue &amp; Kitchen Display</h1>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary animate-pulse"></span> KDS Stream Online
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Real-time kitchen execution ledger, cash verification &amp; recipe BOM auto-deduction</p>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<!-- Station Dropdown -->
+<div class="relative">
+<select class="h-8 pl-2.5 pr-8 bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest cursor-pointer shadow-sm appearance-none">
+<option>All Stations (Kadai + Griddle)</option>
+<option>Kadai / Decoction Pot #1</option>
+<option>Snack &amp; Grill Station</option>
+<option>Kulhad Pouring Counter</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-headline-sm text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+<!-- Kitchen Busy Toggle -->
+<button class="h-8 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm" id="busy-toggle" onclick="toggleKitchenBusy()">
+<span class="h-2 w-2 rounded-full bg-tertiary" id="busy-indicator"></span>
+<span id="busy-text">Accepting Orders</span>
+</button>
+<!-- Audio Alert Chime -->
+<button class="h-8 px-space-sm bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1 shadow-sm" id="chime-btn" onclick="toggleAudioChime()" title="Audio Chime: Active">
+<span class="material-symbols-outlined text-headline-sm text-primary">volume_up</span>
+<span class="font-body-sm text-body-sm">Chimes</span>
+</button>
+<!-- Primary POS Order Button -->
+<button class="h-8 px-space-md bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-1.5 shadow-sm transition-all" onclick="openWalkInModal()">
+<span class="material-symbols-outlined text-headline-sm">add_shopping_cart</span>
+<span>+ New Counter Walk-in</span>
+</button>
+</div>
+</div>
+<!-- Operational KPI Ribbon -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-sm">
+<!-- Active In Queue -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-0.5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Queue</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold bg-tertiary-fixed/60 px-1.5 py-0.5 rounded">4.2m SLA</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-stat-kpi text-stat-kpi text-on-surface" id="stat-active">7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">tickets</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Average turnaround optimal</span>
+</div>
+<!-- Cash Verification Urgent -->
+<div class="p-space-md rounded-xl bg-surface-container-high flex flex-col gap-0.5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Cash Pending</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container font-semibold bg-secondary-fixed px-1.5 py-0.5 rounded">Action Reqd</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-stat-kpi text-stat-kpi text-secondary font-bold" id="stat-cash">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">at register</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Awaiting physical cashier receipt</span>
+</div>
+<!-- Brewing In Kitchen -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-0.5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Brewing / In-Pot</span>
+<span class="h-2 w-2 rounded-full bg-secondary-container animate-ping"></span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-stat-kpi text-stat-kpi text-on-surface" id="stat-brewing">3</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">in-station</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">2 Kadai pots simmered</span>
+</div>
+<!-- Ready for Handover -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-0.5 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Ready at Window</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-semibold bg-tertiary-fixed px-1.5 py-0.5 rounded">Chime Active</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-stat-kpi text-stat-kpi text-tertiary font-bold" id="stat-ready">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">calling tokens</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tokens #27 &amp; #28</span>
+</div>
+<!-- Fulfilled Shift Total -->
+<div class="p-space-md rounded-xl bg-surface-container flex flex-col gap-0.5 shadow-sm col-span-2 md:col-span-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Shift Fulfilled</span>
+<span class="font-label-sm text-label-sm text-tertiary-container font-bold">100% BOM sync</span>
+</div>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-stat-kpi text-stat-kpi text-on-surface">184</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">orders</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₹23,940 gross rev · 0 leakage</span>
+</div>
+</div>
+</header>
+<!-- Real-Time Kanban Board (4 Columns) -->
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-space-md items-start">
+<!-- COLUMN 1: PENDING CASH VERIFICATION -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<!-- Column Banner -->
+<div class="flex items-center justify-between px-space-xs py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-headline-sm text-secondary">payments</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Pending Cash</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold" id="badge-col-cash">2 Tickets</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-space-xs -mt-1">Orders halted until cashier marks physical currency received.</p>
+<div class="flex flex-col gap-space-sm" id="column-cash-items">
+<!-- Ticket Card 1846 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md" id="card-1846">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#1846</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Table QR #08</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Placed 1m ago · Dine-in</span>
+</div>
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">₹130 CASH</span>
+</div>
+<!-- Order Line Items -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex justify-between items-start text-on-surface">
+<span class="font-body-md text-body-md font-semibold">2x Masala Chai (Kulhad)</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface">₹80</span>
+</div>
+<div class="font-body-sm text-body-sm text-primary pl-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-label-md">info</span>
+<span>Mod: Less Sugar, Strong Kadai Decoction</span>
+</div>
+<div class="flex justify-between items-start text-on-surface pt-1">
+<span class="font-body-md text-body-md font-semibold">1x Bun Maska (Amul Salted)</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface">₹50</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-body-sm text-body-sm italic bg-surface-container px-2 py-1 rounded">
+<span class="material-symbols-outlined text-label-md">record_voice_over</span>
+<span>Customer paying at till: "Needs 2 kulhads extra piping hot"</span>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-1 pt-1">
+<button class="w-full h-8 bg-secondary-container hover:bg-secondary text-on-secondary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all" onclick="approveCashTicket('1846', 'Table QR #08', '₹130', '2x Masala Chai (Kulhad), 1x Bun Maska')">
+<span class="material-symbols-outlined text-headline-sm">point_of_sale</span>
+<span>Collect ₹130 &amp; Dispatch to Kitchen</span>
+</button>
+<button class="w-full h-7 bg-surface-container hover:bg-surface-container-high text-error rounded font-label-sm text-label-sm transition-colors text-center" onclick="cancelTicket('1846')">
+              Cancel / Customer No-Show
+            </button>
+</div>
+</div>
+<!-- Ticket Card 1845 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md" id="card-1845">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#1845</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Self-Kiosk #01</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Placed 3m ago · Takeaway</span>
+</div>
+<span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">₹110 CASH</span>
+</div>
+<!-- Items -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex justify-between items-start text-on-surface">
+<span class="font-body-md text-body-md font-semibold">1x Saffron Royal Elaichi Pot</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface">₹70</span>
+</div>
+<div class="flex justify-between items-start text-on-surface">
+<span class="font-body-md text-body-md font-semibold">2x Osmania Chai Biscuits (Pair)</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface">₹40</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col gap-1 pt-1">
+<button class="w-full h-8 bg-secondary-container hover:bg-secondary text-on-secondary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all" onclick="approveCashTicket('1845', 'Self-Kiosk #01', '₹110', '1x Saffron Royal Elaichi, 2x Osmania')">
+<span class="material-symbols-outlined text-headline-sm">point_of_sale</span>
+<span>Collect ₹110 &amp; Dispatch to Kitchen</span>
+</button>
+<button class="w-full h-7 bg-surface-container hover:bg-surface-container-high text-error rounded font-label-sm text-label-sm transition-colors text-center" onclick="cancelTicket('1845')">
+              Cancel / Void Order
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- COLUMN 2: KITCHEN QUEUE & BREWING -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<!-- Column Banner -->
+<div class="flex items-center justify-between px-space-xs py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-headline-sm text-primary">skillet</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Kitchen Brewing</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold" id="badge-col-brewing">3 In-Pot</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-space-xs -mt-1">Active decoction bubbling, griddle toasting &amp; Kulhad prep.</p>
+<div class="flex flex-col gap-space-sm" id="column-brewing-items">
+<!-- Card 1844 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md" id="card-1844">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#1844</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">Dine-in #04</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">UPI Paid</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PhonePe Intent TXN-984328</span>
+</div>
+<!-- Timer SLA -->
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-tabular-numeric text-tabular-numeric">
+<span class="material-symbols-outlined text-label-md text-primary">timer</span>
+<span class="font-bold">03:45</span>
+<span class="text-on-surface-variant text-label-sm font-normal">/ 05:00</span>
+</div>
+</div>
+<!-- Items Breakdown -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md font-semibold text-on-surface">2x Masala Chai in Kulhad</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Kadai #1 Simmering</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md font-semibold text-on-surface">1x Bun Maska (Griddled)</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">On Flat Griddle</span>
+</div>
+</div>
+<!-- Recipe BOM Deduction Preview Well -->
+<div class="p-2 rounded bg-surface-container flex items-start gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-label-md text-primary mt-0.5">inventory_2</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Live BOM Deduction Hook</span>
+<span class="font-body-sm text-body-sm">100ml Buffalo Milk, 20g Wagh Bakri CTC, 2 Clay Kulhads, 50g Amul Butter</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-headline-sm text-on-surface-variant">person</span>
+<span>Brewer: Suresh M.</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Pot Temp: 92°C</span>
+</div>
+<button class="w-full h-8 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all" onclick="markReady('1844', 'Token #29', 'Dine-in #04', '2x Masala Chai, 1x Bun Maska')">
+<span class="material-symbols-outlined text-headline-sm">check_circle</span>
+<span>Mark Ready for Handover</span>
+</button>
+</div>
+<!-- Card 1843 Surge Priority -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md" id="card-1843">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#1843</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold animate-pulse">SURGE RUSH</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">CyberCity Kiosk · GPay Verified</span>
+</div>
+<!-- Timer SLA -->
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-tabular-numeric text-tabular-numeric">
+<span class="material-symbols-outlined text-label-md text-primary">timer</span>
+<span class="font-bold">04:10</span>
+<span class="text-on-surface-variant text-label-sm font-normal">/ 05:00</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-body-md text-body-md font-semibold">4x Special Cutting Chai</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Kadak / Elaichi</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-body-md text-body-md font-semibold">2x Irani Bun Maska</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Toasted</span>
+</div>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-start gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-label-md text-primary mt-0.5">inventory_2</span>
+<span class="font-body-sm text-body-sm">BOM: 220ml Milk, 35g Estate Dust Tea, 100g Butter</span>
+</div>
+<button class="w-full h-8 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all" onclick="markReady('1843', 'Token #30', 'CyberCity Kiosk', '4x Cutting Chai, 2x Irani Bun Maska')">
+<span class="material-symbols-outlined text-headline-sm">check_circle</span>
+<span>Mark Ready for Handover</span>
+</button>
+</div>
+<!-- Card 1842 SLA Overrun Warning -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md" id="card-1842">
+<div class="flex items-start justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#1842</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Window Takeaway</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cashier: Rohan S.</span>
+</div>
+<!-- Timer Breached -->
+<div class="flex items-center gap-1 px-2 py-0.5 rounded bg-error-container text-on-error-container font-tabular-numeric text-tabular-numeric font-bold">
+<span class="material-symbols-outlined text-label-md text-error">warning</span>
+<span>07:15 (+2m delay)</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-body-md text-body-md font-semibold">1x Cold Brew Peach Iced Chai</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Shake Station</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span class="font-body-md text-body-md font-semibold">1x Saffron Elaichi Pot</span>
+<span class="px-1.5 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Steeping</span>
+</div>
+</div>
+<button class="w-full h-8 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all" onclick="markReady('1842', 'Token #31', 'Window Takeaway', '1x Peach Iced Chai, 1x Saffron Pot')">
+<span class="material-symbols-outlined text-headline-sm">check_circle</span>
+<span>Mark Ready for Handover</span>
+</button>
+</div>
+</div>
+</div>
+<!-- COLUMN 3: READY FOR PICKUP / HANDOVER -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<!-- Column Banner -->
+<div class="flex items-center justify-between px-space-xs py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-headline-sm text-tertiary">check_circle</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Ready for Pickup</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold" id="badge-col-ready">2 Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-space-xs -mt-1">Poured hot into terracotta; awaiting customer pickup.</p>
+<div class="flex flex-col gap-space-sm" id="column-ready-items">
+<!-- Card 1841 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md" id="card-1841">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-headline-sm text-headline-sm font-bold">TOKEN #28</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">#1841</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Counter Pickup · Customer: Ananya S.</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Ready 1m</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 text-on-surface">
+<div class="font-body-md text-body-md font-semibold">1x Ginger Lemongrass Chai (Kulhad)</div>
+<div class="font-body-md text-body-md font-semibold">1x Bun Maska (Warm)</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-tertiary font-semibold">
+<span class="material-symbols-outlined text-headline-sm">notifications_active</span> Calling Token Display
+            </span>
+<button class="h-6 px-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm" onclick="ringToken('Token #28')">Re-Chime</button>
+</div>
+<button class="w-full h-8 bg-tertiary-container hover:bg-tertiary text-on-tertiary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all" onclick="completeHandover('1841', '1841', '₹130 (UPI)', 'Assam CTC -15g, Fresh Lemongrass -10g, Kulhad -1')">
+<span class="material-symbols-outlined text-headline-sm">done_all</span>
+<span>Handover &amp; Finalize BOM</span>
+</button>
+</div>
+<!-- Card 1840 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md" id="card-1840">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-headline-sm text-headline-sm font-bold">TOKEN #27</span>
+<span class="font-headline-sm text-headline-sm text-primary font-semibold">#1840</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Table #12 Service</span>
+</div>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Ready 2m</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 text-on-surface">
+<div class="font-body-md text-body-md font-semibold">2x Masala Chai (Kulhad)</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Standard sweetness · Piping hot</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-tertiary font-semibold">
+<span class="material-symbols-outlined text-headline-sm">room_service</span> Ready for Runner
+            </span>
+<button class="h-6 px-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm" onclick="ringToken('Token #27')">Re-Chime</button>
+</div>
+<button class="w-full h-8 bg-tertiary-container hover:bg-tertiary text-on-tertiary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all" onclick="completeHandover('1840', '1840', '₹80 (Cash)', 'Tea Leaves -20g, Milk -100ml, Kulhad -2')">
+<span class="material-symbols-outlined text-headline-sm">done_all</span>
+<span>Handover &amp; Finalize BOM</span>
+</button>
+</div>
+</div>
+</div>
+<!-- COLUMN 4: RECENTLY COMPLETED & DEPLETED LOG -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-sm rounded-xl">
+<!-- Column Banner -->
+<div class="flex items-center justify-between px-space-xs py-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-headline-sm text-on-surface-variant">history</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Recent Handover</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Auto-Audit</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant px-space-xs -mt-1">Inventory stock decremented instantly upon staff dispatch.</p>
+<div class="flex flex-col gap-space-sm" id="column-completed-items">
+<!-- Card 1839 -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#1839</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">₹120 (UPI)</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5 font-semibold">
+<span class="material-symbols-outlined text-label-sm">check</span> 14:24
+            </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            Fulfilled: 2x Cutting Chai, 1x Maska
+          </div>
+<div class="p-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm text-tertiary">schema</span>
+<span>BOM Depleted: Assam Tea -20g, Milk -100ml</span>
+</div>
+</div>
+<!-- Card 1838 -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#1838</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">₹90 (Cash)</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5 font-semibold">
+<span class="material-symbols-outlined text-label-sm">check</span> 14:21
+            </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            Fulfilled: 1x Elaichi Chai, 2x Osmania
+          </div>
+<div class="p-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm text-primary">point_of_sale</span>
+<span>Receipt #0981 logged to Drawer #1</span>
+</div>
+</div>
+<!-- Card 1837 -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1.5 opacity-80">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#1837</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">₹240 (Card)</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5 font-semibold">
+<span class="material-symbols-outlined text-label-sm">check</span> 14:15
+            </span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+            Fulfilled: 4x Ginger Chai, 2x Samosa Plate
+          </div>
+<div class="p-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-label-sm text-tertiary">schema</span>
+<span>BOM Depleted: Ginger root -30g, Oil -40ml</span>
+</div>
+</div>
+</div>
+<!-- Quick Ledger Link -->
+<button class="mt-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm flex items-center justify-center gap-1 transition-colors" onclick="showToast('Full Kitchen Journal loading...')">
+<span class="material-symbols-outlined text-headline-sm">receipt_long</span>
+<span>View Full Shift Journal (184 orders)</span>
+</button>
+</div>
+</div>
+<!-- Bottom Operational Control & Summary Bar -->
+<footer class="mt-space-xl p-space-md rounded-xl bg-surface-container flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<!-- WebSocket Channel Status -->
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-tertiary"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Supabase Realtime Channel</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">#krmangalam-flagship-orders · Ping 12ms · 0 dropouts</span>
+</div>
+</div>
+<div class="hidden sm:block h-6 w-px bg-surface-variant"></div>
+<!-- Cash Drawer Telemetry -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-headline-md text-primary">point_of_sale</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Till #1 Float Balance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">₹7,200 Cash On Hand (Reconciled)</span>
+</div>
+</div>
+</div>
+<!-- Print & Station Dispatch Actions -->
+<div class="flex items-center gap-space-sm">
+<button class="h-8 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" onclick="showToast('Printing Kitchen KOT Slips to thermal printer #1...')">
+<span class="material-symbols-outlined text-headline-sm">print</span>
+<span>Print Kitchen KOT Slips</span>
+</button>
+<button class="h-8 px-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" onclick="showToast('Generating Shift Dispatch Summary PDF...')">
+<span class="material-symbols-outlined text-headline-sm">description</span>
+<span>Kitchen Dispatch Sheet</span>
+</button>
+</div>
+</footer>
+<!-- Inline Modal: New Counter Walk-in Order -->
+<div class="hidden fixed inset-0 bg-inverse-surface/60 backdrop-blur-sm z-50 flex items-center justify-center p-4" id="walkin-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-headline-lg text-primary">add_circle</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Quick Counter Walk-In Ticket</h2>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-container text-on-surface-variant" onclick="closeWalkInModal()">
+<span class="material-symbols-outlined text-headline-md">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Customer Identifier / Token #</label>
+<input class="w-full h-8 mt-1 px-space-sm bg-surface-container rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="modal-customer" type="text" value="Walk-in Guest #32"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Select Signature Items</label>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<button class="p-2 text-left rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex justify-between" onclick="selectModalItem(this, '2x Masala Chai (Kulhad)', 80)" type="button">
+<span>2x Masala Chai</span>
+<span class="font-bold">₹80</span>
+</button>
+<button class="p-2 text-left rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex justify-between" onclick="selectModalItem(this, '1x Elaichi Chai &amp; Bun Maska', 95)" type="button">
+<span>Elaichi + Bun</span>
+<span class="font-bold">₹95</span>
+</button>
+<button class="p-2 text-left rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex justify-between" onclick="selectModalItem(this, '1x Saffron Royal Pot', 70)" type="button">
+<span>Saffron Royal</span>
+<span class="font-bold">₹70</span>
+</button>
+<button class="p-2 text-left rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-body-sm text-body-sm flex justify-between" onclick="selectModalItem(this, '2x Irani Bun Maska', 100)" type="button">
+<span>2x Irani Bun</span>
+<span class="font-bold">₹100</span>
+</button>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Selected Items Summary</label>
+<div class="p-2 mt-1 bg-surface-container-low rounded-lg font-body-sm text-body-sm text-on-surface flex justify-between" id="modal-order-summary">
+<span id="modal-item-name">2x Masala Chai (Kulhad)</span>
+<span class="font-bold" id="modal-item-price">₹80</span>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Payment Collection</label>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<button class="p-2 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md flex items-center justify-center gap-1" id="pay-cash-btn" onclick="setPaymentType('cash')" type="button">
+<span class="material-symbols-outlined text-headline-sm">payments</span> Cash Received Now
+            </button>
+<button class="p-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1" id="pay-upi-btn" onclick="setPaymentType('upi')" type="button">
+<span class="material-symbols-outlined text-headline-sm">qr_code_scanner</span> UPI Paid
+            </button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="h-8 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded-lg font-label-md text-label-md" onclick="closeWalkInModal()">Cancel</button>
+<button class="h-8 px-space-lg bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md font-bold shadow-sm" onclick="submitWalkInTicket()">Dispatch to Kitchen</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let isKitchenBusy = false;
+  let audioChimeActive = true;
+  let selectedModalItem = '2x Masala Chai (Kulhad)';
+  let selectedModalPrice = '₹80';
+  let selectedPayType = 'cash';
+  let nextTicketNumber = 1847;
+
+  function showToast(message) {
+    const toast = document.getElementById('audio-toast');
+    const toastText = document.getElementById('toast-text');
+    toastText.innerText = message;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 2800);
+  }
+
+  function toggleKitchenBusy() {
+    isKitchenBusy = !isKitchenBusy;
+    const indicator = document.getElementById('busy-indicator');
+    const text = document.getElementById('busy-text');
+    if (isKitchenBusy) {
+      indicator.className = 'h-2 w-2 rounded-full bg-error animate-pulse';
+      text.innerText = 'Kitchen Busy (Pacing)';
+      showToast('Kitchen state changed to BUSY. Inflow throttled.');
+    } else {
+      indicator.className = 'h-2 w-2 rounded-full bg-tertiary';
+      text.innerText = 'Accepting Orders';
+      showToast('Kitchen state restored to NORMAL.');
+    }
+  }
+
+  function toggleAudioChime() {
+    audioChimeActive = !audioChimeActive;
+    const chimeBtn = document.getElementById('chime-btn');
+    if (audioChimeActive) {
+      chimeBtn.classList.remove('opacity-50');
+      showToast('Kitchen Audio Chimes: ENABLED');
+    } else {
+      chimeBtn.classList.add('opacity-50');
+      showToast('Kitchen Audio Chimes: MUTED');
+    }
+  }
+
+  function ringToken(tokenName) {
+    showToast('Ding-Dong! ' + tokenName + ' called on counter token display & audio speaker.');
+  }
+
+  function approveCashTicket(ticketId, source, amount, items) {
+    const card = document.getElementById('card-' + ticketId);
+    if (card) {
+      card.remove();
+    }
+
+    // Update pending cash badge and stat
+    const statCash = document.getElementById('stat-cash');
+    const currentCashCount = parseInt(statCash.innerText) - 1;
+    statCash.innerText = currentCashCount;
+    document.getElementById('badge-col-cash').innerText = currentCashCount + ' Tickets';
+
+    // Increment brewing stat
+    const statBrewing = document.getElementById('stat-brewing');
+    const currentBrewingCount = parseInt(statBrewing.innerText) + 1;
+    statBrewing.innerText = currentBrewingCount;
+    document.getElementById('badge-col-brewing').innerText = currentBrewingCount + ' In-Pot';
+
+    // Create new brewing card
+    const brewingContainer = document.getElementById('column-brewing-items');
+    const newCard = document.createElement('div');
+    newCard.id = 'card-' + ticketId;
+    newCard.className = 'p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md';
+    newCard.innerHTML = `
+      <div class="flex items-start justify-between">
+        <div>
+          <div class="flex items-center gap-1.5">
+            <span class="font-headline-sm text-headline-sm text-primary font-bold">#` + ticketId + `</span>
+            <span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">` + source + `</span>
+            <span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Cash Collected ` + amount + `</span>
+          </div>
+          <span class="font-body-sm text-body-sm text-on-surface-variant">Verified by Till #1 · Just Now</span>
+        </div>
+        <div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-tabular-numeric text-tabular-numeric">
+          <span class="material-symbols-outlined text-label-md text-primary">timer</span>
+          <span class="font-bold">00:15</span>
+        </div>
+      </div>
+      <div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 text-on-surface font-body-md text-body-md font-semibold">
+        ` + items + `
+      </div>
+      <div class="p-2 rounded bg-surface-container flex items-start gap-1.5 text-on-surface-variant">
+        <span class="material-symbols-outlined text-label-md text-primary mt-0.5">inventory_2</span>
+        <span class="font-body-sm text-body-sm">Live BOM: Tea leaves, buffalo milk, spiced decoction locked</span>
+      </div>
+      <button onclick="markReady('` + ticketId + `', 'Token #33', '` + source + `', '` + items + `')" class="w-full h-8 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all">
+        <span class="material-symbols-outlined text-headline-sm">check_circle</span>
+        <span>Mark Ready for Handover</span>
+      </button>
+    `;
+    brewingContainer.prepend(newCard);
+    showToast('Payment ' + amount + ' received! #' + ticketId + ' moved to Kitchen Brewing pot.');
+  }
+
+  function cancelTicket(ticketId) {
+    const card = document.getElementById('card-' + ticketId);
+    if (card) {
+      card.remove();
+    }
+    const statCash = document.getElementById('stat-cash');
+    const currentCashCount = parseInt(statCash.innerText) - 1;
+    statCash.innerText = currentCashCount;
+    document.getElementById('badge-col-cash').innerText = currentCashCount + ' Tickets';
+    showToast('Ticket #' + ticketId + ' marked as cancelled.');
+  }
+
+  function markReady(ticketId, tokenLabel, source, items) {
+    const card = document.getElementById('card-' + ticketId);
+    if (card) {
+      card.remove();
+    }
+
+    // Decrement brewing stat
+    const statBrewing = document.getElementById('stat-brewing');
+    const currentBrewingCount = Math.max(0, parseInt(statBrewing.innerText) - 1);
+    statBrewing.innerText = currentBrewingCount;
+    document.getElementById('badge-col-brewing').innerText = currentBrewingCount + ' In-Pot';
+
+    // Increment ready stat
+    const statReady = document.getElementById('stat-ready');
+    const currentReadyCount = parseInt(statReady.innerText) + 1;
+    statReady.innerText = currentReadyCount;
+    document.getElementById('badge-col-ready').innerText = currentReadyCount + ' Ready';
+
+    // Append to ready column
+    const readyContainer = document.getElementById('column-ready-items');
+    const newReadyCard = document.createElement('div');
+    newReadyCard.id = 'card-' + ticketId;
+    newReadyCard.className = 'p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md';
+    newReadyCard.innerHTML = `
+      <div class="flex items-start justify-between">
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 rounded bg-tertiary text-on-tertiary font-headline-sm text-headline-sm font-bold">` + tokenLabel + `</span>
+            <span class="font-headline-sm text-headline-sm text-primary font-semibold">#` + ticketId + `</span>
+          </div>
+          <span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">` + source + `</span>
+        </div>
+        <span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">Just Ready</span>
+      </div>
+      <div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 text-on-surface font-body-md text-body-md font-semibold">
+        ` + items + `
+      </div>
+      <div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+        <span class="flex items-center gap-1 text-tertiary font-semibold">
+          <span class="material-symbols-outlined text-headline-sm">notifications_active</span> Calling Token
+        </span>
+        <button onclick="ringToken('` + tokenLabel + `')" class="h-6 px-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm">Re-Chime</button>
+      </div>
+      <button onclick="completeHandover('` + ticketId + `', '` + ticketId + `', '₹110 (Fulfilled)', 'Ingredients deducted')" class="w-full h-8 bg-tertiary-container hover:bg-tertiary text-on-tertiary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all">
+        <span class="material-symbols-outlined text-headline-sm">done_all</span>
+        <span>Handover & Finalize BOM</span>
+      </button>
+    `;
+    readyContainer.prepend(newReadyCard);
+    ringToken(tokenLabel);
+  }
+
+  function completeHandover(elementId, ticketNum, amountText, bomText) {
+    const card = document.getElementById('card-' + elementId);
+    if (card) {
+      card.remove();
+    }
+
+    // Decrement ready stat
+    const statReady = document.getElementById('stat-ready');
+    const currentReadyCount = Math.max(0, parseInt(statReady.innerText) - 1);
+    statReady.innerText = currentReadyCount;
+    document.getElementById('badge-col-ready').innerText = currentReadyCount + ' Ready';
+
+    // Add to completed log
+    const completedContainer = document.getElementById('column-completed-items');
+    const newLogItem = document.createElement('div');
+    newLogItem.className = 'p-space-sm rounded-lg bg-surface-container-lowest shadow-sm flex flex-col gap-1.5';
+    newLogItem.innerHTML = `
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-1.5">
+          <span class="font-headline-sm text-headline-sm text-primary font-bold">#` + ticketNum + `</span>
+          <span class="font-body-sm text-body-sm font-semibold text-on-surface">` + amountText + `</span>
+        </div>
+        <span class="font-label-sm text-label-sm text-tertiary flex items-center gap-0.5 font-semibold">
+          <span class="material-symbols-outlined text-label-sm">check</span> Just now
+        </span>
+      </div>
+      <div class="p-1.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+        <span class="material-symbols-outlined text-label-sm text-tertiary">schema</span>
+        <span>BOM Finalized: ` + bomText + `</span>
+      </div>
+    `;
+    completedContainer.prepend(newLogItem);
+    showToast('Ticket #' + ticketNum + ' handed over! Recipe BOM inventory deducted successfully.');
+  }
+
+  function openWalkInModal() {
+    document.getElementById('walkin-modal').classList.remove('hidden');
+  }
+
+  function closeWalkInModal() {
+    document.getElementById('walkin-modal').classList.add('hidden');
+  }
+
+  function selectModalItem(btn, name, price) {
+    selectedModalItem = name;
+    selectedModalPrice = '₹' + price;
+    document.getElementById('modal-item-name').innerText = name;
+    document.getElementById('modal-item-price').innerText = selectedModalPrice;
+  }
+
+  function setPaymentType(type) {
+    selectedPayType = type;
+    const cashBtn = document.getElementById('pay-cash-btn');
+    const upiBtn = document.getElementById('pay-upi-btn');
+    if (type === 'cash') {
+      cashBtn.className = 'p-2 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md flex items-center justify-center gap-1';
+      upiBtn.className = 'p-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1';
+    } else {
+      upiBtn.className = 'p-2 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md flex items-center justify-center gap-1';
+      cashBtn.className = 'p-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1';
+    }
+  }
+
+  function submitWalkInTicket() {
+    const customer = document.getElementById('modal-customer').value || 'Walk-in Guest';
+    const ticketId = nextTicketNumber++;
+    closeWalkInModal();
+
+    if (selectedPayType === 'cash') {
+      // Append to cash column
+      const cashContainer = document.getElementById('column-cash-items');
+      const newCard = document.createElement('div');
+      newCard.id = 'card-' + ticketId;
+      newCard.className = 'p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md';
+      newCard.innerHTML = `
+        <div class="flex items-start justify-between">
+          <div class="flex flex-col">
+            <div class="flex items-center gap-1.5">
+              <span class="font-headline-sm text-headline-sm text-primary font-bold">#` + ticketId + `</span>
+              <span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">` + customer + `</span>
+            </div>
+            <span class="font-body-sm text-body-sm text-on-surface-variant">Counter Till Walk-in · Just Now</span>
+          </div>
+          <span class="px-2 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">` + selectedModalPrice + ` CASH</span>
+        </div>
+        <div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+          <div class="flex justify-between items-start text-on-surface">
+            <span class="font-body-md text-body-md font-semibold">` + selectedModalItem + `</span>
+            <span class="font-tabular-numeric text-tabular-numeric font-bold text-on-surface">` + selectedModalPrice + `</span>
+          </div>
+        </div>
+        <div class="flex flex-col gap-1 pt-1">
+          <button onclick="approveCashTicket('` + ticketId + `', '` + customer + `', '` + selectedModalPrice + `', '` + selectedModalItem + `')" class="w-full h-8 bg-secondary-container hover:bg-secondary text-on-secondary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all">
+            <span class="material-symbols-outlined text-headline-sm">point_of_sale</span>
+            <span>Collect ` + selectedModalPrice + ` & Dispatch to Kitchen</span>
+          </button>
+        </div>
+      `;
+      cashContainer.prepend(newCard);
+
+      const statCash = document.getElementById('stat-cash');
+      const currentCashCount = parseInt(statCash.innerText) + 1;
+      statCash.innerText = currentCashCount;
+      document.getElementById('badge-col-cash').innerText = currentCashCount + ' Tickets';
+      showToast('Order #' + ticketId + ' created. Awaiting cash at counter register.');
+    } else {
+      // Goes straight to brewing
+      const brewingContainer = document.getElementById('column-brewing-items');
+      const newCard = document.createElement('div');
+      newCard.id = 'card-' + ticketId;
+      newCard.className = 'p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm transition-all hover:shadow-md';
+      newCard.innerHTML = `
+        <div class="flex items-start justify-between">
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="font-headline-sm text-headline-sm text-primary font-bold">#` + ticketId + `</span>
+              <span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">` + customer + `</span>
+              <span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">UPI Confirmed</span>
+            </div>
+            <span class="font-body-sm text-body-sm text-on-surface-variant">Walk-in Till POS · Just Now</span>
+          </div>
+          <div class="flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container text-on-surface font-tabular-numeric text-tabular-numeric">
+            <span class="material-symbols-outlined text-label-md text-primary">timer</span>
+            <span class="font-bold">00:05</span>
+          </div>
+        </div>
+        <div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1 text-on-surface font-body-md text-body-md font-semibold">
+          ` + selectedModalItem + `
+        </div>
+        <button onclick="markReady('` + ticketId + `', 'Token #` + (ticketId % 50) + `', '` + customer + `', '` + selectedModalItem + `')" class="w-full h-8 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm transition-all">
+          <span class="material-symbols-outlined text-headline-sm">check_circle</span>
+          <span>Mark Ready for Handover</span>
+        </button>
+      `;
+      brewingContainer.prepend(newCard);
+
+      const statBrewing = document.getElementById('stat-brewing');
+      const currentBrewingCount = parseInt(statBrewing.innerText) + 1;
+      statBrewing.innerText = currentBrewingCount;
+      document.getElementById('badge-col-brewing').innerText = currentBrewingCount + ' In-Pot';
+      showToast('Order #' + ticketId + ' paid via UPI! Sent directly to Kitchen Kadai.');
+    }
+  }
+</script></main></div></body></html>

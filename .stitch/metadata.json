@@ -1,0 +1,458 @@
+{
+  "projectId": "4818275559717816074",
+  "title": "Tea Shop Management System",
+  "deviceType": "DESKTOP",
+  "Last Sync Time": "2026-09-22T00:24:45.027Z",
+  "theme": {
+    "colorMode": "LIGHT",
+    "font": "PLUS_JAKARTA_SANS",
+    "roundness": "ROUND_FOUR",
+    "customColor": "#92400e",
+    "headlineFont": "PLUS_JAKARTA_SANS",
+    "bodyFont": "PLUS_JAKARTA_SANS",
+    "labelFont": "PLUS_JAKARTA_SANS",
+    "namedColors": {
+      "error": "#ba1a1a",
+      "on_tertiary_fixed_variant": "#005323",
+      "on_error_container": "#93000a",
+      "on_primary_fixed": "#341000",
+      "on_tertiary_fixed": "#00210a",
+      "outline_variant": "#dcc1b6",
+      "surface_variant": "#e9e1dd",
+      "surface_container_high": "#eee7e3",
+      "surface_bright": "#fff8f5",
+      "primary_fixed_dim": "#ffb693",
+      "tertiary": "#004c20",
+      "on_tertiary_container": "#82e595",
+      "on_surface_variant": "#55433a",
+      "tertiary_fixed_dim": "#79db8d",
+      "primary_fixed": "#ffdbcb",
+      "tertiary_container": "#00672d",
+      "surface_container": "#f4ece8",
+      "on_tertiary": "#ffffff",
+      "primary_container": "#92400e",
+      "surface_tint": "#9a4614",
+      "inverse_on_surface": "#f7efeb",
+      "on_secondary_fixed_variant": "#832600",
+      "surface": "#fff8f5",
+      "secondary": "#ac3400",
+      "secondary_fixed_dim": "#ffb59d",
+      "surface_container_lowest": "#ffffff",
+      "secondary_fixed": "#ffdbd0",
+      "on_error": "#ffffff",
+      "surface_container_highest": "#e9e1dd",
+      "surface_container_low": "#faf2ee",
+      "background": "#fff8f5",
+      "on_surface": "#1e1b19",
+      "inverse_surface": "#33302d",
+      "on_primary": "#ffffff",
+      "surface_dim": "#e0d8d5",
+      "on_secondary_container": "#5d1900",
+      "on_background": "#1e1b19",
+      "on_secondary_fixed": "#390c00",
+      "on_primary_container": "#ffc2a5",
+      "secondary_container": "#fd6b36",
+      "outline": "#887269",
+      "error_container": "#ffdad6",
+      "on_primary_fixed_variant": "#7a3000",
+      "tertiary_fixed": "#95f8a7",
+      "inverse_primary": "#ffb693",
+      "primary": "#712c00",
+      "on_secondary": "#ffffff"
+    },
+    "designMd": "---\nname: Artisanal Chai Operations\ncolors:\n  surface: '#fff8f5'\n  surface-dim: '#e0d8d5'\n  surface-bright: '#fff8f5'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#faf2ee'\n  surface-container: '#f4ece8'\n  surface-container-high: '#eee7e3'\n  surface-container-highest: '#e9e1dd'\n  on-surface: '#1e1b19'\n  on-surface-variant: '#55433a'\n  inverse-surface: '#33302d'\n  inverse-on-surface: '#f7efeb'\n  outline: '#887269'\n  outline-variant: '#dcc1b6'\n  surface-tint: '#9a4614'\n  primary: '#712c00'\n  on-primary: '#ffffff'\n  primary-container: '#92400e'\n  on-primary-container: '#ffc2a5'\n  inverse-primary: '#ffb693'\n  secondary: '#ac3400'\n  on-secondary: '#ffffff'\n  secondary-container: '#fd6b36'\n  on-secondary-container: '#5d1900'\n  tertiary: '#004c20'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#00672d'\n  on-tertiary-container: '#82e595'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#ffdbcb'\n  primary-fixed-dim: '#ffb693'\n  on-primary-fixed: '#341000'\n  on-primary-fixed-variant: '#7a3000'\n  secondary-fixed: '#ffdbd0'\n  secondary-fixed-dim: '#ffb59d'\n  on-secondary-fixed: '#390c00'\n  on-secondary-fixed-variant: '#832600'\n  tertiary-fixed: '#95f8a7'\n  tertiary-fixed-dim: '#79db8d'\n  on-tertiary-fixed: '#00210a'\n  on-tertiary-fixed-variant: '#005323'\n  background: '#fff8f5'\n  on-background: '#1e1b19'\n  surface-variant: '#e9e1dd'\ntypography:\n  display-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 30px\n    fontWeight: '700'\n    lineHeight: 38px\n    letterSpacing: -0.025em\n  headline-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 22px\n    fontWeight: '600'\n    lineHeight: 28px\n    letterSpacing: -0.02em\n  headline-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 18px\n    fontWeight: '600'\n    lineHeight: 24px\n    letterSpacing: -0.015em\n  headline-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 15px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: -0.01em\n  body-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 22px\n  body-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 18px\n  body-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 12px\n    fontWeight: '400'\n    lineHeight: 16px\n  label-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 16px\n    letterSpacing: 0.02em\n  label-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 14px\n    letterSpacing: 0.04em\n  stat-kpi:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 26px\n    fontWeight: '700'\n    lineHeight: 32px\n    letterSpacing: -0.02em\n  tabular-numeric:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 13px\n    fontWeight: '500'\n    lineHeight: 18px\nrounded:\n  sm: 0.125rem\n  DEFAULT: 0.25rem\n  md: 0.375rem\n  lg: 0.5rem\n  xl: 0.75rem\n  full: 9999px\nspacing:\n  gutter: 1rem\n  margin: 1.5rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 0.75rem\n  space-lg: 1.25rem\n  space-xl: 1.75rem\n---\n\n## Brand & Style\n\nThis design system serves multi-unit artisanal tea houses, specialty beverage operators, and master blenders. It balances operational rigor with the sensory heritage of single-estate harvests, spiced decoctions, and clay kulhad service. \n\nThe aesthetic pairs high-density operational utility with an editorial warmth. Instead of cold, sterile enterprise grays, the interface employs layered parchment tones, deep roasted amber accents, and rich espresso typography. The visual language conveys craftsmanship, uncompromised control, freshness, and culinary precision. It evokes the feeling of an artisanal estate ledger engineered into a modern enterprise control plane.\n\nKey visual attributes:\n- **Warm Editorial Density**: Compact, information-rich viewports configured with warm hairline borders and tactile ivory surfaces.\n- **Precision Data Craft**: Monospace-like tabular figure alignment for batch yields, gram-level recipe measurements, and currency balances.\n- **Organic Restraint**: Semantic color cues drawn from natural states—fresh tea leaves (emerald green), roasted spices (cardamom and cinnamon ambers), and baked clay (terracotta).\n\n## Colors\n\nThe palette references steeped tea liquors, clay ceramics, and spice markets while remaining strictly calibrated for enterprise contrast ratios (WCAG AAA for all body and tabular data).\n\n### Functional Palette Structure\n- **Surface Canvas (`#FDFBF7`)**: Base background reminiscent of unbleached parchment and fresh milk froth.\n- **Surface Layered (`#F7F4EE`)**: Primary card and table container fill. Provides clear optical separation without heavy shadows.\n- **Surface Muted / Inset (`#F0EAE1`)**: Recessed inputs, table header rows, tab group rails, and read-only data fields.\n- **Border Crisp (`#E6DEC8`)**: Hairline boundary defining cards, cell dividers, and segmented controls.\n- **Border Subtle (`#EFE8DC`)**: Secondary interior line work for dense data grids.\n\n### Brand & Interactive\n- **Primary Amber (`#92400E`)**: Primary buttons, active navigation, active branch selectors, and primary metrics.\n- **Hover Amber (`#78350F`)**: Darkened state for primary interactions.\n- **Terracotta Accent (`#C2410C`)**: Secondary calls-to-action, active recipe batch tags, and attention callouts.\n\n### Data & Semantic Statuses\n- **Verified / On-Spec Emerald (`#15803D`)**: Matched drawer reconciliations, optimal steep times, and verified bulk leaf stock. Light background tint: `#F0FDF4`, border: `#BBF7D0`.\n- **Pending / Brew Caution Amber (`#B45309`)**: Unreconciled cash floats, variance thresholds under review, and impending restocks. Light background tint: `#FFFBEB`, border: `#FDE68A`.\n- **Critical / Spoilage Crimson (`#B91C1C`)**: Drawer shortfalls, expired spice extracts, and milk temperature alerts. Light background tint: `#FEF2F2`, border: `#FECACA`.\n- **Informational / Steep Slate (`#44403C`)**: Neutral statuses, batch IDs, and audit timestamps. Light background tint: `#F5F5F4`, border: `#E7E5E4`.\n\n## Typography\n\nThe typography leverages **Plus Jakarta Sans** across all hierarchies, pairing its geometric approachability with tabular numeric features for dense computational tables.\n\n### Rules for Application\n- **Tabular Figures**: Every numeric data point—including currency (`$`, `₹`), recipe yields (`g`, `kg`, `L`), batch counts, and stock timestamps—must enforce `font-variant-numeric: tabular-nums`. This prevents visual jitter in tables and KPI stat bars.\n- **Section Headers & Metric Labels**: Micro-headers (e.g., table column descriptors and KPI category labels) use `label-sm` with explicit uppercase casing and a `0.04em` letter spacing for legibility against warm background fields.\n- **Visual Weight Distribution**: Bold weights (`700`) are reserved solely for high-level aggregated totals and critical KPI card values. Standard reading flows rely strictly on `400` (body) and `600` (subheads, labels, interactive triggers).\n\n## Layout & Spacing\n\nThe layout is built for high-density desktop dashboards with screen widths ranging from 1280px to 1920px+, optimizing for immediate visual scanning by regional managers and store leads.\n\n### Grid & Canvas Structure\n- **Persistent App Shell**: Fixed 240px left-hand navigation railing; collapsible to a 64px icon-rail for narrow desktop viewpoints.\n- **Top Command Strip**: 56px sticky header housing the Global Branch Switcher, Shift Status indicator, and live Master Sync status.\n- **Fluid Work Surface**: 12-column fluid grid system pinned with a `1.5rem` outer canvas margin and `1rem` column gutters. \n- **Sub-Grid Partitions**:\n  - **Overview**: 4-column equal span KPI row (`col-span-3`).\n  - **Reconciliation Workflows**: 8-column primary journal ledger split against a 4-column cash drawer breakdown and variance audit trail.\n  - **Recipe Bill of Materials (BOM)**: 5-column ingredient composition builder balanced alongside a 7-column batch cost & stock deduction preview.\n\n### Spacing Rhythms\n- **Micro-density (`0.25rem` – `0.5rem`)**: Used for table row vertical padding, chip badges, and input groupings.\n- **Container Structure (`0.75rem` – `1.25rem`)**: Internal padding for metric summary cards, flyout drawers, and filter bars.\n- **Section Breaks (`1.75rem`)**: Distinct vertical offsets between top-level KPI rails and primary data views.\n\n## Elevation & Depth\n\nThis system avoids floating, heavily blurred drop shadows. Depth is achieved via **tonal layering and crisp low-contrast borders** derived from organic tea-leaf and ceramic tones.\n\n### Layering Rules\n- **Base Canvas (`Level 0`)**: `#FDFBF7`. Pure uncarded background holding main section divisions.\n- **Container Cards & Panels (`Level 1`)**: `#F7F4EE` framed with a single 1px solid border in `#E6DEC8`. No drop shadow in resting state.\n- **Active / Focused Containers (`Level 2`)**: `#FFFFFF` with a 1px border in `#D4C9AF` and an ambient, warm contact shadow: `0 2px 6px -1px rgba(28, 25, 23, 0.05), 0 1px 3px -1px rgba(28, 25, 23, 0.03)`.\n- **Overlays, Popovers & Context Menus (`Level 3`)**: `#FFFFFF` with a 1px border in `#CBBFA3` and a grounded shadow: `0 10px 24px -4px rgba(28, 25, 23, 0.08), 0 4px 8px -2px rgba(28, 25, 23, 0.04)`.\n- **Recessed Areas (Data Wells & Tables Rows)**: `#F0EAE1` with no shadow, inset against the `#F7F4EE` card.\n\n## Shapes\n\nTo sustain an architectural, high-density desktop tool, roundedness is restrained (`roundedness: 1`). Soft, disciplined radii ensure optimal spatial efficiency inside compact data tables and inputs while softening the interface just enough to evoke hand-thrown ceramics.\n\n### Radius Scale\n- **`rounded-xs` (2px)**: Badges, progress bar tracks, and segmented tab active pills.\n- **`rounded-sm` (4px)**: Buttons, text inputs, dropdown selects, and data table rows.\n- **`rounded-md` (8px)**: Standard metric cards, modal dialogs, and slide-over panels.\n- **`rounded-lg` (12px)**: Reserved exclusively for major screen-level containers and empty state hero illustrations.\n- **`rounded-full`**: User avatars, status pulse pips, and counter badges.\n\n## Components\n\n### Buttons & Interactive Controls\n- **Primary Button**: Solid `#92400E` background, `#FFFFFF` text, 4px radius, 32px compact height (desktop default). Hover state `#78350F`. Active state `#5B2609`. Focus ring: 2px offset with `#C2410C`.\n- **Secondary Button**: Crisp `#F7F4EE` background, 1px border `#E6DEC8`, text `#1C1917`. Hover: `#F0EAE1` with border `#D4C9AF`.\n- **Destructive Action**: `#FEF2F2` background, 1px border `#FECACA`, text `#B91C1C`. Hover: `#FEE2E2`.\n\n### Branch Switcher (Specialized)\n- Located prominently in the persistent top bar. Combines a location pin icon, current branch name (e.g., \"Koramangala Roastery & Flagship\"), active shift indicator (green dot), and a chevron dropdown.\n- Flyout menu reveals:\n  - Search bar for instant multi-branch filtering.\n  - Multi-location list grouped by region/city.\n  - Inline operational status indicators (e.g., \"Shift 2 Active\", \"Register EOD Open\").\n\n### KPI Stat Cards\n- Structure: 12px internal padding (`space-md`), `#F7F4EE` surface with 1px `#E6DEC8` border.\n- Layout: \n  - Top row: Metric name in `label-sm` muted text (`#78716C`) paired with a contextual micro-badge (+4.2% vs target).\n  - Middle: Big numeric value in `stat-kpi` with tabular numerals (`#1C1917`).\n  - Bottom: Micro-sparkline or operational subtext (\"842 cups brewed · 98.4% yield efficiency\").\n\n### Interactive Data Tables (BOM & Reconciliation)\n- **Header Row**: `#F0EAE1` background, 32px height, 1px bottom border `#E6DEC8`. Typography: `label-sm` in `#57534E`, all uppercase.\n- **Body Rows**: `#F7F4EE` background with hover highlight to `#FDFBF7`. 36px row height for optimal information packing.\n- **Data Alignment**: Text aligns left; dates align center; all inventory counts, gram measures, batch costs, and drawer reconciliations align strictly right using tabular figures.\n- **Inline Variance Highlighting**:\n  - Exact match (`$0.00` variance): Soft text `#15803D`.\n  - Acceptable tolerance: Text `#B45309`.\n  - Discrepancy: Inline chip with red tint (`#FEF2F2`), text `#B91C1C`.\n\n### Form Fields & Inputs\n- Height: 32px compact desktop standard.\n- Base style: `#FDFBF7` background, 1px `#E6DEC8` border, text `#1C1917`.\n- Focus state: Border transitions to `#92400E` with an ambient 2px outer glow (`rgba(146, 64, 14, 0.15)`).\n- Units affix (e.g., \"grams\", \"ml\", \"INR\", \"USD\"): Inset `#F0EAE1` right-side block with border-left `#E6DEC8`, text in `#78716C`.\n\n### Status Badges & Chips\n- Compact dimensions: Height 20px, horizontal padding 6px, radius 2px.\n- **Verified / Stock Healthy**: `#F0FDF4` fill, `#BBF7D0` border, `#15803D` text.\n- **Low Restock / Float Mismatch**: `#FFFBEB` fill, `#FDE68A` border, `#B45309` text.\n- **Out of Stock / Cash Variance Over Threshold**: `#FEF2F2` fill, `#FECACA` border, `#B91C1C` text.\n- **Batch / Leaf Grade Tag**: `#F5F5F4` fill, `#E7E5E4` border, `#44403C` text.\n\n### Tabs & Navigation Rails\n- Segmented pill track on `#F0EAE1` container with 3px interior padding.\n- Tab triggers: Inactive tabs show `#57534E` with no background. Active tab elevates with `#FFFFFF`, subtle 1px border `#E6DEC8`, text `#1C1917`, and font weight `600`.\n- Tabs cover core workflows: **Branch Overview**, **EOD Cash Reconciliation**, and **Recipe BOM Inventory**.",
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#92400e",
+    "overrideSecondaryColor": "#c2410c",
+    "overrideTertiaryColor": "#15803d",
+    "overrideNeutralColor": "#1c1917",
+    "spacingScale": 2,
+    "typography": {
+      "display-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "30px",
+        "fontWeight": "700",
+        "lineHeight": "38px",
+        "letterSpacing": "-0.025em"
+      },
+      "tabular-numeric": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "lineHeight": "18px"
+      },
+      "headline-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "15px",
+        "fontWeight": "600",
+        "lineHeight": "20px",
+        "letterSpacing": "-0.01em"
+      },
+      "label-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "lineHeight": "16px",
+        "letterSpacing": "0.02em"
+      },
+      "body-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "lineHeight": "18px"
+      },
+      "body-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "16px"
+      },
+      "stat-kpi": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "lineHeight": "32px",
+        "letterSpacing": "-0.02em"
+      },
+      "label-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "11px",
+        "fontWeight": "600",
+        "lineHeight": "14px",
+        "letterSpacing": "0.04em"
+      },
+      "headline-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "22px",
+        "fontWeight": "600",
+        "lineHeight": "28px",
+        "letterSpacing": "-0.02em"
+      },
+      "body-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "lineHeight": "22px"
+      },
+      "headline-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.015em"
+      }
+    },
+    "spacing": {
+      "space-md": "0.75rem",
+      "space-sm": "0.5rem",
+      "margin": "1.5rem",
+      "space-lg": "1.25rem",
+      "space-xs": "0.25rem",
+      "space-xl": "1.75rem",
+      "gutter": "1rem"
+    },
+    "headlineFontFamily": "Plus Jakarta Sans",
+    "bodyFontFamily": "Plus Jakarta Sans",
+    "labelFontFamily": "Plus Jakarta Sans"
+  },
+  "screens": {
+    "01fc1fa13dc14b688ec932117e0a978d": {
+      "name": "projects/4818275559717816074/screens/01fc1fa13dc14b688ec932117e0a978d",
+      "title": "ChaiOps Payment Options Bottom Sheet",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/01fc1fa13dc14b688ec932117e0a978d/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WEJYn2sOzrZJZ8AbQpva1gAhMSNwGVAYzVy5xP27tdeLcj4uWVollryDhYgXUir4DlYX1qXcK1D17VflPWfQfKg29V844UR5rmiYq90Shg2Yw8N_I1w771KKhTwV87TC5XSMek-i4pZeDeYRyfkCjvIIH9wdyp1VvvPrtxnQM74yZAzT-jMu0rDnYcXpNR86FCTD3n5O0lTIoVHIwRIJbP9oHt9aN8JsXDxcyX9rkpL2qmAMT-dB2RdTg"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/01fc1fa13dc14b688ec932117e0a978d/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyYTgwOTJjNWYwMDMwMWYwMjVkMzM1YTEzEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "780",
+      "height": "1768",
+      "deviceType": "MOBILE"
+    },
+    "1d93bc3ad8fc41629c5ab411c1aeed07": {
+      "name": "projects/4818275559717816074/screens/1d93bc3ad8fc41629c5ab411c1aeed07",
+      "title": "ChaiOps Menu & Branch Pricing Management",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/1d93bc3ad8fc41629c5ab411c1aeed07/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WWkeaycgk8ycXVHGvViODk2MhH9xFD85C0u73xKi4Vuk24BVs0dbD_ukFEDz1jtX89KgYYpOClz444n4tQNYm7hMDY7KQpxGa-AD5RA_PyUftFaqCwCvc2HH5U9N91pLTQJcnJWWY6MOAPAeZPTG0lUaQB6la6dL60SLTgtZj-ByCcxiqRGM70jf5LSTp726pG1eOihrMUxMWYqbux_p3UHtnbBDzXtWm_u9FvnESnBjYM6xSHVXDzpg"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/1d93bc3ad8fc41629c5ab411c1aeed07/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyNTJkNDNiMjIwMWI0ZWQ5NjU0MDM2MmRlEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "2348",
+      "deviceType": "DESKTOP"
+    },
+    "28e88d8cc6bc4bc8848bdbca7aaa4ad1": {
+      "name": "projects/4818275559717816074/screens/28e88d8cc6bc4bc8848bdbca7aaa4ad1",
+      "title": "ChaiOps Settings & Webhooks",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/28e88d8cc6bc4bc8848bdbca7aaa4ad1/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UtzYTEgD34PWJ3vA3ZwxW7q1NbuflaivB1U_d2W83qpasJ67wQmnbniN7W3ETkQ2YuJ2BGREgECRR6wN8FkTY0Ma-w9f2Y6HA2v0wuirKioDHI6qidryhUvIh81WLz7g7czWwSWZJ-nPODAJxamdvChUgjlaWPYf53iN1_LmxsphPYYYTbPzycdpJl3llKOPecGMjCKGhQ-nl73hugDu3HaMq2q_bvQJrql58ApB1aM1PtZMN8-N4J1w"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/28e88d8cc6bc4bc8848bdbca7aaa4ad1/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyOTYwNDYwYWIwMmE5OWIwNjFlMjRkOTk3EgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "3246",
+      "deviceType": "DESKTOP"
+    },
+    "332e85562eb646f9b1eaf619ae0e5de3": {
+      "name": "projects/4818275559717816074/screens/332e85562eb646f9b1eaf619ae0e5de3",
+      "title": "ChaiOps EOD Cash Reconciliation",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/332e85562eb646f9b1eaf619ae0e5de3/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1XhuF-G3sT5-HGwdH8NMD_8zfMI3XcTn0nsPox6Z1Q6iO2t98g6wloJ_-OYDi6_vE5jMlrOWvrfCK_NduOuI_Vj_sZ8HSqnI9Pu8YAfvudayMl1i8VxV1hbxLWqi4pQ1VDe4nCRMnc7ediALOvnqPVayRmgpLJJTrcY6zYYwmIkbfMU7L-Z_CFSDZrn8vWwFeLAPprgiSsPzdYgvIBnyX5Zbz6lMzS7xX00wC6HGX0l4vYQzUiI1Uct_cA"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/332e85562eb646f9b1eaf619ae0e5de3/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyNjc3YjgxOWYwMWE2MzJmMWQwMWU1OGFhEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "3200",
+      "deviceType": "DESKTOP"
+    },
+    "38fffae822424b94935ddce1af43a750": {
+      "name": "projects/4818275559717816074/screens/38fffae822424b94935ddce1af43a750",
+      "title": "ChaiOps EOD Cash Reconciliation",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/38fffae822424b94935ddce1af43a750/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1X5Jg4w0Sjhc3l7k4MOEhEgm1rrvUditRLAJsHKWZNoN2oVGesxf8DZRB1MU73LqIEADzycLsxAqjkxlqZxyrhQH69yaqZBlHx27P_NdydVlZ2xjQDV5-Lo3O4Ga8F9b8sR6z1o39qISjPpfEUu1Z6w7rWQR9VgbR6tsrsuFnjNm_6X1SwwJkMOwpcZsaUEaYYknYrATMSUiY-kgfc5wF0swodlS9Rf43aYo3ZvEysuV0z_jfpTs1GA8Q"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/38fffae822424b94935ddce1af43a750/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyNTA0MGZlNDEwMjA3OWNlZWY4MmY1OTAzEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "2188",
+      "deviceType": "DESKTOP"
+    },
+    "3b5fab4ce2be4b67abe32e2841c1bff5": {
+      "name": "projects/4818275559717816074/screens/3b5fab4ce2be4b67abe32e2841c1bff5",
+      "title": "Tea Shop System Architecture Spec",
+      "screenshot": {},
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/3b5fab4ce2be4b67abe32e2841c1bff5/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YjRjMWEzYzA4YTMwMjJkNGMxZjQyMWJmYjliEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/markdown"
+      },
+      "width": "0",
+      "height": "0",
+      "deviceType": "DESKTOP"
+    },
+    "51e55ad120d84cbd891e8b85fbf588c2": {
+      "name": "projects/4818275559717816074/screens/51e55ad120d84cbd891e8b85fbf588c2",
+      "title": "ChaiOps Owner Admin Dashboard",
+      "screenshot": {},
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/51e55ad120d84cbd891e8b85fbf588c2/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyYWI0ZjI0OTUwNTc2MDJiNjhlMDRlY2MyEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "390",
+      "height": "884",
+      "deviceType": "MOBILE"
+    },
+    "53160e5fda1b4bc3a1021dfcba5e1448": {
+      "name": "projects/4818275559717816074/screens/53160e5fda1b4bc3a1021dfcba5e1448",
+      "title": "ChaiOps Recipe BOM & Inventory Depletion",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/53160e5fda1b4bc3a1021dfcba5e1448/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UUA5FGDDM9GYRhuN4auOxMr3Sw6TG4Fi6H-jF4qcj60ejbVltOqPNbdiVD0CGvGTV_jncyBD68B6tXupFsddlUo6haOHgdGFm4bpDamvXU_A1vcI6_pFEbkPoOnXtKZlWN8cx_UUlnHeqC2KQXRNcVfi7mf530i-zwzM7jysiOrxPbLMRqXZfeMzuHfHR8hrv6XhjJcJj6Lul9MupcZ21p3neyeQqTrkvcWcO9ZO-pA6iRTUw6v1zclK0"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/53160e5fda1b4bc3a1021dfcba5e1448/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyNTE4NDU1ZjUwNDczNjQ0MWJjMzM5NzE4EgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "4512",
+      "deviceType": "DESKTOP"
+    },
+    "55a65457395342a3a3f5f56aafc528d8": {
+      "name": "projects/4818275559717816074/screens/55a65457395342a3a3f5f56aafc528d8",
+      "title": "Professional studio headshot of an Indian male business owner and founder in his late 30s wearing a modern linen blazer, warm soft studio lighting, confident warm smile, neutral warm background.",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/55a65457395342a3a3f5f56aafc528d8/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V9AGagrJhWIY0fxwbxL0_nWogDpDmW7Ht3tyNz0OZ7x2s2nbVmX1BgBJeHntHMbRbF57a6U79dORI4nJKktSHOm7XYk-of1aFBuZ2oYf4bJx-R4cCoOiT-Gv72gvKzTXX-lWiezLgZDQP0nyztk3uImNQi70dBRxrcRsQjrS-xsAi1QBFvUZj01wGyBg3K_bxSC5eQJdm7XLrx9xXr_I5uNWpLa2-mjv3z5WH-MF4CPyLIrr4z2O7ikss"
+      },
+      "htmlCode": {},
+      "width": "1024",
+      "height": "1024"
+    },
+    "590cc1bc113641c693e0e060320708ea": {
+      "name": "projects/4818275559717816074/screens/590cc1bc113641c693e0e060320708ea",
+      "title": "ChaiOps Emblem",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/b09140bb4f4ddd738360bc2cc767517b11d1a338337fb2275e83528f982dffe9/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1Vl1_aq3IRGW2ZNjfj6aq1K5Lq2hkAXZw_Wey68pc5h14iaN9tDI1CCYhk30EWcfXGRRcfSWJGDjNqB4XgIf0KM3vGMyp8xIecNmB1dyoJSZ4Pqibgi4WYFsF_sCLhoMUwgBPgRF5tXzA969AG9Dd7T7tFO417AziM7-EtvZS63Q-3Y7xysErhe9UDvBoebSMMMbUu_6-CgDgHWhCE510RkHWT94Opcyws8B_WTobTBGAKdQ_-aJ9oV93A"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/590cc1bc113641c693e0e060320708ea/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YjRjMWY5NzUzNmUwNGVhYWFiYjQ3MzdmNjBhEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "image/svg+xml"
+      },
+      "width": "512",
+      "height": "512"
+    },
+    "72bcbeb2f8d7428bb8e9ad4143a8b2f1": {
+      "name": "projects/4818275559717816074/screens/72bcbeb2f8d7428bb8e9ad4143a8b2f1",
+      "title": "Authentic steaming hot Indian Masala Chai served in a traditional handcrafted earthen clay terracotta kulhad cup, close up appetizing food photo, warm steam rising, rustic wooden counter, cardamom pods, cinnamon sticks, natural lighting",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/72bcbeb2f8d7428bb8e9ad4143a8b2f1/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1U95Ol9bUfj0_i8-3cpQqH7ppw1gDEJqsPZuT_u2EjSwsgF8NF8jJkGAteYaCKG7yu1N49hyuPjC-Ag1rVP7z7RDaWg-TUS0VDVJ7NDhX1-GChZC8jOaSPyiaFsraNoIOU_GMOMML6Whr3N0LKy-1C5YLO_H6Xw6mEsZBblt-VQIQBi4BMltreidL0XU_nyGFJ6rTdsXpyc8mKmzOBcGxogVr0XBtMNscJqsqfDOKuQc_2PmrOFnXrTkg"
+      },
+      "htmlCode": {},
+      "width": "1024",
+      "height": "1024"
+    },
+    "7a4f692bf7704fa892ba4b95ba549459": {
+      "name": "projects/4818275559717816074/screens/7a4f692bf7704fa892ba4b95ba549459",
+      "title": "ChaiOps Shift Handover & Float Audit",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/7a4f692bf7704fa892ba4b95ba549459/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1X8l83hmKr8GFY0r4H1iZ7uYEuiIMWu8HoJzAp2QBOPbf4xB_fbeaoCViUnx_WwmOYAkNMT-yRvSS5MIV1TRe_DgUSSUu4mbfp7AL4ZY9E_XMzSSW6D_SUCD3uEVSF49N9bbAsE9myXwGEvs_w404vmfbnHEsTzjoBMn9R7FKIJnvZ4JYEsIQtOClqkaDwhchelLsmMvfma1jvIK_6eS53PRmxSt9AtxXMaJyPGhMsbblqFQztFaI0krSg"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/7a4f692bf7704fa892ba4b95ba549459/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyODNiMjdlZGQwMjA3OWNlZWY4MmY1OTAzEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "2528",
+      "deviceType": "DESKTOP"
+    },
+    "8c8c2184562e4dd98a000a73e546d56f": {
+      "name": "projects/4818275559717816074/screens/8c8c2184562e4dd98a000a73e546d56f",
+      "title": "ChaiOps Live Order Queue",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/8c8c2184562e4dd98a000a73e546d56f/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UoF9yOzACeMg_ipSNj_emSWDmfAYs4j1QjJbYzbay9341yB_lA2sseparunTjTngFBsy8Z6V4KVu4qju2DZGS0piyx7568YMLH1xDnnK_iWYdXr7XIze_1Ky_UYGkNCIKgM69dLSWYtNjIvFxz7lf2s326BX-LbvqUpb93xnS3qL87NYhD4VGMdE48_jsyRtM2fQ2mXbA_L0PDxQmLelYIrjO3JJxOge4OAY40Oopj435diNw9T9CuhME"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/8c8c2184562e4dd98a000a73e546d56f/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyNWVlNmZhYTAwMzZjN2ZiMmNlMGIzMGIwEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "2920",
+      "deviceType": "DESKTOP"
+    },
+    "a3cf046b51b64e6292b0829a788b6bd2": {
+      "name": "projects/4818275559717816074/screens/a3cf046b51b64e6292b0829a788b6bd2",
+      "title": "ChaiOps Recipe & BOM Entry Studio",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/a3cf046b51b64e6292b0829a788b6bd2/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VWGCYLNpCaVni0tRzw5gwnyhYnrPlwaeL3MknIrRrNZ1B8bjDNDyogJfarevMd6OAsfF0FoQ9vLvUfOTDr49D8ah4S0zfg0PCtUIoXYH4TYmdLquUYU587piFc2PxAqkSYTRrEJ-n6rA8Wod1e9ozRam8CeVp3qW3ckZZDUnpFeALly1e8YLQpdE59VMVR-wHl92FZo0GSmeGZ9ulIHO_pph0kK0zmYc95Mk7mjByVYbh-NiRWU0PHFyM"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/a3cf046b51b64e6292b0829a788b6bd2/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyNzU0NDNmYmIwMmQzYzJkYjc0MjRjYjk5EgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "3024",
+      "deviceType": "DESKTOP"
+    },
+    "ab46a51d7a3f476ab2238fe0d4594c62": {
+      "name": "projects/4818275559717816074/screens/ab46a51d7a3f476ab2238fe0d4594c62",
+      "title": "ChaiOps Owner Admin Dashboard",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/ab46a51d7a3f476ab2238fe0d4594c62/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1V3xBDyxWBjMPUfBv_YIPsjwjQHx0hcZcJBpT8MEB6A3BR0UtUmjr6AEeqwiwJ01eKToGuUMkcsnrn0UV9F3sXlwsSVYYdl-T9SA9aR7s4X_XBRjb2uhCHw-gix8EVPk4kBgp7oH4AgxIvJhWt4um3sEYmn8Uo0YG_EUePnNWVHcogxdJA0Y3BYWhgeYsCsB8fIo2ECnITnF80pP1UuJTzegZqwh0VnM8SUN0MTdLVsjCNqbr2T5BXBcuE"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/ab46a51d7a3f476ab2238fe0d4594c62/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YjRjMjM5MTk1Y2MwMWI0ZTUyZWNmMWI5OGVjEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "3122",
+      "deviceType": "DESKTOP"
+    },
+    "ac6577d8e62242c996fcf6169a0192d0": {
+      "name": "projects/4818275559717816074/screens/ac6577d8e62242c996fcf6169a0192d0",
+      "title": "ChaiOps Financial Reports & Revenue Audit",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/ac6577d8e62242c996fcf6169a0192d0/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WUcphdJFic9t2UEdBv4vSNprW-QwevIb93NKZnMFTYIzTd99PVv2aIIt3t0QnMyk1bI0dKVdtjHH8MLxxea2SEq3AWhY8JtNnfLw3LDb035B5jMK2EIYBWlghdBshHT02sDFZPE63Vdz8Jsn7r15YMnE-EZ2WUNiQbzinpYqkTCDZFp1dhuPo3kpze63AMYqBTHGQG7alNGfvxKWWrlt4lZQDxdSxBfxH00200jFBD9QFeOHjT0N2rWok"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/ac6577d8e62242c996fcf6169a0192d0/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyOGQwNmY0NWMwOTEwNzVmMGI5MmMzYzM5EgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "3388",
+      "deviceType": "DESKTOP"
+    },
+    "c7de932186c447ea930882fd0398471d": {
+      "name": "projects/4818275559717816074/screens/c7de932186c447ea930882fd0398471d",
+      "title": "ChaiOps Staff POS & Counter Terminal",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/c7de932186c447ea930882fd0398471d/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1U8EX8_BOJsltPmCwM9nv_h2-Fc4JbXRv374MhSVC-oYIoFyjlCTZGYhoqExH1TfPrq10oVr67KA-WbbNwpip0_8YceAQ8GMIaxgZdycDHAuLDyKIwDF-oW7OH5hdvAy-jrr-5aWfa9uFFICNXVoiwikZxjpbLFqNZu-9Rr8i8t5U1cVTR0tidHerTLABq6OYLzGUItdxDoGYrHbgczpI1xggIC5CpZSe5Y4jjLj2ROyY0624W5-8rAG9M"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/c7de932186c447ea930882fd0398471d/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyODNmZjAyYWIwNzllNzZjMzM3MGQ5ZTNlEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "2560",
+      "height": "2192",
+      "deviceType": "DESKTOP"
+    },
+    "d872025bf6924997a2955c40d63d7ec5": {
+      "name": "projects/4818275559717816074/screens/d872025bf6924997a2955c40d63d7ec5",
+      "title": "ChaiOps Customer Self-Service Ordering",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/d872025bf6924997a2955c40d63d7ec5/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1VLC21av56-jMKNBxcq1bK0UR-Dte4u4B4tAYSPbeHeGqMBC5STunORpqWENAQeekLu5250uP7XgIfQaxy0nAf9vyuKKOHDdnH02jt0jYy_rJZzaAwG02T2o3ogWg41nUru66G3UpFmsEC3uInb7dzQs2tkXiVRKp6eNJjg1msE5yoBu8kcAu4Im0ZvCUBPUgzhwofdqAAhqvNoeQH6ZTafTLMKa4roHPjHTCRm-iQ-7Qhu7sSTZpY7lQg"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/d872025bf6924997a2955c40d63d7ec5/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyM2VkMmQyOTQwODlhZjU1OTVlMTg2NGM0EgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "780",
+      "height": "3650",
+      "deviceType": "MOBILE"
+    },
+    "dbe99fcb71a34cb882f391313d91e4a2": {
+      "name": "projects/4818275559717816074/screens/dbe99fcb71a34cb882f391313d91e4a2",
+      "title": "Freshly toasted Mumbai Irani Bun Maska with a thick slab of melting Amul butter inside a fluffy warm bun, vintage ceramic cafe plate, authentic tea shop aesthetic",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/dbe99fcb71a34cb882f391313d91e4a2/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1WYIHYjC4vUloJ3Lqvk6c2NGb-HZRbucY5yZo4nO-Fyp3fy2NfSZNI-apjmKG1V8iZbtNkILj-pQtPxINSnf3eO_rXHUKI5VuV6LieFcbbse0sRx7fDv55n6Ca_f9HiGpBPlAJ3mfqpv3NvjqD4qiFbMoljsuk8GdQKQBvmgbnLTA_iEZz6y6CM3bj29qlpUr7O5xAWFdxGH-Jv4wPXqWcpxp8RpOv3z3y0xe0tXSfvAwuv4ivzXbYanA"
+      },
+      "htmlCode": {},
+      "width": "1024",
+      "height": "1024"
+    },
+    "fc887ff6fadf47c18f145ea6d44918fb": {
+      "name": "projects/4818275559717816074/screens/fc887ff6fadf47c18f145ea6d44918fb",
+      "title": "ChaiOps Bottom-Sheet Checkout",
+      "screenshot": {
+        "name": "projects/4818275559717816074/screens/fc887ff6fadf47c18f145ea6d44918fb/fileEntries/screenshot",
+        "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1UqPcCBE8M4C7X_va8ieRr1csM57gVrtfHI7W4OTJjH3pYfHZulEdGBiFiAdqrMHAXmm2bOTkeZ0zKar1KqOGr6BhmPOXW7vF4RTXRBXl3xYA45basDGO9YDCTeL9SoHj02iPEdkfH1EC6u8MgKmiC_TyIFzOUvhMiGH_IZiOWmch1pWhtatdlWaKcTdHJsOYahn5nHYvmXLHV6sfH0CgUz79SmZ5xtjih8UoSJgPlky3nz9EffFUkxf5Y"
+      },
+      "htmlCode": {
+        "name": "projects/4818275559717816074/screens/fc887ff6fadf47c18f145ea6d44918fb/fileEntries/html",
+        "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzAwMDY1YmMyYTAxYWU4NzkwNTc2MDIwMWNjMDE3OWRlEgsSBxDTqImyzxsYAZIBIwoKcHJvamVjdF9pZBIVQhM0ODE4Mjc1NTU5NzE3ODE2MDc0&filename=&opi=89354086",
+        "mimeType": "text/html"
+      },
+      "width": "780",
+      "height": "2338",
+      "deviceType": "MOBILE"
+    }
+  }
+}

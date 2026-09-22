@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed-variant":"#832600","on-error":"#ffffff","inverse-surface":"#33302d","on-error-container":"#93000a","secondary-fixed-dim":"#ffb59d","background":"#fff8f5","on-secondary":"#ffffff","surface-container-high":"#eee7e3","surface-bright":"#fff8f5","on-tertiary-fixed-variant":"#005323","primary-fixed-dim":"#ffb693","tertiary-fixed":"#95f8a7","inverse-on-surface":"#f7efeb","surface":"#fff8f5","on-primary":"#ffffff","primary-fixed":"#ffdbcb","on-tertiary":"#ffffff","on-secondary-fixed":"#390c00","on-tertiary-fixed":"#00210a","secondary-fixed":"#ffdbd0","surface-dim":"#e0d8d5","on-secondary-container":"#5d1900","secondary":"#ac3400","on-primary-fixed":"#341000","inverse-primary":"#ffb693","surface-container-highest":"#e9e1dd","on-background":"#1e1b19","primary":"#712c00","on-tertiary-container":"#82e595","on-primary-fixed-variant":"#7a3000","surface-container-lowest":"#ffffff","on-primary-container":"#ffc2a5","error-container":"#ffdad6","secondary-container":"#fd6b36","tertiary-fixed-dim":"#79db8d","surface-container":"#f4ece8","on-surface":"#1e1b19","outline-variant":"#dcc1b6","tertiary-container":"#00672d","on-surface-variant":"#55433a","primary-container":"#92400e","surface-tint":"#9a4614","surface-container-low":"#faf2ee","error":"#ba1a1a","outline":"#887269","surface-variant":"#e9e1dd","tertiary":"#004c20"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","space-xl":"1.75rem","margin":"1.5rem","space-lg":"1.25rem","space-md":"0.75rem"},"fontFamily":{"stat-kpi":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"tabular-numeric":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"stat-kpi":["26px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-lg":["30px",{"lineHeight":"38px","letterSpacing":"-0.025em","fontWeight":"700"}],"headline-sm":["15px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-lg":["22px",{"lineHeight":"28px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"tabular-numeric":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-lg":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"24px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-screen w-64 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-14 px-margin flex items-center gap-space-sm bg-surface-container"><img alt="ChaiOps Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XEbT592nQcX2pzmg8K2BsNoOYgXaj_aFVgcL6W-kfnZzDfaYsHDb6mb30SjuYkR3hXOhkPPlpI7Ry1kjmURCWzPUBexFdNYEGDVA8OptQYcfxnGRMPKiIYM_-9_h8qMvQekuLwW-fM8G3vbvEtX7gdoTRZcWy7Qf284uwvY_Z00RMJ4lg-0PO4fR4e6uYf_BeQaEkGpoawPQxuAmOzNFOGduyHOHi2tDZz2qt34VhPMJh2cpT0n2mb9Wg"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">ChaiOps</span><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant uppercase">HQ</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">Enterprise Super Admin</span></div></div><div class="px-space-md py-space-sm"><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-headline-sm rounded-lg shadow-sm"><div class="pt-space-sm pb-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Operations</div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="multi-branch-overview" href="#">Multi-Branch Overview</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="live-order-queue" href="#">Live Order Queue</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="eod-cash-reconciliation" href="#">EOD Cash Reconciliation</a><div class="pt-space-md pb-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Supply &amp; Menu</div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="recipe-bom-inventory" href="#">Recipe BOM &amp; Inventory</a><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="menu-branch-pricing" href="#">Menu &amp; Branch Pricing</a><div class="pt-space-md pb-space-xs px-space-sm font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Management</div><a class="px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-medium" data-path="staff-shift-pos" href="#">Staff &amp; Shift POS</a></nav></div></div><div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low"><div class="flex items-center gap-space-sm px-space-sm py-space-xs rounded bg-surface-container"><span class="h-2 w-2 rounded-full bg-tertiary-container animate-pulse"></span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">4 Branches Online</span><span class="font-body-sm text-body-sm text-on-surface-variant">Supabase Sync Active</span></div></div><div class="flex items-center gap-space-sm px-space-sm py-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-headline-sm">verified_user</span><span class="font-body-sm text-body-sm">Audit Compliant</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-margin"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high cursor-pointer transition-colors"><span class="material-symbols-outlined text-headline-sm text-primary">storefront</span><span class="font-label-md text-label-md text-on-surface">All Branches (4)</span><span class="material-symbols-outlined text-headline-sm text-on-surface-variant">expand_more</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed"><span class="h-1.5 w-1.5 rounded-full bg-tertiary"></span><span class="font-label-sm text-label-sm">Live WebSockets Active</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface"><span class="material-symbols-outlined text-headline-sm text-on-surface-variant">event</span><span class="font-tabular-numeric text-tabular-numeric">Today, 24 Oct 2024</span></div><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-headline-sm text-on-surface-variant">search</span><input class="w-56 h-8 pl-8 pr-space-md bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest transition-colors" placeholder="Search orders, recipes, SKUs..." type="text"/></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-headline-md">notifications</span><span class="absolute top-1 right-1 flex items-center justify-center h-4 min-w-4 px-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">3</span></button><div class="h-6 w-px bg-surface-variant"></div><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Aditya Roy Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtIdWOy10pr_SrhGsLCXdeIjrv1gs-UvlXR8vOrY49L6H8gDqWZtzp9bW8cw-dImNtZrFdancZnfUE4tAh3WSJVpb8qNLvPW4m7PjPhRdkB7mzH6qHSOriLgeJoGNVhkcw5c7C_gvnqo2KJ0chlvlk90w3ZvyVA088jhP6uiNnNBeF5Oy0FfZK9kqRoHNE5sgDP0Gz-DreNCtsMOsnf4HrqQjI5aRoArAqI7j01-6gJmqCUNTa7YZT"/><div class="flex flex-col text-left"><span class="font-headline-sm text-headline-sm leading-none text-on-surface">Aditya Roy</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Owner &amp; Master Franchisee</span></div></div></div></header><main class="w-full pt-14 px-margin pb-margin bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md pb-space-xs">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded bg-primary text-on-primary font-label-sm uppercase tracking-wider">Formula Ledger v4.2</span>
+<span class="font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+          Automated BOM Depletion Active
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Recipe BOM &amp; Inventory Hub</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time batch yield deduction, gram-precise recipe matrices, and automated central dairy &amp; terracotta guild replenishment.</p>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">history</span>
+<span>Depletion Logs</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-2 rounded bg-primary-container hover:bg-primary text-on-primary font-label-md transition-colors shadow-sm" onclick="document.getElementById('formulaModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>Create New Recipe / Edit Formula</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded bg-surface-container-low flex flex-col justify-between transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-wider">Raw Materials Monitored</span>
+<span class="flex items-center justify-center w-7 h-7 rounded bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-stat-kpi text-stat-kpi text-on-surface">14</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Active SKUs</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<span class="font-body-sm text-body-sm">All 4 branches synced</span>
+<span class="font-label-sm text-tertiary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 100% Calibrated
+        </span>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-low flex flex-col justify-between transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-wider">BOM Auto-Depletions Today</span>
+<span class="flex items-center justify-center w-7 h-7 rounded bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-stat-kpi text-stat-kpi text-on-surface">1,842</span>
+<span class="font-label-sm text-secondary font-semibold">Deductions</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant">
+<span class="font-body-sm text-body-sm truncate">Triggered on PostgreSQL order_complete</span>
+<span class="font-label-sm text-on-surface font-semibold">+12.4% vs yest.</span>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-low flex flex-col justify-between transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-wider">Active Restock Alerts</span>
+<span class="flex items-center justify-center w-7 h-7 rounded bg-error-container text-error">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-stat-kpi text-stat-kpi text-error">2</span>
+<span class="font-label-md text-label-md text-error font-medium">Critical Depletions</span>
+</div>
+<div class="flex flex-col gap-1 pt-space-xs">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Artisanal Clay Kulhads</span>
+<span class="text-error font-semibold font-tabular-numeric">18% (Indiranagar)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Full Cream Cow Milk</span>
+<span class="text-secondary font-semibold font-tabular-numeric">38% (CyberCity)</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-low flex flex-col justify-between transition-transform hover:-translate-y-0.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-on-surface-variant uppercase tracking-wider">Automated Supplier POs</span>
+<span class="flex items-center justify-center w-7 h-7 rounded bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-stat-kpi text-stat-kpi text-on-surface">2 Active</span>
+<span class="font-label-md text-label-md text-on-surface-variant">₹34,800 total</span>
+</div>
+<div class="flex flex-col gap-1 pt-space-xs text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Amul Dairy (120L)</span>
+<span class="text-tertiary font-semibold font-tabular-numeric">Gen 17:00 IST</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface-variant">Khurja Guild (2k Kulhad)</span>
+<span class="text-secondary font-semibold">Pending Approval</span>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="p-space-md rounded bg-surface-container-low flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Master Recipe Catalog</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select formula to inspect ingredient breakdown</p>
+</div>
+<span class="font-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant">4 Core SKUs</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="recipeSelector">
+<div class="recipe-card p-space-md rounded bg-surface-container cursor-pointer transition-all flex flex-col gap-space-xs" id="tab-masala" onclick="selectRecipe('masala')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-primary-fixed flex items-center justify-center text-primary font-bold text-headline-sm">MC</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Masala Chai (Kulhad)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">150ml Heritage Clay Serving</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">79.0% Margin</span>
+</div>
+<div class="grid grid-cols-3 gap-2 mt-2 pt-2 bg-surface-container-low p-2 rounded text-center">
+<div>
+<div class="font-label-sm text-on-surface-variant">Cost / Cup</div>
+<div class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold">₹8.40</div>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Retail MRP</div>
+<div class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold">₹40.00</div>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Daily Brews</div>
+<div class="font-tabular-numeric text-tabular-numeric text-primary font-bold">1,120</div>
+</div>
+</div>
+</div>
+<div class="recipe-card p-space-md rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all flex flex-col gap-space-xs" id="tab-saffron" onclick="selectRecipe('saffron')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-secondary-fixed flex items-center justify-center text-secondary font-bold text-headline-sm">SR</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Saffron Royal Elaichi Chai</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">150ml Infused Grade A Saffron</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">76.3% Margin</span>
+</div>
+<div class="grid grid-cols-3 gap-2 mt-2 pt-2 bg-surface-container p-2 rounded text-center">
+<div>
+<div class="font-label-sm text-on-surface-variant">Cost / Cup</div>
+<div class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold">₹14.20</div>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Retail MRP</div>
+<div class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold">₹60.00</div>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Daily Brews</div>
+<div class="font-tabular-numeric text-tabular-numeric text-primary font-bold">428</div>
+</div>
+</div>
+</div>
+<div class="recipe-card p-space-md rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all flex flex-col gap-space-xs" id="tab-bunmaska" onclick="selectRecipe('bunmaska')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary-container font-bold text-headline-sm">BM</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Bun Maska</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Toasted Pav Bun with Salted Butter</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">63.0% Margin</span>
+</div>
+<div class="grid grid-cols-3 gap-2 mt-2 pt-2 bg-surface-container p-2 rounded text-center">
+<div>
+<div class="font-label-sm text-on-surface-variant">Cost / Unit</div>
+<div class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold">₹18.50</div>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Retail MRP</div>
+<div class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold">₹50.00</div>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Daily Units</div>
+<div class="font-tabular-numeric text-tabular-numeric text-primary font-bold">294</div>
+</div>
+</div>
+</div>
+<div class="recipe-card p-space-md rounded bg-surface-container-low hover:bg-surface-container cursor-pointer transition-all flex flex-col gap-space-xs" id="tab-osmania" onclick="selectRecipe('osmania')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded bg-surface-container-highest flex items-center justify-center text-primary-container font-bold text-headline-sm">OB</span>
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Osmania Biscuits (2 pcs)</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Pre-portioned Hyderabadi Pair</div>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">68.0% Margin</span>
+</div>
+<div class="grid grid-cols-3 gap-2 mt-2 pt-2 bg-surface-container p-2 rounded text-center">
+<div>
+<div class="font-label-sm text-on-surface-variant">Cost / Pack</div>
+<div class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold">₹8.00</div>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Retail MRP</div>
+<div class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold">₹25.00</div>
+</div>
+<div>
+<div class="font-label-sm text-on-surface-variant">Daily Units</div>
+<div class="font-tabular-numeric text-tabular-numeric text-primary font-bold">365</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<div class="p-space-md rounded bg-surface-container-low flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded bg-primary-container text-on-primary">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-md text-headline-md text-on-surface" id="currentRecipeTitle">Masala Chai (Kulhad)</h3>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-on-surface-variant">Active v2.4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Single cup formulation &amp; automated warehouse deduction specs</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">print</span> Batch Sheet
+            </button>
+<button class="px-space-sm py-1 rounded bg-primary text-on-primary font-label-sm flex items-center gap-1" onclick="document.getElementById('formulaModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[16px]">tune</span> Adjust Formulation
+            </button>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm p-space-sm rounded bg-surface-container">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Target Cost / Cup</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold" id="statTargetCost">₹8.40</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Selling Price (MRP)</span>
+<span class="font-tabular-numeric text-tabular-numeric text-on-surface font-bold" id="statSellingPrice">₹40.00</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Gross Profit / Cup</span>
+<span class="font-tabular-numeric text-tabular-numeric text-tertiary font-bold" id="statGrossProfit">₹31.60</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Gross Margin</span>
+<span class="font-tabular-numeric text-tabular-numeric text-tertiary font-bold" id="statMargin">79.0%</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm uppercase">
+<th class="py-2.5 px-3 rounded-l">Component / Ingredient</th>
+<th class="py-2.5 px-3">Grade / Vendor Specification</th>
+<th class="py-2.5 px-3 text-right">Dosage / Cup</th>
+<th class="py-2.5 px-3 text-right">Unit Cost</th>
+<th class="py-2.5 px-3 text-right">Deduction Cost</th>
+<th class="py-2.5 px-3 text-right rounded-r">Wastage %</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface" id="recipeBOMTableBody">
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Assam CTC Broken Orange Pekoe
+                </td>
+<td class="py-2.5 px-3 text-on-surface-variant font-body-sm">Estate Direct (Bukhial BP1)</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">10.00 g</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">₹260.00 / kg</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">₹2.60</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">2.5%</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Full Cream Cow Milk (6% Fat)
+                </td>
+<td class="py-2.5 px-3 text-on-surface-variant font-body-sm">Amul Gold Fresh Cold-Chain</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">50.00 ml</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">₹64.00 / L</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">₹3.20</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">4.0%</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+                  Refined Cane Sugar
+                </td>
+<td class="py-2.5 px-3 text-on-surface-variant font-body-sm">Fine Granulated Sulphur-Free</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">10.00 g</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">₹44.00 / kg</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">₹0.44</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">1.0%</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                  Fresh Ginger &amp; Cardamom Crush
+                </td>
+<td class="py-2.5 px-3 text-on-surface-variant font-body-sm">House Fresh Decoction Mix</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">2.00 g</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">₹180.00 / kg</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">₹0.36</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">5.0%</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-medium flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+                  Artisanal Clay Kulhad (150ml)
+                </td>
+<td class="py-2.5 px-3 text-on-surface-variant font-body-sm">Khurja High-Fired Unfinished</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">1.00 pc</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">₹1.80 / pc</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">₹1.80</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">3.0%</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="bg-surface-container font-headline-sm text-headline-sm text-on-surface">
+<td class="py-2.5 px-3 text-right font-semibold" colspan="4">Total Cost of Goods Sold (COGS):</td>
+<td class="py-2.5 px-3 text-right font-bold text-primary font-tabular-numeric" id="footerTotalCost">₹8.40</td>
+<td class="py-2.5 px-3 text-right font-body-sm text-on-surface-variant">Avg: 3.1%</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="p-space-sm rounded bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface">Auto-depletion hook active on POS event <code class="px-1 py-0.5 rounded bg-surface-container-high font-mono text-[11px]">trg_orders_recipe_cogs_deduct</code></span>
+</div>
+<span class="font-label-sm text-on-surface-variant font-tabular-numeric">Updated today 14:22 IST</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded bg-surface-container-low flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm pb-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Live Multi-Branch Stock &amp; Warehouse Ledger</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time inventory levels across Central Hub and retail parlours with direct PO procurement triggers</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 bg-surface-container rounded p-1">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface font-label-sm shadow-sm">All SKUs (14)</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm">Critical Only (2)</button>
+<button class="px-space-sm py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm">Perishables (4)</button>
+</div>
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm">
+<span class="material-symbols-outlined text-[16px]">file_download</span> Export CSV
+        </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm uppercase">
+<th class="py-2.5 px-3 rounded-l">Ingredient Name</th>
+<th class="py-2.5 px-3">Unit</th>
+<th class="py-2.5 px-3 text-right">Central Hub</th>
+<th class="py-2.5 px-3 text-right">KR Mangalam</th>
+<th class="py-2.5 px-3 text-right">CyberCity</th>
+<th class="py-2.5 px-3 text-right">Indiranagar</th>
+<th class="py-2.5 px-3 text-right">Koramangala</th>
+<th class="py-2.5 px-3 text-right">Threshold</th>
+<th class="py-2.5 px-3 text-right">Depletion Rate</th>
+<th class="py-2.5 px-3 text-center">Status</th>
+<th class="py-2.5 px-3 text-center rounded-r">Action</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md text-on-surface">
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-semibold">
+              Assam CTC Broken Tea (BP1)
+              <div class="font-body-sm text-on-surface-variant">Batch: #AS-2024-B9</div>
+</td>
+<td class="py-2.5 px-3 font-tabular-numeric text-on-surface-variant">kg</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">1,450.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">42.5</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">58.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">36.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">64.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">25.0 kg</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">1.8 kg/hr</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">Optimal</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm">Transfer</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-semibold">
+              Artisanal Clay Kulhads (150ml)
+              <div class="font-body-sm text-on-surface-variant">Khurja Terra Guild</div>
+</td>
+<td class="py-2.5 px-3 font-tabular-numeric text-on-surface-variant">pcs</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">4,200</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">620</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">850</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-error font-bold">140</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">710</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">400 pcs</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">85 pcs/hr</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-error-container text-error font-label-sm">Critical (18%)</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button class="px-2 py-1 rounded bg-primary text-on-primary font-label-sm" onclick="triggerPO('Khurja Pottery Guild', '2000 Kulhads')">Approve PO</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-semibold">
+              Full Cream Cow Milk (Amul Gold)
+              <div class="font-body-sm text-on-surface-variant">Cold Chain · 4°C</div>
+</td>
+<td class="py-2.5 px-3 font-tabular-numeric text-on-surface-variant">L</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">180.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">32.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-secondary font-bold">18.5</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">28.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">34.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">20.0 L</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">6.2 L/hr</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm">Low (38%)</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button class="px-2 py-1 rounded bg-primary-container text-on-primary font-label-sm" onclick="triggerPO('Amul Dairy', '120 Liters')">Instant PO</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-semibold">
+              Kashmiri Mogra Saffron Threads
+              <div class="font-body-sm text-on-surface-variant">GI Certified · Pampore</div>
+</td>
+<td class="py-2.5 px-3 font-tabular-numeric text-on-surface-variant">g</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">450.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">18.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">24.5</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">15.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">22.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">10.0 g</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">0.8 g/hr</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">Optimal</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm">Transfer</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-semibold">
+              Green Cardamom (Idukki 8mm)
+              <div class="font-body-sm text-on-surface-variant">Estate Whole Pods</div>
+</td>
+<td class="py-2.5 px-3 font-tabular-numeric text-on-surface-variant">kg</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">65.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">4.2</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">5.8</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">3.9</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">6.1</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">2.5 kg</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">0.2 kg/hr</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">Optimal</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm">Transfer</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-semibold">
+              Fresh Sweet Pav Buns
+              <div class="font-body-sm text-on-surface-variant">Daily Bakery Delivery</div>
+</td>
+<td class="py-2.5 px-3 font-tabular-numeric text-on-surface-variant">pcs</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">120</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">65</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">90</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">50</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">85</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">30 pcs</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">18 pcs/hr</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">Optimal</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm">Restock</button>
+</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-2.5 px-3 font-semibold">
+              Amul Salted Table Butter
+              <div class="font-body-sm text-on-surface-variant">500g Commercial Blocks</div>
+</td>
+<td class="py-2.5 px-3 font-tabular-numeric text-on-surface-variant">kg</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">85.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">8.5</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">12.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">6.5</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">10.0</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">5.0 kg</td>
+<td class="py-2.5 px-3 text-right font-tabular-numeric">0.5 kg/hr</td>
+<td class="py-2.5 px-3 text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm">Optimal</span>
+</td>
+<td class="py-2.5 px-3 text-center">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm">Transfer</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-body-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">autorenew</span>
+<span>Cross-branch replenishment route active · Next consolidated dispatch 19:30 IST</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm">Live sync with Regional ERP</span>
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+</div>
+</div>
+</div>
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm" id="formulaModal">
+<div class="w-full max-w-2xl rounded bg-surface-container-lowest p-space-lg flex flex-col gap-space-md shadow-xl">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded bg-primary-container text-on-primary">
+<span class="material-symbols-outlined text-[20px]">edit_note</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Formula &amp; Bill of Materials Editor</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Create recipe versioning or configure auto-depletion parameters</p>
+</div>
+</div>
+<button class="p-1 rounded text-on-surface-variant hover:bg-surface-container" onclick="document.getElementById('formulaModal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface-variant uppercase">Recipe Display Name</label>
+<input class="h-9 px-3 rounded bg-surface-container text-on-surface font-body-md focus:bg-surface-container-lowest focus:outline-none" type="text" value="Masala Chai (Kulhad)"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-on-surface-variant uppercase">SKU Category</label>
+<select class="h-9 px-3 rounded bg-surface-container text-on-surface font-body-md focus:outline-none">
+<option>Hot Beverages (Kulhad Service)</option>
+<option>Specialty Royal Infusions</option>
+<option>Fresh Bakery &amp; Quick Bites</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-on-surface-variant uppercase">Ingredient Allocations (Single Cup / Serve)</span>
+<button class="font-label-sm text-primary hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">add</span> Add Raw Material
+          </button>
+</div>
+<div class="space-y-2 max-h-56 overflow-y-auto pr-1">
+<div class="flex items-center gap-space-sm p-2 rounded bg-surface-container">
+<span class="font-body-md text-on-surface flex-1">Assam CTC Tea</span>
+<input class="w-20 h-8 px-2 rounded bg-surface-container-lowest text-right font-tabular-numeric text-on-surface" type="text" value="10.0"/>
+<span class="font-body-sm text-on-surface-variant w-8">grams</span>
+<button class="text-error hover:opacity-80"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+<div class="flex items-center gap-space-sm p-2 rounded bg-surface-container">
+<span class="font-body-md text-on-surface flex-1">Full Cream Cow Milk</span>
+<input class="w-20 h-8 px-2 rounded bg-surface-container-lowest text-right font-tabular-numeric text-on-surface" type="text" value="50.0"/>
+<span class="font-body-sm text-on-surface-variant w-8">ml</span>
+<button class="text-error hover:opacity-80"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+<div class="flex items-center gap-space-sm p-2 rounded bg-surface-container">
+<span class="font-body-md text-on-surface flex-1">Fresh Ginger &amp; Elaichi Crush</span>
+<input class="w-20 h-8 px-2 rounded bg-surface-container-lowest text-right font-tabular-numeric text-on-surface" type="text" value="2.0"/>
+<span class="font-body-sm text-on-surface-variant w-8">grams</span>
+<button class="text-error hover:opacity-80"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+<div class="flex items-center gap-space-sm p-2 rounded bg-surface-container">
+<span class="font-body-md text-on-surface flex-1">Artisanal Clay Kulhad (150ml)</span>
+<input class="w-20 h-8 px-2 rounded bg-surface-container-lowest text-right font-tabular-numeric text-on-surface" type="text" value="1.0"/>
+<span class="font-body-sm text-on-surface-variant w-8">pcs</span>
+<button class="text-error hover:opacity-80"><span class="material-symbols-outlined text-[18px]">delete</span></button>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-on-surface-variant">Calculated Production Cost</span>
+<span class="font-headline-sm text-headline-sm text-primary font-tabular-numeric">₹8.40 / Cup</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md" onclick="document.getElementById('formulaModal').classList.add('hidden')">Cancel</button>
+<button class="px-space-md py-2 rounded bg-primary-container text-on-primary font-label-md hover:bg-primary transition-colors" onclick="saveFormulaMock()">Publish Formula v2.5</button>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden fixed bottom-6 right-6 z-50 p-space-md rounded bg-primary text-on-primary flex items-center gap-space-sm shadow-xl transition-all" id="toastSuccess">
+<span class="material-symbols-outlined text-tertiary-fixed">check_circle</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm leading-none" id="toastTitle">PO Dispatched</span>
+<span class="font-body-sm text-body-sm text-primary-fixed" id="toastMessage">Trigger recorded in warehouse queue</span>
+</div>
+</div>
+</div>
+<script>
+  const recipeData = {
+    masala: {
+      title: "Masala Chai (Kulhad)",
+      targetCost: "₹8.40",
+      sellingPrice: "₹40.00",
+      grossProfit: "₹31.60",
+      margin: "79.0%",
+      items: [
+        { name: "Assam CTC Broken Orange Pekoe", spec: "Estate Direct (Bukhial BP1)", dosage: "10.00 g", unitCost: "₹260.00 / kg", cost: "₹2.60", waste: "2.5%", color: "bg-primary" },
+        { name: "Full Cream Cow Milk (6% Fat)", spec: "Amul Gold Fresh Cold-Chain", dosage: "50.00 ml", unitCost: "₹64.00 / L", cost: "₹3.20", waste: "4.0%", color: "bg-secondary" },
+        { name: "Refined Cane Sugar", spec: "Fine Granulated Sulphur-Free", dosage: "10.00 g", unitCost: "₹44.00 / kg", cost: "₹0.44", waste: "1.0%", color: "bg-outline" },
+        { name: "Fresh Ginger & Cardamom Crush", spec: "House Fresh Decoction Mix", dosage: "2.00 g", unitCost: "₹180.00 / kg", cost: "₹0.36", waste: "5.0%", color: "bg-tertiary" },
+        { name: "Artisanal Clay Kulhad (150ml)", spec: "Khurja High-Fired Unfinished", dosage: "1.00 pc", unitCost: "₹1.80 / pc", cost: "₹1.80", waste: "3.0%", color: "bg-secondary-container" }
+      ]
+    },
+    saffron: {
+      title: "Saffron Royal Elaichi Chai",
+      targetCost: "₹14.20",
+      sellingPrice: "₹60.00",
+      grossProfit: "₹45.80",
+      margin: "76.3%",
+      items: [
+        { name: "Assam CTC Broken Orange Pekoe", spec: "Estate Direct (Bukhial BP1)", dosage: "8.00 g", unitCost: "₹260.00 / kg", cost: "₹2.08", waste: "2.0%", color: "bg-primary" },
+        { name: "Full Cream Cow Milk (6% Fat)", spec: "Amul Gold Fresh Cold-Chain", dosage: "45.00 ml", unitCost: "₹64.00 / L", cost: "₹2.88", waste: "3.5%", color: "bg-secondary" },
+        { name: "Kashmiri Mogra Saffron Threads", spec: "Grade A Pampore GI Certified", dosage: "0.05 g", unitCost: "₹140.00 / g", cost: "₹7.00", waste: "0.5%", color: "bg-secondary-fixed" },
+        { name: "Idukki Green Cardamom Powder", spec: "Cold-Ground Whole 8mm Pods", dosage: "3.00 g", unitCost: "₹145.00 / 100g", cost: "₹0.44", waste: "2.0%", color: "bg-tertiary" },
+        { name: "Artisanal Clay Kulhad (150ml)", spec: "Khurja High-Fired Unfinished", dosage: "1.00 pc", unitCost: "₹1.80 / pc", cost: "₹1.80", waste: "3.0%", color: "bg-secondary-container" }
+      ]
+    },
+    bunmaska: {
+      title: "Bun Maska",
+      targetCost: "₹18.50",
+      sellingPrice: "₹50.00",
+      grossProfit: "₹31.50",
+      margin: "63.0%",
+      items: [
+        { name: "Fresh Sweet Pav Bun", spec: "Local Artisanal Bakery (Daily Batch)", dosage: "1.00 pc", unitCost: "₹6.00 / pc", cost: "₹6.00", waste: "1.0%", color: "bg-outline" },
+        { name: "Amul Salted Table Butter", spec: "Standard 80% Butterfat Block", dosage: "25.00 g", unitCost: "₹500.00 / kg", cost: "₹12.50", waste: "2.0%", color: "bg-secondary-container" }
+      ]
+    },
+    osmania: {
+      title: "Osmania Biscuits (2 pcs)",
+      targetCost: "₹8.00",
+      sellingPrice: "₹25.00",
+      grossProfit: "₹17.00",
+      margin: "68.0%",
+      items: [
+        { name: "Osmania Traditional Biscuits", spec: "Pre-portioned Airtight Duo Pack", dosage: "2.00 pcs", unitCost: "₹4.00 / pc", cost: "₹8.00", waste: "0.5%", color: "bg-primary" }
+      ]
+    }
+  };
+
+  function selectRecipe(key) {
+    const data = recipeData[key];
+    if (!data) return;
+
+    document.querySelectorAll('.recipe-card').forEach(card => {
+      card.classList.remove('bg-surface-container');
+      card.classList.add('bg-surface-container-low');
+    });
+    const currentTab = document.getElementById('tab-' + key);
+    if (currentTab) {
+      currentTab.classList.remove('bg-surface-container-low');
+      currentTab.classList.add('bg-surface-container');
+    }
+
+    document.getElementById('currentRecipeTitle').innerText = data.title;
+    document.getElementById('statTargetCost').innerText = data.targetCost;
+    document.getElementById('statSellingPrice').innerText = data.sellingPrice;
+    document.getElementById('statGrossProfit').innerText = data.grossProfit;
+    document.getElementById('statMargin').innerText = data.margin;
+    document.getElementById('footerTotalCost').innerText = data.targetCost;
+
+    const tbody = document.getElementById('recipeBOMTableBody');
+    tbody.innerHTML = '';
+
+    data.items.forEach(item => {
+      const row = document.createElement('tr');
+      row.className = "hover:bg-surface-container transition-colors";
+      row.innerHTML = `
+        <td class="py-2.5 px-3 font-medium flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full ${item.color}"></span>
+          ${item.name}
+        </td>
+        <td class="py-2.5 px-3 text-on-surface-variant font-body-sm">${item.spec}</td>
+        <td class="py-2.5 px-3 text-right font-tabular-numeric">${item.dosage}</td>
+        <td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">${item.unitCost}</td>
+        <td class="py-2.5 px-3 text-right font-tabular-numeric font-semibold">${item.cost}</td>
+        <td class="py-2.5 px-3 text-right font-tabular-numeric text-on-surface-variant">${item.waste}</td>
+      `;
+      tbody.appendChild(row);
+    });
+  }
+
+  function triggerPO(supplier, quantity) {
+    showToast("PO Generated & Transmitted", supplier + " · " + quantity + " dispatched automatically via ERP gateway.");
+  }
+
+  function saveFormulaMock() {
+    document.getElementById('formulaModal').classList.add('hidden');
+    showToast("Formula Matrix Published", "Assam CTC & Kulhad ratios updated across all 4 branch POS terminals.");
+  }
+
+  function showToast(title, msg) {
+    const toast = document.getElementById('toastSuccess');
+    document.getElementById('toastTitle').innerText = title;
+    document.getElementById('toastMessage').innerText = msg;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.add('hidden');
+    }, 4000);
+  }
+</script></main></div></body></html>

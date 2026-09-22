@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Secrets and local MCP config
+.agents/mcp_config.json
+.env
+.env.*
+*.pem
+*.key
+
+# Expo and build output
+.expo/
+**/dist/
+**/web-build/
+expo-env.d.ts
+
+# macOS
+.DS_Store
+
+# Temporary & logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*

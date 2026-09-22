@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{width:6px;height:6px;}::-webkit-scrollbar-track{background:transparent;}::-webkit-scrollbar-thumb{background:#dcc1b6;border-radius:3px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#ffb59d", "inverse-surface": "#33302d", "on-primary": "#ffffff", "on-secondary-container": "#5d1900", "error-container": "#ffdad6", "on-tertiary": "#ffffff", "error": "#ba1a1a", "outline": "#887269", "on-primary-container": "#ffc2a5", "primary": "#712c00", "surface-container-lowest": "#ffffff", "on-surface-variant": "#55433a", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#832600", "on-background": "#1e1b19", "background": "#fff8f5", "on-primary-fixed-variant": "#7a3000", "tertiary-fixed-dim": "#79db8d", "on-surface": "#1e1b19", "on-primary-fixed": "#341000", "primary-container": "#92400e", "surface-variant": "#e9e1dd", "on-tertiary-container": "#82e595", "on-secondary": "#ffffff", "surface-container-high": "#eee7e3", "inverse-on-surface": "#f7efeb", "surface-tint": "#9a4614", "primary-fixed": "#ffdbcb", "tertiary-container": "#00672d", "surface-container": "#f4ece8", "surface-container-low": "#faf2ee", "on-tertiary-fixed-variant": "#005323", "on-secondary-fixed": "#390c00", "surface-dim": "#e0d8d5", "on-tertiary-fixed": "#00210a", "surface-container-highest": "#e9e1dd", "primary-fixed-dim": "#ffb693", "surface": "#fff8f5", "tertiary": "#004c20", "surface-bright": "#fff8f5", "inverse-primary": "#ffb693", "tertiary-fixed": "#95f8a7", "on-error": "#ffffff", "secondary-container": "#fd6b36", "secondary-fixed": "#ffdbd0", "secondary": "#ac3400", "outline-variant": "#dcc1b6" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1.5rem", "space-xl": "1.75rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-lg": "1.25rem", "space-md": "0.75rem" }, "fontFamily": { "tabular-numeric": ["Plus Jakarta Sans"], "stat-kpi": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"] }, "fontSize": { "tabular-numeric": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "stat-kpi": ["26px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "headline-md": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "fontWeight": "400" }], "body-md": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-lg": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "headline-sm": ["15px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background text-on-surface font-body-md min-h-screen antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 h-14 z-40 bg-surface/90 backdrop-blur-md shadow-[0_1px_4px_rgba(30,27,25,0.06)]"><div class="h-14 px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="ChaiOps Emblem" class="h-7 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XEbT592nQcX2pzmg8K2BsNoOYgXaj_aFVgcL6W-kfnZzDfaYsHDb6mb30SjuYkR3hXOhkPPlpI7Ry1kjmURCWzPUBexFdNYEGDVA8OptQYcfxnGRMPKiIYM_-9_h8qMvQekuLwW-fM8G3vbvEtX7gdoTRZcWy7Qf284uwvY_Z00RMJ4lg-0PO4fR4e6uYf_BeQaEkGpoawPQxuAmOzNFOGduyHOHi2tDZz2qt34VhPMJh2cpT0n2mb9Wg"/><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">ChaiOps</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-primary-container bg-surface-container-high px-space-xs py-0.5 rounded">Core</span></div><div class="h-5 w-px bg-outline-variant/40 hidden md:block"></div><div class="relative flex items-center bg-surface-container-low hover:bg-surface-container transition-colors rounded-lg px-space-sm py-1"><span class="material-symbols-outlined text-[18px] text-primary mr-1.5">storefront</span><select class="bg-transparent font-label-md text-label-md text-on-surface font-medium pr-5 focus:outline-none cursor-pointer appearance-none"><option value="kr-mangalam">KR Mangalam Flagship (Roastery)</option><option value="cybercity">CyberCity Express Hub</option><option value="all">All Branches (Consolidated)</option></select><span class="material-symbols-outlined text-[16px] text-on-surface-variant pointer-events-none absolute right-2">expand_more</span></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-sm bg-surface-container-low px-space-sm py-1 rounded-lg w-72"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">search</span><input class="bg-transparent font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 w-full focus:outline-none" placeholder="Search receipts, SKU or batch ID..." type="text"/></div><div class="flex items-center gap-1.5 px-space-sm py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface">Live Sync: 99.8%</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md font-bold">AR</div><div class="hidden sm:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Aditya Roy</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Regional Lead</span></div></div></div></div></header><aside class="fixed top-14 bottom-0 left-0 w-64 z-30 bg-surface-container-low overflow-y-auto"><div class="p-space-md flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-space-sm font-semibold">Operations</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container-highest text-primary font-semibold shadow-sm"><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="branch-overview" href="#">Branch Overview</a><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="recipe-bom-inventory" href="#">Recipe &amp; Leaf BOM</a><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="eod-cash-reconciliation" href="#">EOD Reconciliation</a><a aria-current="page" class="px-space-sm py-2 rounded-lg transition-colors bg-surface-container-highest text-primary font-semibold shadow-sm" data-path="financial-reports" href="#">Financial Reports</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-space-sm font-semibold">Estate Supply</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container-highest text-primary font-semibold shadow-sm"><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="procurement-batches" href="#">Procurement &amp; Batches</a><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="supplier-ledger" href="#">Supplier Ledger</a></nav></div><div class="flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant px-space-sm font-semibold">Settings</span><nav class="flex flex-col gap-0.5" data-active-classes="bg-surface-container-highest text-primary font-semibold shadow-sm"><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="compliance-tax" href="#">Tax &amp; Compliance</a><a class="px-space-sm py-2 rounded-lg font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="terminal-configs" href="#">Terminal Configs</a></nav></div></div></aside><main class="pt-14 pl-64 min-h-screen bg-surface"><div class="flex flex-col w-full">
+<div class="p-space-lg flex flex-col gap-space-xl">
+<!-- Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Audit &amp; Intelligence</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm">FY 2024–25 Consolidated</span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+            Sync Verified: 14 mins ago
+          </span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Financial Reports &amp; Revenue Audit</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Consolidated multi-branch P&amp;L, real-time payment settlement reconciliation, recipe BOM COGS variance, and automated GST-ready statutory ledger.
+        </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="flex items-center gap-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface px-space-md py-1.5 rounded font-label-md text-label-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule_send</span>
+<span>Schedule Dispatch</span>
+</button>
+<button class="flex items-center gap-1.5 bg-surface-container hover:bg-surface-container-high text-on-surface px-space-md py-1.5 rounded font-label-md text-label-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">description</span>
+<span>Audited P&amp;L (PDF)</span>
+</button>
+<button class="flex items-center gap-1.5 bg-primary hover:bg-primary-container text-on-primary px-space-md py-1.5 rounded font-label-md text-label-md font-semibold transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export GSTR-1 / 3B</span>
+</button>
+</div>
+</div>
+<!-- Period Selector Navigation Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low p-1.5 rounded-lg shadow-sm">
+<div class="flex items-center gap-1 bg-surface-container-highest p-1 rounded">
+<button class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors">Today</button>
+<button class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors">Last 7 Days</button>
+<button class="px-space-md py-1 rounded bg-surface-container-lowest text-primary font-semibold shadow-sm">Month to Date (Oct 2024)</button>
+<button class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors">Q3 FY24-25</button>
+<button class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1">
+<span>Custom Range</span>
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+</button>
+</div>
+<div class="flex items-center gap-space-md pr-2">
+<div class="hidden sm:flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">verified_user</span>
+<span>Dual-Custody Ledger Audited</span>
+</div>
+<div class="h-4 w-px bg-outline-variant/60"></div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="text-on-surface-variant">Currency:</span>
+<span class="font-semibold text-primary">INR (₹)</span>
+</div>
+</div>
+</div>
+<!-- Executive KPI Row (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1: Net Revenue -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Net Gross Revenue</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All 4 Operational Outlets</span>
+</div>
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-tertiary bg-tertiary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">trending_up</span>
+            +16.4%
+          </span>
+</div>
+<div class="my-space-sm flex flex-col">
+<span class="font-stat-kpi text-stat-kpi text-on-surface font-bold font-tabular-numeric">₹18,42,650</span>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span>Target: ₹17.5L</span>
+<span class="font-semibold text-tertiary">105.3% Achieved</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-1.5">
+<div class="bg-primary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span class="material-symbols-outlined text-[15px] text-primary">local_cafe</span>
+<span>16,163 cups decocted &amp; served</span>
+</div>
+</div>
+<!-- Card 2: Gross Margin / Contribution -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Gross Contribution</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Post Recipe Leaf &amp; Dairy</span>
+</div>
+<span class="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-tertiary bg-tertiary-fixed font-label-sm text-label-sm font-bold">
+            +3.8% vs Plan
+          </span>
+</div>
+<div class="my-space-sm flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-stat-kpi text-stat-kpi text-on-surface font-bold font-tabular-numeric">73.8%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">target 70.0%</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span>Recipe BOM COGS</span>
+<span class="font-tabular-numeric font-medium text-secondary">₹4,82,780</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-1.5 flex">
+<div class="bg-tertiary h-full" style="width: 73.8%;"></div>
+<div class="bg-secondary h-full" style="width: 26.2%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">eco</span>
+<span>Estates: Assam, Dooars &amp; Wayanad</span>
+</div>
+</div>
+<!-- Card 3: Net Operating Profit (EBITDA) -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Operating EBITDA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Net Store Profitability</span>
+</div>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded text-primary-container bg-primary-fixed font-label-sm text-label-sm font-bold">
+            Healthy 31.7%
+          </span>
+</div>
+<div class="my-space-sm flex flex-col">
+<span class="font-stat-kpi text-stat-kpi text-on-surface font-bold font-tabular-numeric">₹5,84,320</span>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-1">
+<span>Staff + Rentals + Utilities</span>
+<span class="font-tabular-numeric font-medium">₹7,75,550</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-1.5">
+<div class="bg-primary-container h-full rounded-full" style="width: 68%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span class="material-symbols-outlined text-[15px] text-primary">account_balance</span>
+<span>₹36.15 net margin/ticket</span>
+</div>
+</div>
+<!-- Card 4: Payment Settlement Split -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col justify-between hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Settlement Split</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">UPI vs Physical Till Audits</span>
+</div>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded text-tertiary bg-tertiary-fixed font-label-sm text-label-sm font-semibold">
+            99.88% Till Match
+          </span>
+</div>
+<div class="my-space-sm flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-stat-kpi text-stat-kpi text-primary font-bold font-tabular-numeric">72.4%</span>
+<span class="font-stat-kpi text-stat-kpi text-secondary font-bold font-tabular-numeric">27.6%</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="text-primary font-medium">UPI: ₹13.34L</span>
+<span class="text-secondary font-medium">Cash: ₹5.08L</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden mt-1.5 flex">
+<div class="bg-primary h-full" style="width: 72.4%;"></div>
+<div class="bg-secondary-container h-full" style="width: 27.6%;"></div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm pt-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">check_circle</span>
+<span>Zero delay UPI settlement gateway</span>
+</div>
+</div>
+</div>
+<!-- Main Content Split Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Central/Left Column: Tables & Hourly Charts (8 Columns) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Section: Multi-Branch Performance Matrix -->
+<div class="bg-surface-container-low rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[22px]">domain</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Multi-Branch Financial Performance Matrix</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Store-level gross yield, payment distribution, leaf BOM direct costs, and physical drawer variance</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm bg-surface-container-lowest px-2 py-1 rounded text-on-surface-variant font-medium">4 of 4 Hubs Active</span>
+</div>
+</div>
+<!-- Responsive Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="py-2.5 px-space-md font-semibold">Branch &amp; Pricing Tier</th>
+<th class="py-2.5 px-space-md text-right font-semibold">Gross Sales</th>
+<th class="py-2.5 px-space-md text-center font-semibold">UPI / Cash Split</th>
+<th class="py-2.5 px-space-md text-right font-semibold">Recipe COGS</th>
+<th class="py-2.5 px-space-md text-right font-semibold">Net Margin</th>
+<th class="py-2.5 px-space-md text-center font-semibold">Audit Status</th>
+<th class="py-2.5 px-space-md text-right font-semibold">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-md text-body-md">
+<!-- Row 1: KR Mangalam Flagship -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-semibold text-primary">
+<span>KR Mangalam Flagship</span>
+<span class="bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm px-1.5 py-0.2 rounded font-bold">Roastery Hub</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Base Standard Price Tier • 2 Active POS</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric font-bold text-on-surface">
+                    ₹6,42,000
+                    <span class="block font-body-sm text-body-sm text-on-surface-variant font-normal">5,630 orders</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-tabular-numeric font-medium text-label-md text-label-md">74% / 26%</span>
+<div class="w-20 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1 flex">
+<div class="bg-primary h-full" style="width: 74%;"></div>
+<div class="bg-secondary-container h-full" style="width: 26%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric">
+<span class="font-medium text-on-surface">₹1,66,920</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">26.0% yield</span>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric">
+<span class="font-bold text-tertiary">34.2%</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">₹2,19,564</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-tertiary bg-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                      ₹0.00 Mismatch
+                    </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="text-primary hover:text-primary-container p-1 rounded hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: CyberCity TechPark -->
+<tr class="bg-surface-container/30 hover:bg-surface-container transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-semibold text-primary">
+<span>CyberCity TechPark</span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-1.5 py-0.2 rounded font-bold">Tier A (+15%)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">High Transit Kiosk • 3 Express POS</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric font-bold text-on-surface">
+                    ₹5,84,500
+                    <span class="block font-body-sm text-body-sm text-on-surface-variant font-normal">4,710 orders</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-tabular-numeric font-medium text-label-md text-label-md">82% / 18%</span>
+<div class="w-20 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1 flex">
+<div class="bg-primary h-full" style="width: 82%;"></div>
+<div class="bg-secondary-container h-full" style="width: 18%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric">
+<span class="font-medium text-on-surface">₹1,40,280</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">24.0% yield</span>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric">
+<span class="font-bold text-tertiary">38.6%</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">₹2,25,617</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-on-secondary-container bg-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+                      -₹100 In Review
+                    </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="text-primary hover:text-primary-container p-1 rounded hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Indiranagar 100ft -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-semibold text-primary">
+<span>Indiranagar 100ft</span>
+<span class="bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-1.5 py-0.2 rounded font-bold">Tier B</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Dine-in Courtyard • 2 Counter POS</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric font-bold text-on-surface">
+                    ₹3,68,150
+                    <span class="block font-body-sm text-body-sm text-on-surface-variant font-normal">3,230 orders</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-tabular-numeric font-medium text-label-md text-label-md">68% / 32%</span>
+<div class="w-20 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1 flex">
+<div class="bg-primary h-full" style="width: 68%;"></div>
+<div class="bg-secondary-container h-full" style="width: 32%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric">
+<span class="font-medium text-on-surface">₹99,400</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">27.0% yield</span>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric">
+<span class="font-bold text-tertiary">29.5%</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">₹1,08,604</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-tertiary bg-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                      ₹0.00 Mismatch
+                    </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="text-primary hover:text-primary-container p-1 rounded hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Koramangala 4th Block -->
+<tr class="bg-surface-container/30 hover:bg-surface-container transition-colors">
+<td class="py-3 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5 font-semibold text-primary">
+<span>Koramangala 4th Block</span>
+<span class="bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-1.5 py-0.2 rounded font-bold">Tier C (-₹5 Dis.)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Student Corridor • 1 Fast POS</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric font-bold text-on-surface">
+                    ₹2,48,000
+                    <span class="block font-body-sm text-body-sm text-on-surface-variant font-normal">2,593 orders</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-tabular-numeric font-medium text-label-md text-label-md">60% / 40%</span>
+<div class="w-20 bg-surface-container-highest h-1 rounded-full overflow-hidden mt-1 flex">
+<div class="bg-primary h-full" style="width: 60%;"></div>
+<div class="bg-secondary-container h-full" style="width: 40%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric">
+<span class="font-medium text-on-surface">₹76,180</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">30.7% yield</span>
+</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric">
+<span class="font-bold text-tertiary">24.1%</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">₹59,768</span>
+</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-tertiary bg-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                      ₹0.00 Mismatch
+                    </span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="text-primary hover:text-primary-container p-1 rounded hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</td>
+</tr>
+</tbody>
+<!-- Table Summary Footer -->
+<tfoot>
+<tr class="bg-surface-container-high font-semibold text-on-surface">
+<td class="py-3 px-space-md">Consolidated Total (4 Hubs)</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric text-primary font-bold">₹18,42,650</td>
+<td class="py-3 px-space-md text-center font-tabular-numeric font-label-md text-label-md">72.4% UPI / 27.6% Cash</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric">₹4,82,780 (26.2%)</td>
+<td class="py-3 px-space-md text-right font-tabular-numeric text-tertiary">₹6,13,553 (33.3%)</td>
+<td class="py-3 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm font-bold">
+                      -₹100 Net (99.98%)
+                    </span>
+</td>
+<td class="py-3 px-space-md text-right font-label-sm text-label-sm text-primary">Audited</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<!-- Section: Revenue Velocity & Settlement Channels Visualization -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Revenue Velocity &amp; Peak Hour Decoction Inflow</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comparative hourly settlement distribution: UPI Instant Webhooks vs Physical Drawer Receipts</p>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="w-3 h-3 rounded-sm bg-primary"></span>
+<span class="text-on-surface">UPI &amp; Digital (₹114 avg ticket)</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="w-3 h-3 rounded-sm bg-secondary-container"></span>
+<span class="text-on-surface">Cash in Till</span>
+</div>
+</div>
+</div>
+<!-- SVG Hourly Velocity Area/Bar Chart -->
+<div class="w-full bg-surface-container-lowest p-space-md rounded-lg overflow-hidden flex flex-col gap-2">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>07:00 Early Shift</span>
+<span class="font-semibold text-primary">09:30 Morning Rush Peak (₹42.8k/hr)</span>
+<span>13:30 Lull</span>
+<span class="font-semibold text-secondary">18:00 Evening Kadak Rush (₹54.2k/hr)</span>
+<span>22:00 Close</span>
+</div>
+<div class="h-44 w-full relative flex items-end">
+<!-- SVG Multi-Layer Chart -->
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 760 140">
+<defs>
+<lineargradient id="upiGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#712c00" stop-opacity="0.3"></stop>
+<stop offset="100%" stop-color="#712c00" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="cashGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#fd6b36" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#fd6b36" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Grid Guide Lines -->
+<line stroke="#e9e1dd" stroke-dasharray="3 3" x1="0" x2="760" y1="20" y2="20"></line>
+<line stroke="#e9e1dd" stroke-dasharray="3 3" x1="0" x2="760" y1="60" y2="60"></line>
+<line stroke="#e9e1dd" stroke-dasharray="3 3" x1="0" x2="760" y1="100" y2="100"></line>
+<!-- UPI Fill Area -->
+<path d="M 0,130 Q 80,110 140,40 T 260,30 T 360,95 T 460,75 T 560,18 T 680,45 L 760,120 L 760,140 L 0,140 Z" fill="url(#upiGradient)"></path>
+<!-- Cash Fill Area -->
+<path d="M 0,135 Q 80,125 140,85 T 260,80 T 360,115 T 460,105 T 560,65 T 680,85 L 760,132 L 760,140 L 0,140 Z" fill="url(#cashGradient)"></path>
+<!-- Lines -->
+<path d="M 0,130 Q 80,110 140,40 T 260,30 T 360,95 T 460,75 T 560,18 T 680,45 L 760,120" fill="none" stroke="#712c00" stroke-width="2.5"></path>
+<path d="M 0,135 Q 80,125 140,85 T 260,80 T 360,115 T 460,105 T 560,65 T 680,85 L 760,132" fill="none" stroke="#fd6b36" stroke-dasharray="2 2" stroke-width="2"></path>
+<!-- Peak Hotspots -->
+<circle cx="190" cy="32" fill="#712c00" r="4"></circle>
+<circle cx="560" cy="18" fill="#712c00" r="4"></circle>
+<circle cx="560" cy="65" fill="#fd6b36" r="3.5"></circle>
+</svg>
+</div>
+<!-- Footnote / Legend stats -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 border-0 bg-surface-container-low p-2 rounded">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Morning Peak (08:00–11:30)</span>
+<span class="font-tabular-numeric font-semibold text-on-surface">₹6,84,200 (37.1%)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Evening Rush (16:00–19:30)</span>
+<span class="font-tabular-numeric font-semibold text-on-surface">₹7,92,450 (43.0%)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Midday Chai Break</span>
+<span class="font-tabular-numeric font-semibold text-on-surface">₹2,44,000 (13.2%)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Avg Ticket Size</span>
+<span class="font-tabular-numeric font-semibold text-primary">₹114.20 / Order</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Operational Tea Master Insights Banner -->
+<div class="bg-gradient-to-r from-surface-container-high to-surface-container p-space-md rounded-xl flex items-center gap-space-md shadow-sm">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">water_drop</span>
+</div>
+<div class="flex flex-col flex-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Decoction Yield Efficiency at 98.4%</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Across 56 store shifts, water-to-CTC leaf extraction held at optimum 4.2g/100ml without dilution wastage. Estimated raw milk conservation: ₹19,800.
+            </p>
+</div>
+<button class="shrink-0 bg-surface-container-lowest hover:bg-surface-bright text-primary px-space-md py-1.5 rounded font-label-md text-label-md font-semibold transition-colors shadow-sm">
+            View Decoction Logs
+          </button>
+</div>
+</div>
+<!-- Right Column: BOM Breakdown, Cash Leakage Audit, & Statutory Tax (4 Columns) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Recipe BOM COGS Breakdown Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">grocery</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Recipe BOM COGS</h3>
+</div>
+<span class="font-tabular-numeric font-bold text-on-surface text-label-md text-label-md">₹4,82,780</span>
+</div>
+<!-- Alert Badge -->
+<div class="flex items-center gap-2 bg-tertiary-fixed text-on-tertiary-fixed-variant p-2 rounded text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">savings</span>
+<span>Assam Direct Estate bulk saved ₹14,200 this mo.</span>
+</div>
+<!-- Ingredient Stack Bars -->
+<div class="flex flex-col gap-2.5">
+<!-- Item 1: Full Cream Milk -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Full Cream Milk (Amul Cold-Chain)</span>
+<span class="font-tabular-numeric font-semibold text-on-surface">42% • ₹2,02,760</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 42%;"></div>
+</div>
+</div>
+<!-- Item 2: Assam CTC Tea Leaves -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Assam CTC Orthodox Blend</span>
+<span class="font-tabular-numeric font-semibold text-on-surface">24% • ₹1,15,860</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 24%;"></div>
+</div>
+</div>
+<!-- Item 3: Terracotta Kulhads -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Artisanal Clay Kulhads (150ml)</span>
+<span class="font-tabular-numeric font-semibold text-on-surface">18% • ₹86,900</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 18%;"></div>
+</div>
+</div>
+<!-- Item 4: Spices & Cardamom -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Kerala Green Cardamom, Ginger &amp; Clove</span>
+<span class="font-tabular-numeric font-semibold text-on-surface">10% • ₹48,270</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 10%;"></div>
+</div>
+</div>
+<!-- Item 5: Sugar & Accompaniments -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Unrefined Khandsari Sugar &amp; Rusk</span>
+<span class="font-tabular-numeric font-semibold text-on-surface">6% • ₹28,990</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-outline-variant h-full rounded-full" style="width: 6%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant bg-surface-container p-2 rounded">
+<span>COGS-to-Sale Ratio:</span>
+<span class="font-bold text-tertiary">26.2% (Target &lt; 30%)</span>
+</div>
+</div>
+<!-- Cash Leakage & Drawer Audit Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">point_of_sale</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Cash Leakage &amp; Drawer Audit</h3>
+</div>
+<span class="px-2 py-0.5 rounded text-tertiary bg-tertiary-fixed font-label-sm text-label-sm font-semibold">
+              99.88% Accuracy
+            </span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="bg-surface-container-lowest p-2.5 rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Physical Cash Audited</span>
+<span class="font-headline-sm text-headline-sm font-tabular-numeric font-bold text-on-surface mt-1">₹5,08,570</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">56 Shift Drops</span>
+</div>
+<div class="bg-surface-container-lowest p-2.5 rounded flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Net Till Discrepancy</span>
+<span class="font-headline-sm text-headline-sm font-tabular-numeric font-bold text-secondary mt-1">-₹100.00</span>
+<span class="font-body-sm text-body-sm text-tertiary">0.02% (Tolerance ±0.15%)</span>
+</div>
+</div>
+<!-- Audit Checklist Details -->
+<div class="flex flex-col gap-2 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center justify-between py-1 bg-surface-container px-2 rounded">
+<span class="text-on-surface-variant">Dual-Auth Manager Sign-Offs</span>
+<span class="font-semibold text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">done_all</span>
+                100% (56/56 shifts)
+              </span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container px-2 rounded">
+<span class="text-on-surface-variant">Resolved Shrinkage / Roundoff</span>
+<span class="font-tabular-numeric font-medium text-on-surface">₹320.00</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container px-2 rounded">
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+<span class="text-on-surface-variant">Pending Investigation</span>
+</div>
+<span class="font-tabular-numeric font-medium text-secondary">CyberCity #T-2 (₹100)</span>
+</div>
+</div>
+<button class="w-full bg-surface-container hover:bg-surface-container-high text-on-surface py-1.5 rounded font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">fingerprint</span>
+<span>View Shift Reconciliation Signatures</span>
+</button>
+</div>
+<!-- GST & Statutory Tax Ledger Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">GST &amp; Statutory Tax Ledger</h3>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold">
+              GSTR-3B Ready
+            </span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded flex flex-col gap-2">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">5% Composite GST on Food &amp; Chai:</span>
+<span class="font-tabular-numeric font-semibold text-on-surface">₹92,132.50</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-on-surface-variant">Input Tax Credit (ITC - Raw Leaf &amp; Dairy):</span>
+<span class="font-tabular-numeric font-semibold text-tertiary">-₹18,450.00</span>
+</div>
+<div class="h-px bg-surface-container-highest my-0.5"></div>
+<div class="flex items-center justify-between font-label-md text-label-md">
+<span class="text-on-surface font-bold">Net GST Payable (Oct 2024):</span>
+<span class="font-stat-kpi text-headline-sm font-bold text-primary font-tabular-numeric">₹73,682.50</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-2 rounded font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Sync with Tally / Zoho Books</span>
+</button>
+<div class="flex items-center justify-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary">check</span>
+<span>Direct GSTN Sandbox Handshake Validated</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></body></html>
